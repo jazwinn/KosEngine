@@ -1,0 +1,2018 @@
+[
+    {
+        "GlobalSettings": {
+            "globalIllumination": 1.0,
+            "backgroundColor": {
+                "r": 0.13300000131130219,
+                "g": 0.23000000417232513,
+                "b": 0.3199999928474426
+            }
+        }
+    },
+    {
+        "CursorSettings": {
+            "cursorImage": "../Assets/Texture/UI/img_startScreenCursor.png",
+            "isCursorCentered": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "Camera",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "camera": {
+            "planes": {
+                "left": 0.0,
+                "right": 0.0,
+                "top": 0.0,
+                "bottom": 0.0
+            },
+            "aspectRatio": 0.0
+        }
+    },
+    {
+        "name": {
+            "namestr": "Background",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "collider": {
+            "checkcollision": true,
+            "checkresponse": true,
+            "size": {
+                "x": 4.800000190734863,
+                "y": 2.700000047683716
+            },
+            "offset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "drawDebug": true,
+            "radius": 0.5,
+            "shapetype": 0
+        },
+        "sprite": {
+            "imagefile": "img_levelSelectBackground.png",
+            "layer": 0,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": false
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "LevelSelection",
+                    "enabled": true,
+                    "map": [
+                        {
+                            "variable": "SceneName",
+                            "base64": ""
+                        },
+                        {
+                            "variable": "LevelSelected",
+                            "base64": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "audio": [
+            {
+                "name": "aud_mainMenuLoop",
+                "volume": 0.20900000631809235,
+                "loop": true,
+                "playOnStart": false,
+                "isBGM": true,
+                "isSFX": false
+            },
+            {
+                "name": "aud_startMenuAmbienceLoop01",
+                "volume": 1.0,
+                "loop": true,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            }
+        ]
+    },
+    {
+        "name": {
+            "namestr": "Build Version",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": -0.0981338769197464,
+                "y": -0.05888044834136963
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 0.8999999165534973,
+                "y": 0.8999999165534973
+            }
+        }
+    },
+    {
+        "name": {
+            "namestr": "Build Frame",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": -1.4642666578292847,
+                "y": 0.753293514251709
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 0.4000000059604645,
+                "y": 0.4000000059604645
+            }
+        },
+        "collider": {
+            "checkcollision": true,
+            "checkresponse": true,
+            "size": {
+                "x": 1.2799999713897705,
+                "y": 0.4000000059604645
+            },
+            "offset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "drawDebug": true,
+            "radius": 0.5,
+            "shapetype": 0
+        },
+        "sprite": {
+            "imagefile": "ani_pauseMenuQuitButton_strip2.png",
+            "layer": 1,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": false
+        },
+        "animation": {
+            "frameNumber": 0,
+            "framesPerSecond": 0,
+            "frameTimer": 0.0,
+            "isAnimating": false,
+            "stripCount": 2
+        },
+        "button": {
+            "force": {
+                "x": 169.2960205078125,
+                "y": 946.7785034179688
+            },
+            "scale": {
+                "x": 0.47999998927116394,
+                "y": 0.20000000298023224
+            },
+            "enablehover": true
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "LevelSelectButton",
+                    "enabled": true,
+                    "map": [
+                        {
+                            "variable": "isSelected",
+                            "base64": ""
+                        },
+                        {
+                            "variable": "buttonFunctionNo",
+                            "base64": "/////8zMzMwA"
+                        }
+                    ]
+                }
+            ]
+        },
+        "audio": [
+            {
+                "name": "aud_buttonHover01",
+                "volume": 1.0,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            }
+        ],
+        "children": [
+            {
+                "name": {
+                    "namestr": "Build Version Text",
+                    "layer": 0,
+                    "isprefab": false,
+                    "tagstr": "Default"
+                },
+                "transform": {
+                    "position": {
+                        "x": -0.22170297801494598,
+                        "y": -0.037062868475914
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 0.05009743571281433,
+                        "y": 0.05009743571281433
+                    }
+                },
+                "text": {
+                    "text": "QUIT",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 70.0,
+                    "color": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 0.0
+                    },
+                    "layer": 5,
+                    "isCentered": false
+                }
+            }
+        ]
+    },
+    {
+        "name": {
+            "namestr": "UI Frame",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": -1.188603401184082,
+                "y": -0.0405331552028656
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 0.5199999809265137,
+                "y": 0.5199999809265137
+            }
+        },
+        "collider": {
+            "checkcollision": true,
+            "checkresponse": true,
+            "size": {
+                "x": 1.9199999570846558,
+                "y": 1.9199999570846558
+            },
+            "offset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "drawDebug": true,
+            "radius": 0.5,
+            "shapetype": 0
+        },
+        "sprite": {
+            "imagefile": "img_uiFrame.png",
+            "layer": 2,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": false
+        },
+        "children": [
+            {
+                "name": {
+                    "namestr": "Sequencer Text",
+                    "layer": 0,
+                    "isprefab": false,
+                    "tagstr": "Default"
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.8783578276634216
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 0.027900027111172676,
+                        "y": 0.027900027111172676
+                    }
+                },
+                "text": {
+                    "text": "SEQUENCER",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 120.0,
+                    "color": {
+                        "r": 0.10588235408067703,
+                        "g": 0.8823529481887817,
+                        "b": 0.06666667014360428
+                    },
+                    "layer": 6,
+                    "isCentered": true
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Status Text",
+                    "layer": 0,
+                    "isprefab": false,
+                    "tagstr": "Default"
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.003216342767700553,
+                        "y": 0.6190914511680603
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 0.20868001878261566,
+                        "y": 0.20868001878261566
+                    }
+                },
+                "text": {
+                    "text": "STATUS:active",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 13.0,
+                    "color": {
+                        "r": 0.10588235408067703,
+                        "g": 0.8823529481887817,
+                        "b": 0.06666667014360428
+                    },
+                    "layer": 7,
+                    "isCentered": true
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Execute Text",
+                    "layer": 0,
+                    "isprefab": false,
+                    "tagstr": "Default"
+                },
+                "transform": {
+                    "position": {
+                        "x": -0.6762877106666565,
+                        "y": -0.7334170341491699
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 0.20868001878261566,
+                        "y": 0.20868001878261566
+                    }
+                },
+                "text": {
+                    "text": "START:",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 13.5,
+                    "color": {
+                        "r": 0.10588235408067703,
+                        "g": 0.8823529481887817,
+                        "b": 0.06666667014360428
+                    },
+                    "layer": 8,
+                    "isCentered": false
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Y/N Text",
+                    "layer": 0,
+                    "isprefab": false,
+                    "tagstr": "Default"
+                },
+                "transform": {
+                    "position": {
+                        "x": -0.14178213477134705,
+                        "y": -0.7329663038253784
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 0.20868001878261566,
+                        "y": 0.20868001878261566
+                    }
+                },
+                "text": {
+                    "text": "Y/N |",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 13.5,
+                    "color": {
+                        "r": 0.10588235408067703,
+                        "g": 0.8823529481887817,
+                        "b": 0.06666667014360428
+                    },
+                    "layer": 1,
+                    "isCentered": false
+                },
+                "script": {
+                    "scripts": [
+                        {
+                            "name": "LevelSelectionTextBlink",
+                            "enabled": true,
+                            "map": []
+                        },
+                        {
+                            "name": "ButtonPrompt",
+                            "enabled": true,
+                            "map": [
+                                {
+                                    "variable": "promptNo",
+                                    "base64": "AwAAAMzMzMwA"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "name": {
+            "namestr": "LevelFrame",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": -0.004492990672588348,
+                "y": -0.827707827091217
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 0.4985886812210083,
+                "y": 0.38371625542640686
+            }
+        },
+        "sprite": {
+            "imagefile": "img_levelFrame.png",
+            "layer": 4,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "Coroutine Handlers",
+            "layer": 0,
+            "isprefab": true,
+            "tagstr": "Default",
+            "prefabname": "Coroutine Handlers.prefab",
+            "issync": true
+        },
+        "transform": {
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "CoroutineController",
+                    "enabled": true,
+                    "map": []
+                }
+            ]
+        }
+    },
+    {
+        "name": {
+            "namestr": "UI_FPSParent",
+            "layer": 0,
+            "isprefab": true,
+            "tagstr": "Default",
+            "prefabname": "UI_FPSParent.prefab",
+            "issync": false
+        },
+        "transform": {
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "UI_FPSCounter",
+                    "enabled": true,
+                    "map": [
+                        {
+                            "variable": "layerEnabled",
+                            "base64": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "children": [
+            {
+                "name": {
+                    "namestr": "UI_FPSCounter",
+                    "layer": 15,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "UI_FPSParent.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 1.3890342712402344,
+                        "y": 0.8299999833106995
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                },
+                "text": {
+                    "text": "FPS : 000",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 1.5,
+                    "color": {
+                        "r": 0.10588235408067703,
+                        "g": 0.8823529481887817,
+                        "b": 0.06666667014360428
+                    },
+                    "layer": 900,
+                    "isCentered": true
+                }
+            }
+        ]
+    },
+    {
+        "name": {
+            "namestr": "Map1",
+            "layer": 1,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "children": [
+            {
+                "name": {
+                    "namestr": "Map Goal",
+                    "layer": 1,
+                    "isprefab": false,
+                    "tagstr": "Default"
+                },
+                "transform": {
+                    "position": {
+                        "x": -1.5399999618530273,
+                        "y": -0.2892287075519562
+                    },
+                    "rotation": -0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                },
+                "text": {
+                    "text": "GOAL: ESCAPE.",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 1.5,
+                    "color": {
+                        "r": 0.10588235408067703,
+                        "g": 0.8823529481887817,
+                        "b": 0.06666667014360428
+                    },
+                    "layer": 22,
+                    "isCentered": false
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Map Text",
+                    "layer": 1,
+                    "isprefab": false,
+                    "tagstr": "Default"
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.6432318687438965,
+                        "y": 0.560312032699585
+                    },
+                    "rotation": -0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                },
+                "text": {
+                    "text": "SEQUENCE LAYOUT",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 2.0,
+                    "color": {
+                        "r": 0.10588235408067703,
+                        "g": 0.8823529481887817,
+                        "b": 0.06666667014360428
+                    },
+                    "layer": 21,
+                    "isCentered": true
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Map1 Photo",
+                    "layer": 1,
+                    "isprefab": false,
+                    "tagstr": "Default"
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.6314664483070374,
+                        "y": 0.02668103575706482
+                    },
+                    "rotation": -0.0,
+                    "scale": {
+                        "x": 0.5,
+                        "y": 0.5
+                    }
+                },
+                "sprite": {
+                    "imagefile": "img_uiLevelSelectFrame.png",
+                    "layer": 12,
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0
+                    },
+                    "alpha": 1.0,
+                    "isLit": false
+                }
+            }
+        ]
+    },
+    {
+        "name": {
+            "namestr": "Map2",
+            "layer": 2,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "children": [
+            {
+                "name": {
+                    "namestr": "Map Goal",
+                    "layer": 2,
+                    "isprefab": false,
+                    "tagstr": "Default"
+                },
+                "transform": {
+                    "position": {
+                        "x": -1.5399999618530273,
+                        "y": -0.28999999165534973
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                },
+                "text": {
+                    "text": "GOAL: ESCAPE.",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 1.5,
+                    "color": {
+                        "r": 0.10588235408067703,
+                        "g": 0.8823529481887817,
+                        "b": 0.06666667014360428
+                    },
+                    "layer": 23,
+                    "isCentered": false
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Map Text",
+                    "layer": 2,
+                    "isprefab": false,
+                    "tagstr": "Default"
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.6432318687438965,
+                        "y": 0.560312032699585
+                    },
+                    "rotation": -0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                },
+                "text": {
+                    "text": "SEQUENCE LAYOUT",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 2.0,
+                    "color": {
+                        "r": 0.10588235408067703,
+                        "g": 0.8823529481887817,
+                        "b": 0.06666667014360428
+                    },
+                    "layer": 24,
+                    "isCentered": true
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Map2 Photo",
+                    "layer": 2,
+                    "isprefab": false,
+                    "tagstr": "Default"
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.6314664483070374,
+                        "y": 0.02668103575706482
+                    },
+                    "rotation": -0.0,
+                    "scale": {
+                        "x": 0.5,
+                        "y": 0.5
+                    }
+                },
+                "sprite": {
+                    "imagefile": "img_uiLevelSelectFrameLevel2.png",
+                    "layer": 17,
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0
+                    },
+                    "alpha": 1.0,
+                    "isLit": false
+                }
+            }
+        ]
+    },
+    {
+        "name": {
+            "namestr": "Map3",
+            "layer": 3,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "children": [
+            {
+                "name": {
+                    "namestr": "Map Goal",
+                    "layer": 3,
+                    "isprefab": false,
+                    "tagstr": "Default"
+                },
+                "transform": {
+                    "position": {
+                        "x": -1.5399999618530273,
+                        "y": -0.2892287075519562
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                },
+                "text": {
+                    "text": "GOAL: RUN!",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 1.5,
+                    "color": {
+                        "r": 0.10588235408067703,
+                        "g": 0.8823529481887817,
+                        "b": 0.06666667014360428
+                    },
+                    "layer": 25,
+                    "isCentered": false
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Map Text",
+                    "layer": 3,
+                    "isprefab": false,
+                    "tagstr": "Default"
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.6432318687438965,
+                        "y": 0.560312032699585
+                    },
+                    "rotation": -0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                },
+                "text": {
+                    "text": "SEQUENCE LAYOUT",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 2.0,
+                    "color": {
+                        "r": 0.10588235408067703,
+                        "g": 0.8823529481887817,
+                        "b": 0.06666667014360428
+                    },
+                    "layer": 26,
+                    "isCentered": true
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Map3 Photo",
+                    "layer": 3,
+                    "isprefab": false,
+                    "tagstr": "Default"
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.6314664483070374,
+                        "y": 0.02668103575706482
+                    },
+                    "rotation": -0.0,
+                    "scale": {
+                        "x": 0.5,
+                        "y": 0.5
+                    }
+                },
+                "sprite": {
+                    "imagefile": "img_uiLevelSelectFrameLevel3.png",
+                    "layer": 18,
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0
+                    },
+                    "alpha": 1.0,
+                    "isLit": false
+                }
+            }
+        ]
+    },
+    {
+        "name": {
+            "namestr": "Map4",
+            "layer": 4,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "children": [
+            {
+                "name": {
+                    "namestr": "Map Goal",
+                    "layer": 4,
+                    "isprefab": false,
+                    "tagstr": "Default"
+                },
+                "transform": {
+                    "position": {
+                        "x": -1.5399999618530273,
+                        "y": -0.2892287075519562
+                    },
+                    "rotation": -0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                },
+                "text": {
+                    "text": "GOAL: ESCAPE.",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 1.5,
+                    "color": {
+                        "r": 0.10588235408067703,
+                        "g": 0.8823529481887817,
+                        "b": 0.06666667014360428
+                    },
+                    "layer": 27,
+                    "isCentered": false
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Map Text",
+                    "layer": 4,
+                    "isprefab": false,
+                    "tagstr": "Default"
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.6432318687438965,
+                        "y": 0.560312032699585
+                    },
+                    "rotation": -0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                },
+                "text": {
+                    "text": "SEQUENCE LAYOUT",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 2.0,
+                    "color": {
+                        "r": 0.10588235408067703,
+                        "g": 0.8823529481887817,
+                        "b": 0.06666667014360428
+                    },
+                    "layer": 28,
+                    "isCentered": true
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Map4 Photo",
+                    "layer": 4,
+                    "isprefab": false,
+                    "tagstr": "Default"
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.6314664483070374,
+                        "y": 0.02668103575706482
+                    },
+                    "rotation": -0.0,
+                    "scale": {
+                        "x": 0.5,
+                        "y": 0.5
+                    }
+                },
+                "sprite": {
+                    "imagefile": "img_uiLevelSelectFrameLevel4.png",
+                    "layer": 19,
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0
+                    },
+                    "alpha": 1.0,
+                    "isLit": false
+                }
+            }
+        ]
+    },
+    {
+        "name": {
+            "namestr": "Map5",
+            "layer": 5,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "children": [
+            {
+                "name": {
+                    "namestr": "Map Goal",
+                    "layer": 5,
+                    "isprefab": false,
+                    "tagstr": "Default"
+                },
+                "transform": {
+                    "position": {
+                        "x": -1.5399999618530273,
+                        "y": -0.2892287075519562
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                },
+                "text": {
+                    "text": "GOAL: SURVIVE.",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 1.5,
+                    "color": {
+                        "r": 0.10588235408067703,
+                        "g": 0.8823529481887817,
+                        "b": 0.06666667014360428
+                    },
+                    "layer": 29,
+                    "isCentered": false
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Map Text",
+                    "layer": 5,
+                    "isprefab": false,
+                    "tagstr": "Default"
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.6432318687438965,
+                        "y": 0.560312032699585
+                    },
+                    "rotation": -0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                },
+                "text": {
+                    "text": "SEQUENCE LAYOUT",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 2.0,
+                    "color": {
+                        "r": 0.10588235408067703,
+                        "g": 0.8823529481887817,
+                        "b": 0.06666667014360428
+                    },
+                    "layer": 30,
+                    "isCentered": true
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Map5 Photo",
+                    "layer": 5,
+                    "isprefab": false,
+                    "tagstr": "Default"
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.6314664483070374,
+                        "y": 0.02668103575706482
+                    },
+                    "rotation": -0.0,
+                    "scale": {
+                        "x": 0.5,
+                        "y": 0.5
+                    }
+                },
+                "sprite": {
+                    "imagefile": "img_uiLevelSelectFrameLevel5.png",
+                    "layer": 31,
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0
+                    },
+                    "alpha": 1.0,
+                    "isLit": false
+                }
+            }
+        ]
+    },
+    {
+        "name": {
+            "namestr": "Map6",
+            "layer": 6,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "children": [
+            {
+                "name": {
+                    "namestr": "Map Goal",
+                    "layer": 6,
+                    "isprefab": false,
+                    "tagstr": "Default"
+                },
+                "transform": {
+                    "position": {
+                        "x": -1.5399999618530273,
+                        "y": -0.2892287075519562
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                },
+                "text": {
+                    "text": "GOAL: SURVIVE.",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 1.5,
+                    "color": {
+                        "r": 0.10588235408067703,
+                        "g": 0.8823529481887817,
+                        "b": 0.06666667014360428
+                    },
+                    "layer": 37,
+                    "isCentered": false
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Map Text",
+                    "layer": 6,
+                    "isprefab": false,
+                    "tagstr": "Default"
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.6432318687438965,
+                        "y": 0.560312032699585
+                    },
+                    "rotation": -0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                },
+                "text": {
+                    "text": "SEQUENCE LAYOUT",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 2.0,
+                    "color": {
+                        "r": 0.10588235408067703,
+                        "g": 0.8823529481887817,
+                        "b": 0.06666667014360428
+                    },
+                    "layer": 38,
+                    "isCentered": true
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Map6 Photo",
+                    "layer": 6,
+                    "isprefab": false,
+                    "tagstr": "Default"
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.6314664483070374,
+                        "y": 0.02668103575706482
+                    },
+                    "rotation": -0.0,
+                    "scale": {
+                        "x": 0.5,
+                        "y": 0.5
+                    }
+                },
+                "sprite": {
+                    "imagefile": "img_uiLevelSelectFrameLevel6.png",
+                    "layer": 39,
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0
+                    },
+                    "alpha": 1.0,
+                    "isLit": false
+                }
+            }
+        ]
+    },
+    {
+        "name": {
+            "namestr": "Level Select Button 1",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": -1.45438551902771,
+                "y": -0.8258895874023438
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        "sprite": {
+            "imagefile": "ani_pauseMenuQuitButton_strip2.png",
+            "layer": 10,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": false
+        },
+        "animation": {
+            "frameNumber": 0,
+            "framesPerSecond": 0,
+            "frameTimer": 0.0,
+            "isAnimating": false,
+            "stripCount": 2
+        },
+        "button": {
+            "force": {
+                "x": 174.6318359375,
+                "y": 94.01962280273438
+            },
+            "scale": {
+                "x": 0.550000011920929,
+                "y": 0.1899999976158142
+            },
+            "enablehover": true
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "LevelSelectButton",
+                    "enabled": true,
+                    "map": [
+                        {
+                            "variable": "isSelected",
+                            "base64": ""
+                        },
+                        {
+                            "variable": "otherIsClick",
+                            "base64": ""
+                        },
+                        {
+                            "variable": "buttonFunctionNo",
+                            "base64": "CgAAAMzMzMwA"
+                        }
+                    ]
+                }
+            ]
+        },
+        "audio": [
+            {
+                "name": "aud_buttonClick01",
+                "volume": 1.0,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            },
+            {
+                "name": "aud_buttonHover01",
+                "volume": 1.0,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            }
+        ],
+        "children": [
+            {
+                "name": {
+                    "namestr": "Level1 Text",
+                    "layer": 0,
+                    "isprefab": false,
+                    "tagstr": "Default"
+                },
+                "transform": {
+                    "position": {
+                        "x": -0.010471940040588379,
+                        "y": -0.03454655408859253
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                },
+                "text": {
+                    "text": "MEMORY1",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 2.5,
+                    "color": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 0.0
+                    },
+                    "layer": 20,
+                    "isCentered": true
+                }
+            }
+        ]
+    },
+    {
+        "name": {
+            "namestr": "Level Select Button 2",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": -0.8716176748275757,
+                "y": -0.8258895874023438
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        "sprite": {
+            "imagefile": "ani_pauseMenuQuitButton_strip2.png",
+            "layer": 11,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": false
+        },
+        "animation": {
+            "frameNumber": 0,
+            "framesPerSecond": 0,
+            "frameTimer": 0.0,
+            "isAnimating": false,
+            "stripCount": 2
+        },
+        "button": {
+            "force": {
+                "x": 489.32647705078125,
+                "y": 94.01962280273438
+            },
+            "scale": {
+                "x": 0.550000011920929,
+                "y": 0.1899999976158142
+            },
+            "enablehover": true
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "LevelSelectButton",
+                    "enabled": true,
+                    "map": [
+                        {
+                            "variable": "isSelected",
+                            "base64": ""
+                        },
+                        {
+                            "variable": "otherIsClick",
+                            "base64": ""
+                        },
+                        {
+                            "variable": "buttonFunctionNo",
+                            "base64": "FAAAAMzMzMwA"
+                        }
+                    ]
+                }
+            ]
+        },
+        "audio": [
+            {
+                "name": "aud_buttonClick01",
+                "volume": 1.0,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            },
+            {
+                "name": "aud_buttonHover01",
+                "volume": 1.0,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            }
+        ],
+        "children": [
+            {
+                "name": {
+                    "namestr": "Level2 Text",
+                    "layer": 0,
+                    "isprefab": false,
+                    "tagstr": "Default"
+                },
+                "transform": {
+                    "position": {
+                        "x": -0.010471940040588379,
+                        "y": -0.03454655408859253
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                },
+                "text": {
+                    "text": "MEMORY2",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 2.5,
+                    "color": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 0.0
+                    },
+                    "layer": 32,
+                    "isCentered": true
+                }
+            }
+        ]
+    },
+    {
+        "name": {
+            "namestr": "Level Select Button 3",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": -0.2924262285232544,
+                "y": -0.8258895874023438
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        "sprite": {
+            "imagefile": "ani_pauseMenuQuitButton_strip2.png",
+            "layer": 13,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": false
+        },
+        "animation": {
+            "frameNumber": 0,
+            "framesPerSecond": 0,
+            "frameTimer": 0.0,
+            "isAnimating": false,
+            "stripCount": 2
+        },
+        "button": {
+            "force": {
+                "x": 802.08984375,
+                "y": 94.01962280273438
+            },
+            "scale": {
+                "x": 0.550000011920929,
+                "y": 0.1899999976158142
+            },
+            "enablehover": true
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "LevelSelectButton",
+                    "enabled": true,
+                    "map": [
+                        {
+                            "variable": "isSelected",
+                            "base64": ""
+                        },
+                        {
+                            "variable": "otherIsClick",
+                            "base64": ""
+                        },
+                        {
+                            "variable": "buttonFunctionNo",
+                            "base64": "HgAAAMzMzMwA"
+                        }
+                    ]
+                }
+            ]
+        },
+        "audio": [
+            {
+                "name": "aud_buttonClick01",
+                "volume": 1.0,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            },
+            {
+                "name": "aud_buttonHover01",
+                "volume": 1.0,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            }
+        ],
+        "children": [
+            {
+                "name": {
+                    "namestr": "Level3 Text",
+                    "layer": 0,
+                    "isprefab": false,
+                    "tagstr": "Default"
+                },
+                "transform": {
+                    "position": {
+                        "x": -0.010471940040588379,
+                        "y": -0.03454655408859253
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                },
+                "text": {
+                    "text": "MEMORY3",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 2.5,
+                    "color": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 0.0
+                    },
+                    "layer": 33,
+                    "isCentered": true
+                }
+            }
+        ]
+    },
+    {
+        "name": {
+            "namestr": "Level Select Button 4",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": 0.2829817235469818,
+                "y": -0.8258895874023438
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        "sprite": {
+            "imagefile": "ani_pauseMenuQuitButton_strip2.png",
+            "layer": 14,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": false
+        },
+        "animation": {
+            "frameNumber": 0,
+            "framesPerSecond": 0,
+            "frameTimer": 0.0,
+            "isAnimating": false,
+            "stripCount": 2
+        },
+        "button": {
+            "force": {
+                "x": 1112.81005859375,
+                "y": 94.01962280273438
+            },
+            "scale": {
+                "x": 0.550000011920929,
+                "y": 0.1899999976158142
+            },
+            "enablehover": true
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "LevelSelectButton",
+                    "enabled": true,
+                    "map": [
+                        {
+                            "variable": "isSelected",
+                            "base64": ""
+                        },
+                        {
+                            "variable": "otherIsClick",
+                            "base64": ""
+                        },
+                        {
+                            "variable": "buttonFunctionNo",
+                            "base64": "KAAAAMzMzMwA"
+                        }
+                    ]
+                }
+            ]
+        },
+        "audio": [
+            {
+                "name": "aud_buttonClick01",
+                "volume": 1.0,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            },
+            {
+                "name": "aud_buttonHover01",
+                "volume": 1.0,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            }
+        ],
+        "children": [
+            {
+                "name": {
+                    "namestr": "Level4 Text",
+                    "layer": 0,
+                    "isprefab": false,
+                    "tagstr": "Default"
+                },
+                "transform": {
+                    "position": {
+                        "x": -0.010471940040588379,
+                        "y": -0.03454655408859253
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                },
+                "text": {
+                    "text": "MEMORY4",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 2.5,
+                    "color": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 0.0
+                    },
+                    "layer": 34,
+                    "isCentered": true
+                }
+            }
+        ]
+    },
+    {
+        "name": {
+            "namestr": "Level Select Button 5",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": 0.8641768097877502,
+                "y": -0.8258895874023438
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        "sprite": {
+            "imagefile": "ani_pauseMenuQuitButton_strip2.png",
+            "layer": 15,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": false
+        },
+        "animation": {
+            "frameNumber": 0,
+            "framesPerSecond": 0,
+            "frameTimer": 0.0,
+            "isAnimating": false,
+            "stripCount": 2
+        },
+        "button": {
+            "force": {
+                "x": 1426.655517578125,
+                "y": 94.01962280273438
+            },
+            "scale": {
+                "x": 0.550000011920929,
+                "y": 0.1899999976158142
+            },
+            "enablehover": true
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "LevelSelectButton",
+                    "enabled": true,
+                    "map": [
+                        {
+                            "variable": "isSelected",
+                            "base64": ""
+                        },
+                        {
+                            "variable": "otherIsClick",
+                            "base64": ""
+                        },
+                        {
+                            "variable": "buttonFunctionNo",
+                            "base64": "MgAAAMzMzMwA"
+                        }
+                    ]
+                }
+            ]
+        },
+        "audio": [
+            {
+                "name": "aud_buttonClick01",
+                "volume": 1.0,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            },
+            {
+                "name": "aud_buttonHover01",
+                "volume": 1.0,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            }
+        ],
+        "children": [
+            {
+                "name": {
+                    "namestr": "Level5 Text",
+                    "layer": 0,
+                    "isprefab": false,
+                    "tagstr": "Default"
+                },
+                "transform": {
+                    "position": {
+                        "x": -0.010471940040588379,
+                        "y": -0.03454655408859253
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                },
+                "text": {
+                    "text": "MEMORY5",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 2.5,
+                    "color": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 0.0
+                    },
+                    "layer": 35,
+                    "isCentered": true
+                }
+            }
+        ]
+    },
+    {
+        "name": {
+            "namestr": "Level Select Button 6",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": 1.4468880891799927,
+                "y": -0.8258895874023438
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        "sprite": {
+            "imagefile": "ani_pauseMenuQuitButton_strip2.png",
+            "layer": 16,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": false
+        },
+        "animation": {
+            "frameNumber": 0,
+            "framesPerSecond": 0,
+            "frameTimer": 0.0,
+            "isAnimating": false,
+            "stripCount": 2
+        },
+        "button": {
+            "force": {
+                "x": 1741.319580078125,
+                "y": 94.01962280273438
+            },
+            "scale": {
+                "x": 0.550000011920929,
+                "y": 0.1899999976158142
+            },
+            "enablehover": true
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "LevelSelectButton",
+                    "enabled": true,
+                    "map": [
+                        {
+                            "variable": "isSelected",
+                            "base64": ""
+                        },
+                        {
+                            "variable": "otherIsClick",
+                            "base64": ""
+                        },
+                        {
+                            "variable": "buttonFunctionNo",
+                            "base64": "PAAAAMzMzMwA"
+                        }
+                    ]
+                }
+            ]
+        },
+        "audio": [
+            {
+                "name": "aud_buttonClick01",
+                "volume": 1.0,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            },
+            {
+                "name": "aud_buttonHover01",
+                "volume": 1.0,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            }
+        ],
+        "children": [
+            {
+                "name": {
+                    "namestr": "Level6 Text",
+                    "layer": 0,
+                    "isprefab": false,
+                    "tagstr": "Default"
+                },
+                "transform": {
+                    "position": {
+                        "x": -0.010471940040588379,
+                        "y": -0.03454655408859253
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                },
+                "text": {
+                    "text": "MEMORY6",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 2.5,
+                    "color": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 0.0
+                    },
+                    "layer": 36,
+                    "isCentered": true
+                }
+            }
+        ]
+    }
+]

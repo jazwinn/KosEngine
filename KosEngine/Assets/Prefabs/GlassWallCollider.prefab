@@ -1,0 +1,54 @@
+[
+    {
+        "GlobalSettings": {
+            "globalIllumination": 0.2199999988079071,
+            "backgroundColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0
+            }
+        }
+    },
+    {
+        "CursorSettings": {
+            "cursorImage": "../Assets/Texture/UI/img_startScreenCursor.png",
+            "isCursorCentered": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "GlassWallCollider",
+            "layer": 5,
+            "isprefab": true,
+            "tagstr": "PropGlassWall",
+            "prefabname": "Wall.prefab",
+            "issync": false
+        },
+        "transform": {
+            "position": {
+                "x": -4.296412392523763e-10,
+                "y": -2.1963512897491455
+            },
+            "rotation": 0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "collider": {
+            "checkcollision": true,
+            "checkresponse": true,
+            "size": {
+                "x": 5.5,
+                "y": 0.3400000035762787
+            },
+            "offset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "drawDebug": true,
+            "radius": 0.5,
+            "shapetype": 0
+        }
+    }
+]

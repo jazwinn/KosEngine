@@ -1,0 +1,132 @@
+[
+    {
+        "GlobalSettings": {
+            "globalIllumination": 0.2199999988079071,
+            "backgroundColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0
+            }
+        }
+    },
+    {
+        "CursorSettings": {
+            "cursorImage": "../Assets/Texture/UI/img_startScreenCursor.png",
+            "isCursorCentered": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "PlayerBulletType2",
+            "layer": 3,
+            "isprefab": true,
+            "tagstr": "PlayerRailgunBullet",
+            "prefabname": "prefab_playerBullet.prefab",
+            "issync": false
+        },
+        "transform": {
+            "position": {
+                "x": 0.0,
+                "y": 24.406795501708984
+            },
+            "rotation": 0.0,
+            "scale": {
+                "x": 2.274125099182129,
+                "y": 2.274125099182129
+            }
+        },
+        "collider": {
+            "checkcollision": true,
+            "checkresponse": false,
+            "size": {
+                "x": 0.07000000029802322,
+                "y": 0.25999999046325684
+            },
+            "offset": {
+                "x": 0.0,
+                "y": 0.019999999552965164
+            },
+            "drawDebug": true,
+            "radius": 0.5,
+            "shapetype": 0
+        },
+        "rigidbody": {
+            "linearVelocity": {
+                "x": 0.0,
+                "y": 19.799999237060547
+            },
+            "linearAcceleration": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "angularVelocity": 0.0,
+            "angularAcceleration": 0.0,
+            "mass": 1.0,
+            "inverseMass": 1.0,
+            "linearDamping": 0.9900000095367432,
+            "angularDamping": 0.9900000095367432,
+            "force": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "torque": 0.0,
+            "kinematic": false,
+            "static": false
+        },
+        "sprite": {
+            "imagefile": "ani_railgunBulletEffect_strip10.png",
+            "layer": 14,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": true
+        },
+        "animation": {
+            "frameNumber": 0,
+            "framesPerSecond": 80,
+            "frameTimer": 0.0,
+            "isAnimating": false,
+            "stripCount": 10
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "PlayerBulletType2",
+                    "enabled": true,
+                    "map": [
+                        {
+                            "variable": "speed",
+                            "base64": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "LightingComponent": {
+            "m_innerOuterRadius": {
+                "x": 0.0,
+                "y": 1.0
+            },
+            "m_intensity": 1.0,
+            "m_light_OffSet": {
+                "x": 0.0,
+                "y": 0.03999999910593033
+            },
+            "m_light_scale": {
+                "x": 0.41999998688697815,
+                "y": 1.3200000524520874
+            },
+            "m_light_rotation": 0.0,
+            "m_colour": {
+                "x": 0.3805309534072876,
+                "y": 1.0,
+                "z": 0.9013233780860901
+            },
+            "m_lightType": 1
+        }
+    }
+]

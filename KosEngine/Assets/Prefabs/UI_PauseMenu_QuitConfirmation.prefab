@@ -1,0 +1,58 @@
+[
+    {
+        "GlobalSettings": {
+            "globalIllumination": 0.2199999988079071,
+            "backgroundColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0
+            }
+        }
+    },
+    {
+        "CursorSettings": {
+            "cursorImage": "../Assets/Texture/UI/img_startScreenCursor.png",
+            "isCursorCentered": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "UI_PauseMenu_QuitConfirmation",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": 12.858100891113281,
+                "y": -42.499412536621094
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 4.0,
+                "y": 4.0
+            }
+        },
+        "sprite": {
+            "imagefile": "img_quitConfirmationWindow.png",
+            "layer": 407,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": true
+        },
+        "animation": {
+            "frameNumber": 0,
+            "framesPerSecond": 0,
+            "frameTimer": 0.0,
+            "isAnimating": true,
+            "stripCount": 1
+        },
+        "script": {
+            "scripts": []
+        }
+    }
+]

@@ -1,0 +1,296 @@
+[
+    {
+        "GlobalSettings": {
+            "globalIllumination": 0.2199999988079071,
+            "backgroundColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0
+            }
+        }
+    },
+    {
+        "CursorSettings": {
+            "cursorImage": "../Assets/Texture/UI/img_startScreenCursor.png",
+            "isCursorCentered": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "Boss",
+            "layer": 2,
+            "isprefab": true,
+            "tagstr": "Boss",
+            "prefabname": "Boss.prefab",
+            "issync": true
+        },
+        "transform": {
+            "position": {
+                "x": 12.964741706848145,
+                "y": -10.023512840270996
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 3.0999999046325684,
+                "y": 3.0
+            }
+        },
+        "collider": {
+            "checkcollision": true,
+            "checkresponse": true,
+            "size": {
+                "x": 1.2599999904632568,
+                "y": 0.9599999785423279
+            },
+            "offset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "drawDebug": true,
+            "radius": 0.5,
+            "shapetype": 0
+        },
+        "rigidbody": {
+            "linearVelocity": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "linearAcceleration": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "angularVelocity": 0.0,
+            "angularAcceleration": 0.0,
+            "mass": 1.0,
+            "inverseMass": 1.0,
+            "linearDamping": 0.9900000095367432,
+            "angularDamping": 0.9900000095367432,
+            "force": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "torque": 0.0,
+            "kinematic": false,
+            "static": false
+        },
+        "sprite": {
+            "imagefile": "ani_bossHit_strip4.png",
+            "layer": 7,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": true
+        },
+        "animation": {
+            "frameNumber": 0,
+            "framesPerSecond": 11,
+            "frameTimer": 0.0,
+            "isAnimating": false,
+            "stripCount": 4
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "BossController",
+                    "enabled": true,
+                    "map": [
+                        {
+                            "variable": "forceFieldHealth",
+                            "base64": ""
+                        },
+                        {
+                            "variable": "playerHit",
+                            "base64": ""
+                        },
+                        {
+                            "variable": "bossHealth",
+                            "base64": ""
+                        },
+                        {
+                            "variable": "isForceFieldActive",
+                            "base64": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "audio": [
+            {
+                "name": "aud_bossDeath01",
+                "volume": 1.0,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            },
+            {
+                "name": "aud_bossShieldRegen01",
+                "volume": 1.0,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            },
+            {
+                "name": "aud_bossShieldBreak01",
+                "volume": 1.0,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            },
+            {
+                "name": "aud_bossBullet01",
+                "volume": 0.3100000023841858,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            },
+            {
+                "name": "aud_railgunShot01",
+                "volume": 0.15800000727176666,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            },
+            {
+                "name": "aud_playerDeath01",
+                "volume": 0.6700000166893005,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            },
+            {
+                "name": "aud_bossHit01",
+                "volume": 0.33500000834465027,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            },
+            {
+                "name": "aud_katana01",
+                "volume": 0.3840000033378601,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            }
+        ],
+        "LightingComponent": {
+            "m_innerOuterRadius": {
+                "x": 0.0,
+                "y": 1.0
+            },
+            "m_intensity": 0.8999999761581421,
+            "m_light_OffSet": {
+                "x": 0.0,
+                "y": 0.03999999910593033
+            },
+            "m_light_scale": {
+                "x": 5.0,
+                "y": 1.0
+            },
+            "m_light_rotation": 0.0,
+            "m_colour": {
+                "x": 1.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "m_lightType": 1
+        },
+        "children": [
+            {
+                "name": {
+                    "namestr": "Spawn 1",
+                    "layer": 0,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "Boss.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": -3.230449914932251,
+                        "y": 0.014869838021695614
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Spawn 2",
+                    "layer": 0,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "Boss.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 3.216789484024048,
+                        "y": -0.013684551231563091
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Spawn 3",
+                    "layer": 0,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "Boss.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": -1.2723848819732666,
+                        "y": 0.030953630805015564
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Spawn4",
+                    "layer": 0,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "Boss.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 1.3329079151153564,
+                        "y": 0.03473351150751114
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                }
+            }
+        ]
+    }
+]

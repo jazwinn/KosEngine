@@ -1,0 +1,132 @@
+[
+    {
+        "GlobalSettings": {
+            "globalIllumination": 0.2199999988079071,
+            "backgroundColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0
+            }
+        }
+    },
+    {
+        "CursorSettings": {
+            "cursorImage": "../Assets/Texture/UI/img_startScreenCursor.png",
+            "isCursorCentered": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "prefab_bossBullet",
+            "layer": 2,
+            "isprefab": true,
+            "tagstr": "EnemyBullet",
+            "prefabname": "prefab_bossBullet.prefab",
+            "issync": true
+        },
+        "transform": {
+            "position": {
+                "x": 15.627988815307617,
+                "y": -15.873442649841309
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 5.0,
+                "y": 5.0
+            }
+        },
+        "collider": {
+            "checkcollision": true,
+            "checkresponse": false,
+            "size": {
+                "x": 1.0,
+                "y": 1.0
+            },
+            "offset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "drawDebug": true,
+            "radius": 0.20000000298023224,
+            "shapetype": 1
+        },
+        "rigidbody": {
+            "linearVelocity": {
+                "x": 1.9405981302261353,
+                "y": 0.0
+            },
+            "linearAcceleration": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "angularVelocity": 0.0,
+            "angularAcceleration": 0.0,
+            "mass": 1.0,
+            "inverseMass": 1.0,
+            "linearDamping": 0.9900000095367432,
+            "angularDamping": 0.9900000095367432,
+            "force": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "torque": 0.0,
+            "kinematic": false,
+            "static": false
+        },
+        "sprite": {
+            "imagefile": "ani_bossBulletEffect_strip10.png",
+            "layer": 12,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": true
+        },
+        "animation": {
+            "frameNumber": 0,
+            "framesPerSecond": 8,
+            "frameTimer": 0.0,
+            "isAnimating": false,
+            "stripCount": 10
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "BossBullet",
+                    "enabled": true,
+                    "map": [
+                        {
+                            "variable": "speed",
+                            "base64": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "LightingComponent": {
+            "m_innerOuterRadius": {
+                "x": 0.0,
+                "y": 1.0
+            },
+            "m_intensity": 0.8999999761581421,
+            "m_light_OffSet": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "m_light_scale": {
+                "x": 1.0,
+                "y": 1.0
+            },
+            "m_light_rotation": 0.0,
+            "m_colour": {
+                "x": 0.991150438785553,
+                "y": 0.06578432023525238,
+                "z": 0.06578432023525238
+            },
+            "m_lightType": 1
+        }
+    }
+]

@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{71053A72-2BF0-4F44-89A0-E5B2FB4094A0}</ProjectGuid>
+    <RootNamespace>Engine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Engine lib</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)FMOD_API\core\inc;$(ProjectDir)FMOD_API\studio\inc;</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>../Config/pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y /d "$(SolutionDir)FMOD_API\core\lib\x64\*.dll" "$(OutDir)"
+xcopy /y /d "$(SolutionDir)FMOD_API\studio\lib\x64\*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)FMOD_API\core\inc;$(ProjectDir)FMOD_API\studio\inc;</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>../Config/pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y /d "$(SolutionDir)FMOD_API\core\lib\x64\*.dll" "$(OutDir)"
+xcopy /y /d "$(SolutionDir)FMOD_API\studio\lib\x64\*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);GLEW_STATIC;CRT_SECURE_NO_WARNINGS;CRT_SECURE_NO_WARNINGS;CRT_SECURE_NO_WARNINGSCRT_SECURE_NO_WARNINGSCRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)Dependencies\Freetype_Font\include\freetype\config;$(ProjectDir)Dependencies\mono\include;$(ProjectDir)Dependencies\mono\include\mono-2.0;$(ProjectDir)Dependencies\pl_mpeg;$(ProjectDir)Dependencies\rapidjson;$(ProjectDir)Dependencies\FMOD_API\core\inc;$(ProjectDir)Dependencies\FMOD_API\studio\inc;$(ProjectDir)include;$(ProjectDir)Dependencies\GLFW\include;$(ProjectDir)Dependencies\glm\include;$(ProjectDir)Dependencies\stb_image\include;$(ProjectDir)Dependencies\GLEW\include\GL;$(ProjectDir)Json Texts;$(ProjectDir)Dependencies\Freetype_Font\include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>26945; 4005; 4245;4083;26495;6255;6263;6001; 4244; 4706;4267;4305;</DisableSpecificWarnings>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>../Config/pch.h</PrecompiledHeaderFile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\GLFW\lib-vc2022;$(SolutionDir)Dependencies\GLEW\\lib\Release\x64;$(SolutionDir)Dependencies\FMOD_API\core\lib\x64;$(SolutionDir)Dependencies\FMOD_API\studio\lib\x64;$(SolutionDir)Dependencies\Freetype_Font\lib;$(SolutionDir)Dependencies\mono\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32s.lib;glfw3.lib;User32.lib;Gdi32.lib;Shell32.lib;opengl32.lib;freetype.lib;mono-2.0-sgen.lib;Comdlg32.lib;fmodL_vc.lib;fmodstudioL_vc.lib</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <AdditionalOptions>/ignore:4098 /ignore:4099</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y /d "$(ProjectDir)Dependencies\FMOD_API\core\lib\x64\*.dll" "$(OutDir)"
+xcopy /y /d "$(ProjectDir)Dependencies\FMOD_API\studio\lib\x64\*.dll" "$(OutDir)"
+xcopy /y /d "$(ProjectDir)Dependencies\Freetype_Font\lib\*.dll" "$(OutDir)"
+xcopy /y /d "$(ProjectDir)Dependencies\mono\*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalDependencies>glew32s.lib;glfw3.lib;User32.lib;Gdi32.lib;Shell32.lib;opengl32.lib;freetype.lib;mono-2.0-sgen.lib;Comdlg32.lib;fmod_vc.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)Dependencies\GLFW\lib-vc2022;$(ProjectDir)Dependencies\GLEW\\lib\Release\x64;$(ProjectDir)Dependencies\FMOD_API\core\lib\x64;$(ProjectDir)Dependencies\FMOD_API\studio\lib\x64;$(ProjectDir)Dependencies\Freetype_Font\lib;$(ProjectDir)Dependencies\mono\lib</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);GLEW_STATIC;CRT_SECURE_NO_WARNINGS;CRT_SECURE_NO_WARNINGS;CRT_SECURE_NO_WARNINGSCRT_SECURE_NO_WARNINGSCRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)Dependencies\Freetype_Font\include\freetype\config;$(ProjectDir)Dependencies\mono\include;$(ProjectDir)Dependencies\mono\include\mono-2.0;$(ProjectDir)Dependencies\pl_mpeg;$(ProjectDir)Dependencies\rapidjson;$(ProjectDir)Dependencies\FMOD_API\core\inc;$(ProjectDir)Dependencies\FMOD_API\studio\inc;$(ProjectDir)include;$(ProjectDir)Dependencies\GLFW\include;$(ProjectDir)Dependencies\glm\include;$(ProjectDir)Dependencies\stb_image\include;$(ProjectDir)Dependencies\GLEW\include\GL;$(ProjectDir)Json Texts;$(ProjectDir)Dependencies\Freetype_Font\include;;$(SolutionDir)Dependencies\mono\include;$(SolutionDir)Dependencies\mono\include\mono-2.0</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>../Config/pch.h</PrecompiledHeaderFile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DisableSpecificWarnings>26945; 4005; 4245;4083;26495;6255;6263;6001; 4244; 4706;4267;4305;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\GLFW\lib-vc2022;$(SolutionDir)Dependencies\GLEW\\lib\Release\x64;$(SolutionDir)Dependencies\FMOD_API\core\lib\x64;$(SolutionDir)Dependencies\FMOD_API\studio\lib\x64;$(SolutionDir)Dependencies\Freetype_Font\lib;$(SolutionDir)Dependencies\mono\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32s.lib;glfw3.lib;User32.lib;Gdi32.lib;Shell32.lib;opengl32.lib;freetype.lib;mono-2.0-sgen.lib;Comdlg32.lib;fmod_vc.lib;fmodstudio_vc.lib</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>
+      </IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <AdditionalOptions>/ignore:4098 /ignore:4099</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y /d "$(ProjectDir)Dependencies\FMOD_API\core\lib\x64\*.dll" "$(OutDir)"
+xcopy /y /d "$(ProjectDir)Dependencies\FMOD_API\studio\lib\x64\*.dll" "$(OutDir)"
+xcopy /y /d "$(ProjectDir)Dependencies\Freetype_Font\lib\*.dll" "$(OutDir)"
+xcopy /y /d "$(ProjectDir)Dependencies\mono\*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalDependencies>fmod_vc.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)Dependencies\GLFW\lib-vc2022;$(ProjectDir)Dependencies\GLEW\\lib\Release\x64;$(ProjectDir)Dependencies\FMOD_API\core\lib\x64;$(ProjectDir)Dependencies\FMOD_API\studio\lib\x64;$(ProjectDir)Dependencies\Freetype_Font\lib;$(ProjectDir)Dependencies\mono\lib</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Actions\ActionManager.cpp" />
+    <ClCompile Include="Asset Manager\AssetManager.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../Config/pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../Config/pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../Config/pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../Config/pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Asset Manager\Audio.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../Config/pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../Config/pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../Config/pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">../Config/pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Asset Manager\Image.cpp" />
+    <ClCompile Include="Asset Manager\Prefab.cpp" />
+    <ClCompile Include="Asset Manager\SceneManager.cpp" />
+    <ClCompile Include="Asset Manager\Text.cpp" />
+    <ClCompile Include="Asset Manager\Video.cpp" />
+    <ClCompile Include="C#Mono\InternalCall.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C#Mono\mono_handler.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Config\pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Dependencies\backward\backward.cpp" />
+    <ClCompile Include="ECS\Hierachy.cpp" />
+    <ClCompile Include="ECS\Layers.cpp" />
+    <ClCompile Include="ECS\System\AudioSystem.cpp" />
+    <ClCompile Include="ECS\System\ButtonSystem.cpp" />
+    <ClCompile Include="ECS\System\CameraSystem.cpp" />
+    <ClCompile Include="ECS\System\LightingSystem.cpp" />
+    <ClCompile Include="ECS\System\GridSystem.cpp" />
+    <ClCompile Include="ECS\System\ParticleSystem.cpp" />
+    <ClCompile Include="ECS\System\PathfindingSystem.cpp" />
+    <ClCompile Include="ECS\System\PhysicsSystem.cpp" />
+    <ClCompile Include="ECS\System\TilemapSystem.cpp" />
+    <ClCompile Include="ECS\System\LogicSystem.cpp" />
+    <ClCompile Include="De&amp;Serialization\json_handler.cpp" />
+    <ClCompile Include="Debugging\Logging.cpp" />
+    <ClCompile Include="Debugging\Performance.cpp" />
+    <ClCompile Include="ECS\ECS.cpp" />
+    <ClCompile Include="ECS\System\AnimationSystem.cpp" />
+    <ClCompile Include="ECS\System\CollisionResponseSystem.cpp" />
+    <ClCompile Include="ECS\System\CollisionSystem.cpp" />
+    <ClCompile Include="ECS\System\TransformSystem.cpp" />
+    <ClCompile Include="ECS\System\RenderDebugSystem.cpp" />
+    <ClCompile Include="ECS\System\RenderSystem.cpp" />
+    <ClCompile Include="ECS\System\RenderTextSystem.cpp" />
+    <ClCompile Include="ECS\System\RayCastSystem.cpp" />
+    <ClCompile Include="ECS\System\UIRenderSystem.cpp" />
+    <ClCompile Include="ECS\System\VideoSystem.cpp" />
+    <ClInclude Include="Actions\Action.h" />
+    <ClInclude Include="Actions\ActionManager.h" />
+    <ClInclude Include="Actions\ModifyAction.h" />
+    <ClInclude Include="Asset Manager\Video.h" />
+    <ClInclude Include="Dependencies\backward\backward.hpp" />
+    <ClInclude Include="ECS\Component\AudioComponent.h" />
+    <ClInclude Include="ECS\Component\EnemyComponent.h" />
+    <ClInclude Include="ECS\Component\LightingComponent.h" />
+    <ClInclude Include="ECS\Component\ParticleComponent.h" />
+    <ClInclude Include="ECS\Component\SpriteComponent.h" />
+    <ClInclude Include="ECS\Component\VideoComponent.h" />
+    <ClInclude Include="ECS\System\LightingSystem.h" />
+    <ClInclude Include="ECS\Component\GridComponent.h" />
+    <ClInclude Include="ECS\Component\PathfindingComponent.h" />
+    <ClInclude Include="ECS\Component\TilemapComponent.h" />
+    <ClInclude Include="ECS\System\AudioSystem.h" />
+    <ClInclude Include="ECS\System\GridSystem.h" />
+    <ClInclude Include="ECS\System\ParticleSystem.h" />
+    <ClInclude Include="ECS\System\PathfindingSystem.h" />
+    <ClInclude Include="ECS\System\TilemapSystem.h" />
+    <ClCompile Include="Events\Event.cpp" />
+    <ClCompile Include="Events\EventsDragFloat.cpp" />
+    <ClCompile Include="Events\EventsEventHandler.cpp" />
+    <ClCompile Include="Events\EventsListeners.cpp" />
+    <ClCompile Include="Events\MessagingMessageSystem.cpp" />
+    <ClCompile Include="Graphics\GraphicsBuffers.cpp" />
+    <ClCompile Include="Graphics\GraphicsCamera.cpp" />
+    <ClCompile Include="Graphics\GraphicsDraw.cpp" />
+    <ClCompile Include="Graphics\GraphicsFrameBufferUsage.cpp" />
+    <ClCompile Include="Graphics\GraphicsMatrix.cpp" />
+    <ClCompile Include="Graphics\GraphicsParticles.cpp" />
+    <ClCompile Include="Graphics\GraphicsPipe.cpp" />
+    <ClCompile Include="Graphics\GraphicsShader.cpp" />
+    <ClCompile Include="Graphics\GraphicsVAO.cpp" />
+    <ClCompile Include="Inputs\Input.cpp" />
+    <ClCompile Include="Math\Mat2x2.cpp" />
+    <ClCompile Include="Math\Mat3x3.cpp" />
+    <ClCompile Include="Math\Mathlib.cpp" />
+    <ClCompile Include="Math\Vector2.cpp" />
+    <ClCompile Include="Math\Vector3.cpp" />
+    <ClCompile Include="Pathfinding\AStarPathfinding.cpp" />
+    <ClCompile Include="Physics\Physics.cpp" />
+    <ClCompile Include="Physics\PhysicsCollisionResponse.cpp" />
+    <ClCompile Include="Physics\PhysicsLayer.cpp" />
+    <ClInclude Include="ECS\Component\RaycastComponent.h" />
+    <ClInclude Include="ECS\System\RayCastSystem.h" />
+    <ClInclude Include="ECS\System\UIRenderSystem.h" />
+    <ClInclude Include="ECS\System\VideoSystem.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Asset Manager\AssetManager.h" />
+    <ClInclude Include="Asset Manager\Audio.h" />
+    <ClInclude Include="Asset Manager\Image.h" />
+    <ClInclude Include="Asset Manager\Prefab.h" />
+    <ClInclude Include="Asset Manager\Reflection.h" />
+    <ClInclude Include="Asset Manager\SceneManager.h" />
+    <ClInclude Include="Asset Manager\Text.h" />
+    <ClInclude Include="C#Mono\InternalCall.h" />
+    <ClInclude Include="C#Mono\mono_handler.h" />
+    <ClInclude Include="Config\pch.h" />
+    <ClInclude Include="ECS\Component\ButtonComponent.h" />
+    <ClInclude Include="ECS\Component\CameraComponent.h" />
+    <ClInclude Include="ECS\Component\ConvertComponent.h" />
+    <ClInclude Include="ECS\Component\ScriptComponent.h" />
+    <ClInclude Include="ECS\Hierachy.h" />
+    <ClInclude Include="ECS\Layers.h" />
+    <ClInclude Include="ECS\System\ButtonSystem.h" />
+    <ClInclude Include="ECS\System\CameraSystem.h" />
+    <ClInclude Include="ECS\System\PhysicsSystem.h" />
+    <ClInclude Include="ECS\System\LogicSystem.h" />
+    <ClInclude Include="De&amp;Serialization\json_handler.h" />
+    <ClInclude Include="Debugging\Logging.h" />
+    <ClInclude Include="Debugging\Performance.h" />
+    <ClInclude Include="Dependencies\imgui\imconfig.h" />
+    <ClInclude Include="Dependencies\imgui\imgui.h" />
+    <ClInclude Include="Dependencies\imgui\ImGuizmo.h" />
+    <ClInclude Include="Dependencies\imgui\imgui_impl_glfw.h" />
+    <ClInclude Include="Dependencies\imgui\imgui_impl_opengl3.h" />
+    <ClInclude Include="Dependencies\imgui\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="Dependencies\imgui\imgui_internal.h" />
+    <ClInclude Include="Dependencies\imgui\imgui_stdlib.h" />
+    <ClInclude Include="Dependencies\imgui\implot.h" />
+    <ClInclude Include="Dependencies\imgui\implot_internal.h" />
+    <ClInclude Include="Dependencies\imgui\imstb_rectpack.h" />
+    <ClInclude Include="Dependencies\imgui\imstb_textedit.h" />
+    <ClInclude Include="Dependencies\imgui\imstb_truetype.h" />
+    <ClInclude Include="Dependencies\stb_image\include\stb_image.h" />
+    <ClInclude Include="ECS\Component\AnimationComponent.h" />
+    <ClInclude Include="ECS\Component\ColliderComponent.h" />
+    <ClInclude Include="ECS\Component\Component.h" />
+    <ClInclude Include="ECS\Component\ComponentList.h" />
+    <ClInclude Include="ECS\Component\ComponentPool.h" />
+    <ClInclude Include="ECS\Component\NameComponent.h" />
+    <ClInclude Include="ECS\Component\PlayerComponent.h" />
+    <ClInclude Include="ECS\Component\RigidBodyComponent.h" />
+    <ClInclude Include="ECS\Component\UISpriteComponent.h" />
+    <ClInclude Include="ECS\Component\TextComponent.h" />
+    <ClInclude Include="ECS\Component\TransformComponent.h" />
+    <ClInclude Include="ECS\ECS.h" />
+    <ClInclude Include="ECS\ECSList.h" />
+    <ClInclude Include="ECS\System\AnimationSystem.h" />
+    <ClInclude Include="ECS\System\CollisionResponseSystem.h" />
+    <ClInclude Include="ECS\System\CollisionSystem.h" />
+    <ClInclude Include="ECS\System\TransformSystem.h" />
+    <ClInclude Include="ECS\System\RenderDebugSystem.h" />
+    <ClInclude Include="ECS\System\RenderSystem.h" />
+    <ClInclude Include="ECS\System\RenderTextSystem.h" />
+    <ClInclude Include="ECS\System\System.h" />
+    <ClInclude Include="ECS\System\SystemList.h" />
+    <ClInclude Include="ECS\System\SystemType.h" />
+    <ClInclude Include="Events\EventsAction.h" />
+    <ClInclude Include="Events\EventsBaseEvent.h" />
+    <ClInclude Include="Events\EventsBaseMessage.h" />
+    <ClInclude Include="Events\EventsButtonEvent.h" />
+    <ClInclude Include="Events\EventsDragFloat.h" />
+    <ClInclude Include="Events\EventsEventHandler.h" />
+    <ClInclude Include="Events\EventsKeyEvent.h" />
+    <ClInclude Include="Events\EventsListeners.h" />
+    <ClInclude Include="Events\EventsMouseEvent.h" />
+    <ClInclude Include="Events\MessageSystem.h" />
+    <ClInclude Include="Events\MessagingMessageSystem.h" />
+    <ClInclude Include="Graphics\GraphicsCamera.h" />
+    <ClInclude Include="Graphics\GraphicsLighting.h" />
+    <ClInclude Include="Graphics\GraphicsPipe.h" />
+    <ClInclude Include="Helper\Helper.h" />
+    <ClInclude Include="Inputs\Input.h" />
+    <ClInclude Include="Inputs\Keycodes.h" />
+    <ClInclude Include="Math\Mat2x2.h" />
+    <ClInclude Include="Math\Mat3x3.h" />
+    <ClInclude Include="Math\Mathlib.h" />
+    <ClInclude Include="Math\Vector2.h" />
+    <ClInclude Include="Math\Vector3.h" />
+    <ClInclude Include="Pathfinding\AStarPathfinding.h" />
+    <ClInclude Include="Physics\Physics.h" />
+    <ClInclude Include="Physics\PhysicsCollisionResponse.h" />
+    <ClInclude Include="Physics\PhysicsLayer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Graphics\crtFragmentShader.frag" />
+    <None Include="Graphics\crtVertexShader.vert" />
+    <None Include="Graphics\debugFragmentShader.frag" />
+    <None Include="Graphics\debugVertexShader.vert" />
+    <None Include="Graphics\finalPassFragmentShader.frag" />
+    <None Include="Graphics\finalPassVertexShader.vert" />
+    <None Include="Graphics\frameAccumulationFragmentShader.frag" />
+    <None Include="Graphics\frameBufferFragmentShader.frag" />
+    <None Include="Graphics\frameCompositionFragmentShader.frag" />
+    <None Include="Graphics\genericFragmentShader.frag" />
+    <None Include="Graphics\genericVertexShader.vert" />
+    <None Include="Graphics\frameBufferVertexShader.vert" />
+    <None Include="Graphics\gridDebugFragmentShader.frag" />
+    <None Include="Graphics\gridDebugVertexShader.vert" />
+    <None Include="Graphics\gridFragmentShader.frag" />
+    <None Include="Graphics\gridVertexShader.vert" />
+    <None Include="Graphics\lightingFragmentShader.frag" />
+    <None Include="Graphics\lightingVertexShader.vert" />
+    <None Include="Graphics\particleComputer.comp" />
+    <None Include="Graphics\particleFragmentShader.frag" />
+    <None Include="Graphics\particleVertexShader.vert" />
+    <None Include="Graphics\textFragmentShader.frag" />
+    <None Include="Graphics\textVertexShader.vert" />
+    <None Include="Graphics\tilemapFragmentShader.frag" />
+    <None Include="Graphics\tilemapVertexShader.vert" />
+    <None Include="Graphics\videoFragmentShader.frag" />
+    <None Include="Graphics\videoVertexShader.vert" />
+    <None Include="ScriptLibrary\AIScript\AIStateComponent.cs" />
+    <None Include="ScriptLibrary\AIScript\AIStateSystem.cs" />
+    <None Include="ScriptLibrary\AIScript\AStarPathfinding.cs" />
+    <None Include="ScriptLibrary\AIScript\EnemyComponent.cs" />
+    <None Include="ScriptLibrary\AIScript\EntitySetup.cs" />
+    <None Include="ScriptLibrary\AIScript\Grid.cs" />
+    <None Include="ScriptLibrary\AIScript\HealthComponent.cs" />
+    <None Include="ScriptLibrary\AIScript\Node.cs" />
+    <None Include="ScriptLibrary\AIScript\PlayerDetectionComponent.cs" />
+    <None Include="ScriptLibrary\AIScript\PositionComponent.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Assets\Audio\cleaver01.wav" />
+    <Media Include="Assets\Audio\gunshot01.wav" />
+    <Media Include="Assets\Audio\gunshot02.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="ScriptLibrary\GameScript\GameScript.csproj">
+      <Project>{785fc541-4463-4316-8b60-776cebc341b2}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

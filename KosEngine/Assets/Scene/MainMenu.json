@@ -1,0 +1,975 @@
+[
+    {
+        "GlobalSettings": {
+            "globalIllumination": 0.2199999988079071,
+            "backgroundColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0
+            }
+        }
+    },
+    {
+        "CursorSettings": {
+            "cursorImage": "../Assets/Texture/UI/img_startScreenCursor.png",
+            "isCursorCentered": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "Camera",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 1.3275439739227295,
+                "y": 1.3249999284744263
+            }
+        },
+        "camera": {
+            "planes": {
+                "left": 0.0,
+                "right": 0.0,
+                "top": 0.0,
+                "bottom": 0.0
+            },
+            "aspectRatio": 0.0
+        }
+    },
+    {
+        "name": {
+            "namestr": "Background",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 2.3581349849700928,
+                "y": 2.3581349849700928
+            }
+        },
+        "collider": {
+            "checkcollision": false,
+            "checkresponse": false,
+            "size": {
+                "x": 2.4000000953674316,
+                "y": 1.350000023841858
+            },
+            "offset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "drawDebug": true,
+            "radius": 0.5,
+            "shapetype": 0
+        },
+        "sprite": {
+            "imagefile": "img_backgroundMainMenu.png",
+            "layer": 0,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": false
+        },
+        "audio": [
+            {
+                "name": "aud_buttonClick01",
+                "volume": 0.5220000147819519,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            }
+        ]
+    },
+    {
+        "name": {
+            "namestr": "Quit Button",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": -2.119999885559082,
+                "y": 1.0499999523162842
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 0.75,
+                "y": 0.75
+            }
+        },
+        "sprite": {
+            "imagefile": "ani_quitIcon_strip2.png",
+            "layer": 2,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": false
+        },
+        "animation": {
+            "frameNumber": 0,
+            "framesPerSecond": 0,
+            "frameTimer": 0.0,
+            "isAnimating": false,
+            "stripCount": 2
+        },
+        "button": {
+            "force": {
+                "x": 95.82659912109375,
+                "y": 950.8963012695313
+            },
+            "scale": {
+                "x": 0.20999999344348907,
+                "y": 0.20999999344348907
+            },
+            "enablehover": true
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "ExitGameButton",
+                    "enabled": true,
+                    "map": [
+                        {
+                            "variable": "yolo",
+                            "base64": ""
+                        },
+                        {
+                            "variable": "speed",
+                            "base64": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "StartMenuButtons",
+                    "enabled": true,
+                    "map": [
+                        {
+                            "variable": "buttonFunctionNo",
+                            "base64": ""
+                        },
+                        {
+                            "variable": "isReading",
+                            "base64": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "audio": [
+            {
+                "name": "aud_buttonHover01",
+                "volume": 0.3440000116825104,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            }
+        ]
+    },
+    {
+        "name": {
+            "namestr": "Play Button",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "StartMenuButton"
+        },
+        "transform": {
+            "position": {
+                "x": -2.119999885559082,
+                "y": 0.699999988079071
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 0.75,
+                "y": 0.75
+            }
+        },
+        "sprite": {
+            "imagefile": "ani_startIcon_strip2.png",
+            "layer": 1,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": false
+        },
+        "animation": {
+            "frameNumber": 0,
+            "framesPerSecond": 0,
+            "frameTimer": 0.0,
+            "isAnimating": false,
+            "stripCount": 2
+        },
+        "button": {
+            "force": {
+                "x": 95.82659912109375,
+                "y": 810.7640991210938
+            },
+            "scale": {
+                "x": 0.20000000298023224,
+                "y": 0.20999999344348907
+            },
+            "enablehover": true
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "MainMenuScript",
+                    "enabled": true,
+                    "map": []
+                },
+                {
+                    "name": "StartMenuButtons",
+                    "enabled": true,
+                    "map": [
+                        {
+                            "variable": "buttonFunctionNo",
+                            "base64": ""
+                        },
+                        {
+                            "variable": "isReading",
+                            "base64": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "audio": [
+            {
+                "name": "aud_buttonClick01",
+                "volume": 1.0,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            },
+            {
+                "name": "aud_startMenuAmbienceStart01",
+                "volume": 1.0,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            },
+            {
+                "name": "aud_startMenuAmbienceLoop01",
+                "volume": 1.0,
+                "loop": true,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            },
+            {
+                "name": "aud_startMenuAmbienceQuitt01",
+                "volume": 1.0,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            },
+            {
+                "name": "aud_buttonHover01",
+                "volume": 0.37400001287460327,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            }
+        ]
+    },
+    {
+        "name": {
+            "namestr": "How To Play Button",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": -2.119999885559082,
+                "y": 0.3499999940395355
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 0.75,
+                "y": 0.75
+            }
+        },
+        "sprite": {
+            "imagefile": "ani_howToPlayIcon_strip2.png",
+            "layer": 5,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": false
+        },
+        "animation": {
+            "frameNumber": 0,
+            "framesPerSecond": 0,
+            "frameTimer": 0.0,
+            "isAnimating": false,
+            "stripCount": 2
+        },
+        "button": {
+            "force": {
+                "x": 95.82659912109375,
+                "y": 670.632080078125
+            },
+            "scale": {
+                "x": 0.20000000298023224,
+                "y": 0.23999999463558197
+            },
+            "enablehover": true
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "StartMenuButtons",
+                    "enabled": true,
+                    "map": [
+                        {
+                            "variable": "buttonFunctionNo",
+                            "base64": "CgAAAMzMzMwA"
+                        },
+                        {
+                            "variable": "isReading",
+                            "base64": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "audio": [
+            {
+                "name": "aud_buttonHover01",
+                "volume": 0.39899998903274536,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            }
+        ]
+    },
+    {
+        "name": {
+            "namestr": "Quit Text",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": -2.1308069229125977,
+                "y": 0.9291677474975586
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "text": {
+            "text": "QUIT",
+            "text": null,
+            "filename": "fnt_silkscreenRegular.ttf",
+            "fontsize": 1.2000000476837158,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "layer": 11,
+            "isCentered": true
+        }
+    },
+    {
+        "name": {
+            "namestr": "Play Text",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": -2.1241159439086914,
+                "y": 0.570757269859314
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "text": {
+            "text": "PLAY",
+            "text": null,
+            "filename": "fnt_silkscreenRegular.ttf",
+            "fontsize": 1.2000000476837158,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "layer": 10,
+            "isCentered": true
+        }
+    },
+    {
+        "name": {
+            "namestr": "How To Play Text",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": -2.1229660511016846,
+                "y": 0.21879692375659943
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "text": {
+            "text": "MANUAL",
+            "text": null,
+            "filename": "fnt_silkscreenRegular.ttf",
+            "fontsize": 1.2000000476837158,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "layer": 12,
+            "isCentered": true
+        }
+    },
+    {
+        "name": {
+            "namestr": "How To Play Popup",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "collider": {
+            "checkcollision": false,
+            "checkresponse": false,
+            "size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "offset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "drawDebug": true,
+            "radius": 0.5,
+            "shapetype": 0
+        },
+        "children": [
+            {
+                "name": {
+                    "namestr": "How To Play Background",
+                    "layer": 9,
+                    "isprefab": false,
+                    "tagstr": "Default"
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 0.03999999910593033,
+                        "y": 0.03999999910593033
+                    }
+                },
+                "sprite": {
+                    "imagefile": "img_howToPlayText.png",
+                    "layer": 13,
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0
+                    },
+                    "alpha": 1.0,
+                    "isLit": false
+                },
+                "animation": {
+                    "frameNumber": 0,
+                    "framesPerSecond": 0,
+                    "frameTimer": 0.0,
+                    "isAnimating": false,
+                    "stripCount": 1
+                },
+                "script": {
+                    "scripts": [
+                        {
+                            "name": "ButtonPrompt",
+                            "enabled": true,
+                            "map": [
+                                {
+                                    "variable": "promptNo",
+                                    "base64": "BAAAAMzMzMwA"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "name": {
+                    "namestr": "How To Play X",
+                    "layer": 9,
+                    "isprefab": false,
+                    "tagstr": "Default"
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.6560066938400269,
+                        "y": 0.6351301670074463
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 0.5,
+                        "y": 0.5
+                    }
+                },
+                "sprite": {
+                    "imagefile": "ani_howToPlayTextCloseButton_strip2.png",
+                    "layer": 20,
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0
+                    },
+                    "alpha": 1.0,
+                    "isLit": false
+                },
+                "animation": {
+                    "frameNumber": 0,
+                    "framesPerSecond": 0,
+                    "frameTimer": 0.0,
+                    "isAnimating": false,
+                    "stripCount": 2
+                },
+                "button": {
+                    "force": {
+                        "x": 1205.14697265625,
+                        "y": 784.791748046875
+                    },
+                    "scale": {
+                        "x": 0.07999999821186066,
+                        "y": 0.07999999821186066
+                    },
+                    "enablehover": true
+                },
+                "script": {
+                    "scripts": [
+                        {
+                            "name": "StartMenuButtons",
+                            "enabled": true,
+                            "map": [
+                                {
+                                    "variable": "buttonFunctionNo",
+                                    "base64": "CwAAAMzMzMwA"
+                                },
+                                {
+                                    "variable": "isReading",
+                                    "base64": ""
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "audio": [
+                    {
+                        "name": "aud_buttonHover01",
+                        "volume": 0.3490000069141388,
+                        "loop": false,
+                        "playOnStart": false,
+                        "isBGM": false,
+                        "isSFX": true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": {
+            "namestr": "Logo",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": 1.9112639427185059,
+                "y": -0.7584648132324219
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 0.10000000149011612,
+                "y": 0.10000000149011612
+            }
+        },
+        "sprite": {
+            "imagefile": "img_greyGoose.png",
+            "layer": 3,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": false
+        },
+        "button": {
+            "force": {
+                "x": 1706.7603759765625,
+                "y": 226.82781982421875
+            },
+            "scale": {
+                "x": 0.30000001192092896,
+                "y": 0.3799999952316284
+            },
+            "enablehover": true
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "StartMenuEasterEgg",
+                    "enabled": true,
+                    "map": [
+                        {
+                            "variable": "jumpHeight",
+                            "base64": ""
+                        },
+                        {
+                            "variable": "jumpDuration",
+                            "base64": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "name": {
+            "namestr": "Logo",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": 1.6037344932556152,
+                "y": -0.948983907699585
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 0.03999999910593033,
+                "y": 0.03999999910593033
+            }
+        },
+        "sprite": {
+            "imagefile": "img_gameLogo.png",
+            "layer": 4,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "UI_StartMenu_Cursor",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "collider": {
+            "checkcollision": true,
+            "checkresponse": false,
+            "size": {
+                "x": 1.0,
+                "y": 1.0
+            },
+            "offset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "drawDebug": true,
+            "radius": 0.02500000037252903,
+            "shapetype": 1
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "StartMenuCursor",
+                    "enabled": true,
+                    "map": []
+                }
+            ]
+        }
+    },
+    {
+        "name": {
+            "namestr": "Coroutine Handlers",
+            "layer": 0,
+            "isprefab": true,
+            "tagstr": "Default",
+            "prefabname": "Coroutine Handlers.prefab",
+            "issync": true
+        },
+        "transform": {
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "CoroutineController",
+                    "enabled": true,
+                    "map": []
+                }
+            ]
+        }
+    },
+    {
+        "name": {
+            "namestr": "UI_FPSParent",
+            "layer": 0,
+            "isprefab": true,
+            "tagstr": "Default",
+            "prefabname": "UI_FPSParent.prefab",
+            "issync": false
+        },
+        "transform": {
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "UI_FPSCounter",
+                    "enabled": true,
+                    "map": []
+                }
+            ]
+        },
+        "children": [
+            {
+                "name": {
+                    "namestr": "UI_FPSCounter",
+                    "layer": 15,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "UI_FPSParent.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 1.773537039756775,
+                        "y": 1.0265717506408691
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                },
+                "text": {
+                    "text": "FPS : 000",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 1.5,
+                    "color": {
+                        "r": 0.10588235408067703,
+                        "g": 0.8823529481887817,
+                        "b": 0.06666667014360428
+                    },
+                    "layer": 900,
+                    "isCentered": true
+                }
+            }
+        ]
+    },
+    {
+        "name": {
+            "namestr": "Credits Button",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": -2.119999885559082,
+                "y": 0.0
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 0.75,
+                "y": 0.75
+            }
+        },
+        "sprite": {
+            "imagefile": "ani_creditsIcon_strip2.png",
+            "layer": 5,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": false
+        },
+        "animation": {
+            "frameNumber": 0,
+            "framesPerSecond": 0,
+            "frameTimer": 0.0,
+            "isAnimating": false,
+            "stripCount": 2
+        },
+        "button": {
+            "force": {
+                "x": 95.82659912109375,
+                "y": 530.5
+            },
+            "scale": {
+                "x": 0.20000000298023224,
+                "y": 0.23999999463558197
+            },
+            "enablehover": true
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "StartMenuButtons",
+                    "enabled": true,
+                    "map": [
+                        {
+                            "variable": "buttonFunctionNo",
+                            "base64": "DAAAAMzMzMwA"
+                        },
+                        {
+                            "variable": "isReading",
+                            "base64": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "audio": [
+            {
+                "name": "aud_buttonHover01",
+                "volume": 0.39899998903274536,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            }
+        ]
+    },
+    {
+        "name": {
+            "namestr": "Credits Text",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": -2.1229660511016846,
+                "y": -0.12999999523162842
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "text": {
+            "text": "CREDITS",
+            "text": null,
+            "filename": "fnt_silkscreenRegular.ttf",
+            "fontsize": 1.2000000476837158,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "layer": 12,
+            "isCentered": true
+        }
+    }
+]

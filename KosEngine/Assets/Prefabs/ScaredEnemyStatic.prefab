@@ -1,0 +1,269 @@
+[
+    {
+        "GlobalSettings": {
+            "globalIllumination": 0.2199999988079071,
+            "backgroundColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0
+            }
+        }
+    },
+    {
+        "CursorSettings": {
+            "cursorImage": "../Assets/Texture/UI/img_startScreenCursor.png",
+            "isCursorCentered": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "ScaredEnemyStatic",
+            "layer": 2,
+            "isprefab": true,
+            "tagstr": "Enemy",
+            "prefabname": "ScaredEnemy.prefab",
+            "issync": false
+        },
+        "transform": {
+            "position": {
+                "x": 0.0,
+                "y": -4.30968713760376
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 3.0000009536743164,
+                "y": 3.0000009536743164
+            }
+        },
+        "collider": {
+            "checkcollision": true,
+            "checkresponse": true,
+            "size": {
+                "x": 0.7400000095367432,
+                "y": 0.23999999463558197
+            },
+            "offset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "drawDebug": true,
+            "radius": 0.5,
+            "shapetype": 0
+        },
+        "enemy": {
+            "enemytag": -1,
+            "enemytype": 0,
+            "enemybehaviour": 0
+        },
+        "rigidbody": {
+            "linearVelocity": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "linearAcceleration": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "angularVelocity": 0.0,
+            "angularAcceleration": 0.0,
+            "mass": 1.0,
+            "inverseMass": 1.0,
+            "linearDamping": 0.9900000095367432,
+            "angularDamping": 0.9900000095367432,
+            "force": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "torque": 0.0,
+            "kinematic": false,
+            "static": false
+        },
+        "sprite": {
+            "imagefile": "ani_scientistWalk_strip8.png",
+            "layer": 28,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": true
+        },
+        "animation": {
+            "frameNumber": 0,
+            "framesPerSecond": 15,
+            "frameTimer": 0.0,
+            "isAnimating": false,
+            "stripCount": 8
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "EnemyScript",
+                    "enabled": true,
+                    "map": [
+                        {
+                            "variable": "isDead",
+                            "base64": ""
+                        },
+                        {
+                            "variable": "isPatrolling",
+                            "base64": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "particle": {
+            "willSpawn": false,
+            "noOfParticles": 20,
+            "lifeSpan": 20.0,
+            "velocityX": 0.0,
+            "velocityY": 40.0,
+            "sizeX": 1.0,
+            "sizeY": 0.699999988079071,
+            "accelerationX": 0.0,
+            "accelerationY": 0.0,
+            "colorR": 1.0,
+            "colorG": 1.0,
+            "colorB": 1.0,
+            "coneRotation": 0.0,
+            "coneAngle": 45.0,
+            "randomFactor": 3.0,
+            "imageFile": "ani_bloodPool_strip9.png",
+            "stripCount": 9,
+            "frameNumber": 0,
+            "layer": 500,
+            "friction": 20.0,
+            "fps": 1,
+            "loopAnimation": false
+        },
+        "audio": [
+            {
+                "name": "aud_bodyDeath01",
+                "volume": 0.3160000145435333,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            },
+            {
+                "name": "aud_bodyStab01",
+                "volume": 0.4880000054836273,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            },
+            {
+                "name": "aud_bodyStab02",
+                "volume": 0.6650000214576721,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            },
+            {
+                "name": "aud_bodyFall01",
+                "volume": 0.24899999797344208,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            },
+            {
+                "name": "aud_bodyFall02",
+                "volume": 0.2849999964237213,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            },
+            {
+                "name": "aud_bodyFall03",
+                "volume": 0.3070000112056732,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            },
+            {
+                "name": "aud_bodyFall04",
+                "volume": 0.24300000071525574,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            },
+            {
+                "name": "aud_bodyFall05",
+                "volume": 0.2290000021457672,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            },
+            {
+                "name": "aud_bodyFall06",
+                "volume": 0.21199999749660492,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            },
+            {
+                "name": "aud_bodyFall07",
+                "volume": 0.20399999618530273,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            },
+            {
+                "name": "aud_bodyFall08",
+                "volume": 0.25099998712539673,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            },
+            {
+                "name": "aud_bodyFall09",
+                "volume": 0.2290000021457672,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            }
+        ],
+        "raycast": {
+            "raycasts": [
+                {
+                    "raycastID": "RaycastToPlayer",
+                    "israycasting": true,
+                    "targetposition": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "Layer Vector": [
+                        {
+                            "layer": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        "pathfinding": {
+            "startPosition": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "targetPosition": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "gridKey": 0
+        }
+    }
+]

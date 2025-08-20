@@ -1,0 +1,55 @@
+[
+    {
+        "GlobalSettings": {
+            "globalIllumination": 0.2199999988079071,
+            "backgroundColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0
+            }
+        }
+    },
+    {
+        "CursorSettings": {
+            "cursorImage": "../Assets/Texture/UI/img_startScreenCursor.png",
+            "isCursorCentered": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "Door",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Door"
+        },
+        "transform": {
+            "position": {
+                "x": 6.923262596130371,
+                "y": 18.021900177001953
+            },
+            "rotation": 90.0,
+            "scale": {
+                "x": 1.5,
+                "y": 1.5
+            }
+        },
+        "sprite": {
+            "imagefile": "ani_doorsRed_strip13.png",
+            "layer": 39,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": true
+        },
+        "animation": {
+            "frameNumber": 0,
+            "framesPerSecond": 0,
+            "frameTimer": 0.0,
+            "isAnimating": false,
+            "stripCount": 13
+        }
+    }
+]

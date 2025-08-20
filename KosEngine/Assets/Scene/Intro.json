@@ -1,0 +1,90 @@
+[
+    {
+        "GlobalSettings": {
+            "globalIllumination": 0.2199999988079071,
+            "backgroundColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0
+            }
+        }
+    },
+    {
+        "CursorSettings": {
+            "cursorImage": "../Assets/Texture/UI/img_startScreenCursor.png",
+            "isCursorCentered": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "Camera",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "scale": {
+                "x": 9.0,
+                "y": 9.0
+            }
+        },
+        "camera": {
+            "planes": {
+                "left": 0.0,
+                "right": 0.0,
+                "top": 0.0,
+                "bottom": 0.0
+            },
+            "aspectRatio": 0.0
+        }
+    },
+    {
+        "name": {
+            "namestr": "Video",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "scale": {
+                "x": 16.0,
+                "y": 9.0
+            }
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "VideoScript",
+                    "enabled": true,
+                    "map": []
+                }
+            ]
+        },
+        "audio": [
+            {
+                "name": "aud_cutsceneStartup01",
+                "volume": 1.0,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            }
+        ],
+        "VideoComponent": {
+            "filename": "30FPS.mpeg",
+            "pause": false,
+            "loop": false,
+            "layer": 0
+        }
+    }
+]

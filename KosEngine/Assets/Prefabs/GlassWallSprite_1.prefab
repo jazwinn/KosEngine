@@ -1,0 +1,115 @@
+[
+    {
+        "GlobalSettings": {
+            "globalIllumination": 0.2199999988079071,
+            "backgroundColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0
+            }
+        }
+    },
+    {
+        "CursorSettings": {
+            "cursorImage": "../Assets/Texture/UI/img_startScreenCursor.png",
+            "isCursorCentered": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "GlassWallSprite",
+            "layer": 10,
+            "isprefab": true,
+            "tagstr": "Default",
+            "prefabname": "GlassWallSprite.prefab",
+            "issync": false
+        },
+        "transform": {
+            "position": {
+                "x": -4.296412392523763e-10,
+                "y": -2.1454880237579346
+            },
+            "rotation": 90.0,
+            "scale": {
+                "x": 3.140000104904175,
+                "y": 3.140000104904175
+            }
+        },
+        "collider": {
+            "checkcollision": true,
+            "checkresponse": false,
+            "size": {
+                "x": 0.11999999731779099,
+                "y": 1.2999999523162842
+            },
+            "offset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "drawDebug": true,
+            "radius": 0.5,
+            "shapetype": 0
+        },
+        "rigidbody": {
+            "linearVelocity": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "linearAcceleration": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "angularVelocity": 0.0,
+            "angularAcceleration": 0.0,
+            "mass": 1.0,
+            "inverseMass": 1.0,
+            "linearDamping": 0.9900000095367432,
+            "angularDamping": 0.9900000095367432,
+            "force": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "torque": 0.0,
+            "kinematic": false,
+            "static": false
+        },
+        "sprite": {
+            "imagefile": "ani_glassWallAnim_strip4.png",
+            "layer": 6,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": true
+        },
+        "animation": {
+            "frameNumber": 0,
+            "framesPerSecond": 20,
+            "frameTimer": 0.0,
+            "isAnimating": false,
+            "stripCount": 4
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "Prop_GlassWall",
+                    "enabled": true,
+                    "map": []
+                }
+            ]
+        },
+        "audio": [
+            {
+                "name": "aud_glassBreak01",
+                "volume": 0.48899999260902405,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            }
+        ]
+    }
+]

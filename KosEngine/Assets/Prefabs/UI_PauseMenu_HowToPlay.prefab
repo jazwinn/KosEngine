@@ -1,0 +1,227 @@
+[
+    {
+        "GlobalSettings": {
+            "globalIllumination": 0.2199999988079071,
+            "backgroundColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0
+            }
+        }
+    },
+    {
+        "CursorSettings": {
+            "cursorImage": "../Assets/Texture/UI/img_startScreenCursor.png",
+            "isCursorCentered": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "UI_PauseMenu_HowToPlay",
+            "layer": 0,
+            "isprefab": true,
+            "tagstr": "Default",
+            "prefabname": "UI_PauseMenu_HowToPlay.prefab",
+            "issync": true
+        },
+        "transform": {
+            "position": {
+                "x": 0.094451904296875,
+                "y": 0.27921533584594727
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "collider": {
+            "checkcollision": false,
+            "checkresponse": false,
+            "size": {
+                "x": 0.10000000149011612,
+                "y": 0.10000000149011612
+            },
+            "offset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "drawDebug": true,
+            "radius": 0.5,
+            "shapetype": 0
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "PauseMenuManager",
+                    "enabled": true,
+                    "map": []
+                }
+            ]
+        },
+        "children": [
+            {
+                "name": {
+                    "namestr": "UI_PauseMenu_HowToPlay_Menu",
+                    "layer": 6,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "UI_PauseMenu_HowToPlay.prefab",
+                    "issync": false
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 0.36000001430511475,
+                        "y": 0.36000001430511475
+                    }
+                },
+                "sprite": {
+                    "imagefile": "img_userManual.png",
+                    "layer": 500,
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0
+                    },
+                    "alpha": 1.0,
+                    "isLit": false
+                },
+                "script": {
+                    "scripts": [
+                        {
+                            "name": "ButtonPrompt",
+                            "enabled": true,
+                            "map": [
+                                {
+                                    "variable": "promptNo",
+                                    "base64": "AgAAAMzMzMwA"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "name": {
+                    "namestr": "UI_PauseMenu_HowToPlay_BackButton",
+                    "layer": 6,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "UI_PauseMenu_HowToPlay.prefab",
+                    "issync": false
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.0,
+                        "y": -5.0100507736206055
+                    },
+                    "rotation": -0.0,
+                    "scale": {
+                        "x": 3.0,
+                        "y": 3.0
+                    }
+                },
+                "sprite": {
+                    "imagefile": "ani_pauseMenuQuitButton_strip2.png",
+                    "layer": 502,
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0
+                    },
+                    "alpha": 1.0,
+                    "isLit": false
+                },
+                "animation": {
+                    "frameNumber": 0,
+                    "framesPerSecond": 0,
+                    "frameTimer": 0.0,
+                    "isAnimating": false,
+                    "stripCount": 2
+                },
+                "button": {
+                    "force": {
+                        "x": 1140.218017578125,
+                        "y": 362.7215881347656
+                    },
+                    "scale": {
+                        "x": 3.380000114440918,
+                        "y": 1.0
+                    },
+                    "enablehover": true
+                },
+                "script": {
+                    "scripts": [
+                        {
+                            "name": "PauseMenuButtons",
+                            "enabled": true,
+                            "map": [
+                                {
+                                    "variable": "buttonFunctionNo",
+                                    "base64": "HwAAAMzMzMwA"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "audio": [
+                    {
+                        "name": "aud_buttonHover01",
+                        "volume": 0.47200000286102295,
+                        "loop": false,
+                        "playOnStart": false,
+                        "isBGM": false,
+                        "isSFX": true
+                    },
+                    {
+                        "name": "aud_buttonClick01",
+                        "volume": 1.0,
+                        "loop": false,
+                        "playOnStart": false,
+                        "isBGM": false,
+                        "isSFX": true
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "namestr": "UI_PauseMenu_HowToPlay_BackButtonText",
+                    "layer": 6,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "UI_PauseMenu_HowToPlay.prefab",
+                    "issync": false
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.0,
+                        "y": -5.159358501434326
+                    },
+                    "rotation": -0.0,
+                    "scale": {
+                        "x": 3.0,
+                        "y": 3.0
+                    }
+                },
+                "text": {
+                    "text": "BACK",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 3.0,
+                    "color": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 0.0
+                    },
+                    "layer": 503,
+                    "isCentered": true
+                }
+            }
+        ]
+    }
+]

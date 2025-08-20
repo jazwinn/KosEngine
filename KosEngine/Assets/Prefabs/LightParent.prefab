@@ -1,0 +1,1116 @@
+[
+    {
+        "GlobalSettings": {
+            "globalIllumination": 0.2199999988079071,
+            "backgroundColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0
+            }
+        }
+    },
+    {
+        "CursorSettings": {
+            "cursorImage": "../Assets/Texture/UI/img_startScreenCursor.png",
+            "isCursorCentered": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "LightParent",
+            "layer": 0,
+            "isprefab": true,
+            "tagstr": "Default",
+            "prefabname": "LightParent.prefab",
+            "issync": true
+        },
+        "transform": {
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "children": [
+            {
+                "name": {
+                    "namestr": "Lights",
+                    "layer": 0,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "LightParent.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 59.06800079345703,
+                        "y": 4.985283851623535
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 48.0,
+                        "y": 68.0
+                    }
+                },
+                "LightingComponent": {
+                    "m_innerOuterRadius": {
+                        "x": 0.10000000149011612,
+                        "y": 1.0
+                    },
+                    "m_intensity": 0.800000011920929,
+                    "m_light_OffSet": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "m_light_scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "m_light_rotation": 0.0,
+                    "m_colour": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "m_lightType": 1
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Lights",
+                    "layer": 0,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "LightParent.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.0,
+                        "y": -7.993094444274902
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 50.0,
+                        "y": 50.0
+                    }
+                },
+                "LightingComponent": {
+                    "m_innerOuterRadius": {
+                        "x": 0.10000000149011612,
+                        "y": 1.0
+                    },
+                    "m_intensity": 0.800000011920929,
+                    "m_light_OffSet": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "m_light_scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "m_light_rotation": 0.0,
+                    "m_colour": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "m_lightType": 1
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Lights",
+                    "layer": 0,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "LightParent.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": -25.02438735961914,
+                        "y": 37.08807373046875
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 20.0,
+                        "y": 20.0
+                    }
+                },
+                "LightingComponent": {
+                    "m_innerOuterRadius": {
+                        "x": 0.0,
+                        "y": 1.0
+                    },
+                    "m_intensity": 0.800000011920929,
+                    "m_light_OffSet": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "m_light_scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "m_light_rotation": 0.0,
+                    "m_colour": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "m_lightType": 1
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Lights",
+                    "layer": 0,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "LightParent.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 25.012388229370117,
+                        "y": -17.992115020751953
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 50.0,
+                        "y": 80.0
+                    }
+                },
+                "LightingComponent": {
+                    "m_innerOuterRadius": {
+                        "x": 0.10000000149011612,
+                        "y": 1.0
+                    },
+                    "m_intensity": 0.800000011920929,
+                    "m_light_OffSet": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "m_light_scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "m_light_rotation": 0.0,
+                    "m_colour": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "m_lightType": 1
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Lights",
+                    "layer": 0,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "LightParent.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": -0.5466887950897217,
+                        "y": 27.05553436279297
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 70.0,
+                        "y": 130.0
+                    }
+                },
+                "LightingComponent": {
+                    "m_innerOuterRadius": {
+                        "x": 0.10000000149011612,
+                        "y": 1.0
+                    },
+                    "m_intensity": 0.800000011920929,
+                    "m_light_OffSet": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "m_light_scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "m_light_rotation": 0.0,
+                    "m_colour": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "m_lightType": 1
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Lights",
+                    "layer": 0,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "LightParent.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 36.99250030517578,
+                        "y": 23.840980529785156
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 30.0,
+                        "y": 30.0
+                    }
+                },
+                "LightingComponent": {
+                    "m_innerOuterRadius": {
+                        "x": 0.10000000149011612,
+                        "y": 1.0
+                    },
+                    "m_intensity": 0.800000011920929,
+                    "m_light_OffSet": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "m_light_scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "m_light_rotation": 0.0,
+                    "m_colour": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "m_lightType": 1
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Lights",
+                    "layer": 0,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "LightParent.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 37.01701354980469,
+                        "y": 4.9666876792907715
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 25.0,
+                        "y": 25.0
+                    }
+                },
+                "LightingComponent": {
+                    "m_innerOuterRadius": {
+                        "x": 0.10000000149011612,
+                        "y": 1.0
+                    },
+                    "m_intensity": 0.800000011920929,
+                    "m_light_OffSet": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "m_light_scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "m_light_rotation": 0.0,
+                    "m_colour": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "m_lightType": 1
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Lights",
+                    "layer": 0,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "LightParent.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": -20.017610549926758,
+                        "y": -17.992115020751953
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 50.0,
+                        "y": 65.0
+                    }
+                },
+                "LightingComponent": {
+                    "m_innerOuterRadius": {
+                        "x": 0.10000000149011612,
+                        "y": 1.0
+                    },
+                    "m_intensity": 0.800000011920929,
+                    "m_light_OffSet": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "m_light_scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "m_light_rotation": 0.0,
+                    "m_colour": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "m_lightType": 1
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Lights",
+                    "layer": 0,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "LightParent.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": -9.974212646484375,
+                        "y": -17.992115020751953
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 16.0,
+                        "y": 16.0
+                    }
+                },
+                "LightingComponent": {
+                    "m_innerOuterRadius": {
+                        "x": 0.0,
+                        "y": 1.0
+                    },
+                    "m_intensity": 0.800000011920929,
+                    "m_light_OffSet": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "m_light_scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "m_light_rotation": 0.0,
+                    "m_colour": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "m_lightType": 1
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Lights",
+                    "layer": 0,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "LightParent.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": -0.04752063751220703,
+                        "y": -17.992115020751953
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 16.0,
+                        "y": 16.0
+                    }
+                },
+                "LightingComponent": {
+                    "m_innerOuterRadius": {
+                        "x": 0.0,
+                        "y": 1.0
+                    },
+                    "m_intensity": 0.800000011920929,
+                    "m_light_OffSet": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "m_light_scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "m_light_rotation": 0.0,
+                    "m_colour": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "m_lightType": 1
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Lights",
+                    "layer": 0,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "LightParent.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 10.556527137756348,
+                        "y": -17.992115020751953
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 16.0,
+                        "y": 16.0
+                    }
+                },
+                "LightingComponent": {
+                    "m_innerOuterRadius": {
+                        "x": 0.0,
+                        "y": 1.0
+                    },
+                    "m_intensity": 0.800000011920929,
+                    "m_light_OffSet": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "m_light_scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "m_light_rotation": 0.0,
+                    "m_colour": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "m_lightType": 1
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Lights",
+                    "layer": 0,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "LightParent.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 37.07835388183594,
+                        "y": -17.992115020751953
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 16.0,
+                        "y": 16.0
+                    }
+                },
+                "LightingComponent": {
+                    "m_innerOuterRadius": {
+                        "x": 0.0,
+                        "y": 1.0
+                    },
+                    "m_intensity": 0.800000011920929,
+                    "m_light_OffSet": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "m_light_scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "m_light_rotation": 0.0,
+                    "m_colour": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "m_lightType": 1
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Lights",
+                    "layer": 0,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "LightParent.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 37.07835388183594,
+                        "y": -10.852524757385254
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 16.0,
+                        "y": 16.0
+                    }
+                },
+                "LightingComponent": {
+                    "m_innerOuterRadius": {
+                        "x": 0.0,
+                        "y": 1.0
+                    },
+                    "m_intensity": 0.800000011920929,
+                    "m_light_OffSet": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "m_light_scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "m_light_rotation": 0.0,
+                    "m_colour": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "m_lightType": 1
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Lights",
+                    "layer": 0,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "LightParent.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 37.07835388183594,
+                        "y": -4.017244338989258
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 16.0,
+                        "y": 16.0
+                    }
+                },
+                "LightingComponent": {
+                    "m_innerOuterRadius": {
+                        "x": 0.0,
+                        "y": 1.0
+                    },
+                    "m_intensity": 0.800000011920929,
+                    "m_light_OffSet": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "m_light_scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "m_light_rotation": 0.0,
+                    "m_colour": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "m_lightType": 1
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Lights",
+                    "layer": 0,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "LightParent.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 47.752628326416016,
+                        "y": 4.971617698669434
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 16.0,
+                        "y": 16.0
+                    }
+                },
+                "LightingComponent": {
+                    "m_innerOuterRadius": {
+                        "x": 0.0,
+                        "y": 1.0
+                    },
+                    "m_intensity": 0.800000011920929,
+                    "m_light_OffSet": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "m_light_scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "m_light_rotation": 0.0,
+                    "m_colour": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "m_lightType": 1
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Lights",
+                    "layer": 0,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "LightParent.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 37.03153610229492,
+                        "y": 11.64303970336914
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 16.0,
+                        "y": 16.0
+                    }
+                },
+                "LightingComponent": {
+                    "m_innerOuterRadius": {
+                        "x": 0.0,
+                        "y": 1.0
+                    },
+                    "m_intensity": 0.800000011920929,
+                    "m_light_OffSet": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "m_light_scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "m_light_rotation": 0.0,
+                    "m_colour": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "m_lightType": 1
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Lights",
+                    "layer": 0,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "LightParent.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 37.03153610229492,
+                        "y": 17.916515350341797
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 16.0,
+                        "y": 16.0
+                    }
+                },
+                "LightingComponent": {
+                    "m_innerOuterRadius": {
+                        "x": 0.0,
+                        "y": 1.0
+                    },
+                    "m_intensity": 0.800000011920929,
+                    "m_light_OffSet": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "m_light_scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "m_light_rotation": 0.0,
+                    "m_colour": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "m_lightType": 1
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Lights",
+                    "layer": 0,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "LightParent.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 28.01926612854004,
+                        "y": 5.065252780914307
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 16.0,
+                        "y": 16.0
+                    }
+                },
+                "LightingComponent": {
+                    "m_innerOuterRadius": {
+                        "x": 0.0,
+                        "y": 1.0
+                    },
+                    "m_intensity": 0.800000011920929,
+                    "m_light_OffSet": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "m_light_scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "m_light_rotation": 0.0,
+                    "m_colour": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "m_lightType": 1
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Lights",
+                    "layer": 0,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "LightParent.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 20.06037712097168,
+                        "y": 4.995026588439941
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 16.0,
+                        "y": 16.0
+                    }
+                },
+                "LightingComponent": {
+                    "m_innerOuterRadius": {
+                        "x": 0.0,
+                        "y": 1.0
+                    },
+                    "m_intensity": 0.800000011920929,
+                    "m_light_OffSet": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "m_light_scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "m_light_rotation": 0.0,
+                    "m_colour": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "m_lightType": 1
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Lights",
+                    "layer": 0,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "LightParent.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 20.06037712097168,
+                        "y": 11.034418106079102
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 16.0,
+                        "y": 16.0
+                    }
+                },
+                "LightingComponent": {
+                    "m_innerOuterRadius": {
+                        "x": 0.0,
+                        "y": 1.0
+                    },
+                    "m_intensity": 0.800000011920929,
+                    "m_light_OffSet": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "m_light_scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "m_light_rotation": 0.0,
+                    "m_colour": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "m_lightType": 1
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Lights",
+                    "layer": 0,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "LightParent.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 20.06037712097168,
+                        "y": 19.601926803588867
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 16.0,
+                        "y": 16.0
+                    }
+                },
+                "LightingComponent": {
+                    "m_innerOuterRadius": {
+                        "x": 0.0,
+                        "y": 1.0
+                    },
+                    "m_intensity": 0.800000011920929,
+                    "m_light_OffSet": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "m_light_scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "m_light_rotation": 0.0,
+                    "m_colour": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "m_lightType": 1
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Lights",
+                    "layer": 0,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "LightParent.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 13.763492584228516,
+                        "y": 20.84257698059082
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 16.0,
+                        "y": 16.0
+                    }
+                },
+                "LightingComponent": {
+                    "m_innerOuterRadius": {
+                        "x": 0.0,
+                        "y": 1.0
+                    },
+                    "m_intensity": 0.800000011920929,
+                    "m_light_OffSet": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "m_light_scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "m_light_rotation": 0.0,
+                    "m_colour": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "m_lightType": 1
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Lights",
+                    "layer": 0,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "LightParent.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": -14.982141494750977,
+                        "y": 37.08807373046875
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 16.0,
+                        "y": 16.0
+                    }
+                },
+                "LightingComponent": {
+                    "m_innerOuterRadius": {
+                        "x": 0.0,
+                        "y": 1.0
+                    },
+                    "m_intensity": 0.800000011920929,
+                    "m_light_OffSet": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "m_light_scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "m_light_rotation": 0.0,
+                    "m_colour": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "m_lightType": 1
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Lights",
+                    "layer": 0,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "LightParent.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": -25.029953002929688,
+                        "y": 37.08807373046875
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 20.0,
+                        "y": 20.0
+                    }
+                },
+                "LightingComponent": {
+                    "m_innerOuterRadius": {
+                        "x": 0.0,
+                        "y": 1.0
+                    },
+                    "m_intensity": 2.299999952316284,
+                    "m_light_OffSet": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "m_light_scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "m_light_rotation": 0.0,
+                    "m_colour": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "m_lightType": 1
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Lights",
+                    "layer": 0,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "LightParent.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": -0.04752063751220703,
+                        "y": 0.1582350730895996
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 16.0,
+                        "y": 16.0
+                    }
+                },
+                "LightingComponent": {
+                    "m_innerOuterRadius": {
+                        "x": 0.0,
+                        "y": 1.0
+                    },
+                    "m_intensity": 0.800000011920929,
+                    "m_light_OffSet": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "m_light_scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    },
+                    "m_light_rotation": 0.0,
+                    "m_colour": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "m_lightType": 1
+                }
+            }
+        ]
+    }
+]

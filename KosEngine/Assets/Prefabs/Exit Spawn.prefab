@@ -1,0 +1,125 @@
+[
+    {
+        "GlobalSettings": {
+            "globalIllumination": 0.2199999988079071,
+            "backgroundColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0
+            }
+        }
+    },
+    {
+        "CursorSettings": {
+            "cursorImage": "../Assets/Texture/UI/img_startScreenCursor.png",
+            "isCursorCentered": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "Exit Spawn",
+            "layer": 2,
+            "isprefab": true,
+            "tagstr": "ExitSpawn",
+            "prefabname": "EndPoint.prefab",
+            "issync": false
+        },
+        "transform": {
+            "position": {
+                "x": 2.0246949195861816,
+                "y": -22.959794998168945
+            },
+            "rotation": 0.0,
+            "scale": {
+                "x": 2.700000047683716,
+                "y": 2.700000047683716
+            }
+        },
+        "collider": {
+            "checkcollision": true,
+            "checkresponse": false,
+            "size": {
+                "x": 0.5,
+                "y": 0.5
+            },
+            "offset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "drawDebug": true,
+            "radius": 0.5,
+            "shapetype": 0
+        },
+        "rigidbody": {
+            "linearVelocity": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "linearAcceleration": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "angularVelocity": 0.0,
+            "angularAcceleration": 0.0,
+            "mass": 1.0,
+            "inverseMass": 1.0,
+            "linearDamping": 0.9900000095367432,
+            "angularDamping": 0.9900000095367432,
+            "force": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "torque": 0.0,
+            "kinematic": false,
+            "static": false
+        },
+        "sprite": {
+            "imagefile": "img_exitPoint.png",
+            "layer": 4,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": true
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "LevelTransition",
+                    "enabled": true,
+                    "map": [
+                        {
+                            "variable": "NextLevelName",
+                            "base64": "Level6"
+                        }
+                    ]
+                }
+            ]
+        },
+        "LightingComponent": {
+            "m_innerOuterRadius": {
+                "x": 0.0,
+                "y": 1.0
+            },
+            "m_intensity": 1.0,
+            "m_light_OffSet": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "m_light_scale": {
+                "x": 6.0,
+                "y": 6.0
+            },
+            "m_light_rotation": 0.0,
+            "m_colour": {
+                "x": 0.34927302598953247,
+                "y": 0.8274336457252502,
+                "z": 0.2526235282421112
+            },
+            "m_lightType": 1
+        }
+    }
+]

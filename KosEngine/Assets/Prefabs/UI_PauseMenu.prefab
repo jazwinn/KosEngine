@@ -1,0 +1,774 @@
+[
+    {
+        "GlobalSettings": {
+            "globalIllumination": 0.2199999988079071,
+            "backgroundColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0
+            }
+        }
+    },
+    {
+        "CursorSettings": {
+            "cursorImage": "../Assets/Texture/UI/img_startScreenCursor.png",
+            "isCursorCentered": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "UI_PauseMenu",
+            "layer": 0,
+            "isprefab": true,
+            "tagstr": "Default",
+            "prefabname": "UI_PauseMenu.prefab",
+            "issync": true
+        },
+        "transform": {
+            "position": {
+                "x": 0.09445571899414063,
+                "y": 0.16409683227539063
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "collider": {
+            "checkcollision": false,
+            "checkresponse": false,
+            "size": {
+                "x": 0.10000000149011612,
+                "y": 0.10000000149011612
+            },
+            "offset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "drawDebug": true,
+            "radius": 0.5,
+            "shapetype": 0
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "PauseMenuManager",
+                    "enabled": true,
+                    "map": [
+                        {
+                            "variable": "isPausing",
+                            "base64": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "children": [
+            {
+                "name": {
+                    "namestr": "UI_PauseMenu_Background",
+                    "layer": 7,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "UI_PauseMenu.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 4.0,
+                        "y": 4.0
+                    }
+                },
+                "sprite": {
+                    "imagefile": "img_pauseMenuFrame.png",
+                    "layer": 405,
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0
+                    },
+                    "alpha": 1.0,
+                    "isLit": false
+                }
+            },
+            {
+                "name": {
+                    "namestr": "UI_PauseMenu_Resume",
+                    "layer": 7,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "UI_PauseMenu.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.0,
+                        "y": 3.500983953475952
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 4.0,
+                        "y": 4.0
+                    }
+                },
+                "sprite": {
+                    "imagefile": "ani_pauseMenuResumeButton_strip2.png",
+                    "layer": 406,
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0
+                    },
+                    "alpha": 1.0,
+                    "isLit": false
+                },
+                "animation": {
+                    "frameNumber": 0,
+                    "framesPerSecond": 0,
+                    "frameTimer": 0.0,
+                    "isAnimating": false,
+                    "stripCount": 2
+                },
+                "button": {
+                    "force": {
+                        "x": 966.375732421875,
+                        "y": 787.3929443359375
+                    },
+                    "scale": {
+                        "x": 5.920000076293945,
+                        "y": 1.2999999523162842
+                    },
+                    "enablehover": true
+                },
+                "script": {
+                    "scripts": [
+                        {
+                            "name": "PauseMenuButtons",
+                            "enabled": true,
+                            "map": [
+                                {
+                                    "variable": "buttonFunctionNo",
+                                    "base64": "CgAAAMzMzMwA"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "audio": [
+                    {
+                        "name": "aud_buttonHover01",
+                        "volume": 0.4970000088214874,
+                        "loop": false,
+                        "playOnStart": false,
+                        "isBGM": false,
+                        "isSFX": true
+                    },
+                    {
+                        "name": "aud_buttonClick01",
+                        "volume": 1.0,
+                        "loop": false,
+                        "playOnStart": false,
+                        "isBGM": false,
+                        "isSFX": true
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "namestr": "UI_PauseMenu_Restart",
+                    "layer": 7,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "UI_PauseMenu.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.0,
+                        "y": 1.4954073429107666
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 4.0,
+                        "y": 4.0
+                    }
+                },
+                "sprite": {
+                    "imagefile": "ani_pauseMenuRestartButton_strip2.png",
+                    "layer": 407,
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0
+                    },
+                    "alpha": 1.0,
+                    "isLit": false
+                },
+                "animation": {
+                    "frameNumber": 0,
+                    "framesPerSecond": 0,
+                    "frameTimer": 0.0,
+                    "isAnimating": false,
+                    "stripCount": 2
+                },
+                "button": {
+                    "force": {
+                        "x": 966.375732421875,
+                        "y": 652.0165405273438
+                    },
+                    "scale": {
+                        "x": 5.800000190734863,
+                        "y": 1.2000000476837158
+                    },
+                    "enablehover": true
+                },
+                "script": {
+                    "scripts": [
+                        {
+                            "name": "PauseMenuButtons",
+                            "enabled": true,
+                            "map": [
+                                {
+                                    "variable": "buttonFunctionNo",
+                                    "base64": "FAAAAMzMzMwA"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "audio": [
+                    {
+                        "name": "aud_buttonHover01",
+                        "volume": 0.49399998784065247,
+                        "loop": false,
+                        "playOnStart": false,
+                        "isBGM": false,
+                        "isSFX": true
+                    },
+                    {
+                        "name": "aud_buttonClick01",
+                        "volume": 1.0,
+                        "loop": false,
+                        "playOnStart": false,
+                        "isBGM": false,
+                        "isSFX": true
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "namestr": "UI_PauseMenu_UserManual",
+                    "layer": 7,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "UI_PauseMenu.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.0,
+                        "y": -2.6046059131622314
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 4.0,
+                        "y": 4.0
+                    }
+                },
+                "sprite": {
+                    "imagefile": "ani_pauseMenuManualButton_strip2.png",
+                    "layer": 408,
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0
+                    },
+                    "alpha": 1.0,
+                    "isLit": false
+                },
+                "animation": {
+                    "frameNumber": 0,
+                    "framesPerSecond": 0,
+                    "frameTimer": 0.0,
+                    "isAnimating": false,
+                    "stripCount": 2
+                },
+                "button": {
+                    "force": {
+                        "x": 966.375732421875,
+                        "y": 375.2656555175781
+                    },
+                    "scale": {
+                        "x": 5.840000152587891,
+                        "y": 1.1799999475479126
+                    },
+                    "enablehover": true
+                },
+                "script": {
+                    "scripts": [
+                        {
+                            "name": "PauseMenuButtons",
+                            "enabled": true,
+                            "map": [
+                                {
+                                    "variable": "buttonFunctionNo",
+                                    "base64": "HgAAAMzMzMwA"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "audio": [
+                    {
+                        "name": "aud_buttonHover01",
+                        "volume": 0.4830000102519989,
+                        "loop": false,
+                        "playOnStart": false,
+                        "isBGM": false,
+                        "isSFX": true
+                    },
+                    {
+                        "name": "aud_buttonClick01",
+                        "volume": 1.0,
+                        "loop": false,
+                        "playOnStart": false,
+                        "isBGM": false,
+                        "isSFX": true
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "namestr": "UI_PauseMenu_Quit",
+                    "layer": 7,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "UI_PauseMenu.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.0,
+                        "y": -4.661163806915283
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 4.0,
+                        "y": 4.0
+                    }
+                },
+                "sprite": {
+                    "imagefile": "ani_pauseMenuQuitButton_strip2.png",
+                    "layer": 409,
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0
+                    },
+                    "alpha": 1.0,
+                    "isLit": false
+                },
+                "animation": {
+                    "frameNumber": 0,
+                    "framesPerSecond": 0,
+                    "frameTimer": 0.0,
+                    "isAnimating": false,
+                    "stripCount": 2
+                },
+                "button": {
+                    "force": {
+                        "x": 966.375732421875,
+                        "y": 236.447998046875
+                    },
+                    "scale": {
+                        "x": 4.539999961853027,
+                        "y": 1.1799999475479126
+                    },
+                    "enablehover": true
+                },
+                "script": {
+                    "scripts": [
+                        {
+                            "name": "PauseMenuButtons",
+                            "enabled": true,
+                            "map": [
+                                {
+                                    "variable": "buttonFunctionNo",
+                                    "base64": "/////8zMzMwA"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "audio": [
+                    {
+                        "name": "aud_buttonHover01",
+                        "volume": 0.5,
+                        "loop": false,
+                        "playOnStart": false,
+                        "isBGM": false,
+                        "isSFX": true
+                    },
+                    {
+                        "name": "aud_buttonClick01",
+                        "volume": 1.0,
+                        "loop": false,
+                        "playOnStart": false,
+                        "isBGM": false,
+                        "isSFX": true
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "namestr": "UI_PauseMenu_ResumeText",
+                    "layer": 7,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "UI_PauseMenu.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.1307675838470459,
+                        "y": 3.277216911315918
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                },
+                "text": {
+                    "text": "Resume",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 12.0,
+                    "color": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 0.0
+                    },
+                    "layer": 421,
+                    "isCentered": true
+                }
+            },
+            {
+                "name": {
+                    "namestr": "UI_PauseMenu_RestartText",
+                    "layer": 7,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "UI_PauseMenu.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.23999999463558197,
+                        "y": 1.2865631580352783
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                },
+                "text": {
+                    "text": "Restart",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 12.0,
+                    "color": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 0.0
+                    },
+                    "layer": 422,
+                    "isCentered": true
+                }
+            },
+            {
+                "name": {
+                    "namestr": "UI_PauseMenu_QuitText",
+                    "layer": 7,
+                    "isprefab": true,
+                    "tagstr": "UIConfirmQuit",
+                    "prefabname": "UI_PauseMenu.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": -0.031008124351501465,
+                        "y": -4.820469379425049
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                },
+                "text": {
+                    "text": "QUIT",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 12.0,
+                    "color": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 0.0
+                    },
+                    "layer": 423,
+                    "isCentered": true
+                }
+            },
+            {
+                "name": {
+                    "namestr": "UI_SoundText",
+                    "layer": 7,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "UI_PauseMenu.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.23999999463558197,
+                        "y": -0.6888558864593506
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                },
+                "text": {
+                    "text": "SOUND",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 12.0,
+                    "color": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 0.0
+                    },
+                    "layer": 424,
+                    "isCentered": true
+                }
+            },
+            {
+                "name": {
+                    "namestr": "UI_PauseMenu_Sound",
+                    "layer": 7,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "UI_PauseMenu.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.0,
+                        "y": -0.49978548288345337
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 4.0,
+                        "y": 4.0
+                    }
+                },
+                "sprite": {
+                    "imagefile": "ani_pauseMenuSoundButton_strip2.png",
+                    "layer": 410,
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0
+                    },
+                    "alpha": 1.0,
+                    "isLit": false
+                },
+                "animation": {
+                    "frameNumber": 0,
+                    "framesPerSecond": 0,
+                    "frameTimer": 0.0,
+                    "isAnimating": false,
+                    "stripCount": 2
+                },
+                "button": {
+                    "force": {
+                        "x": 966.375732421875,
+                        "y": 517.3410034179688
+                    },
+                    "scale": {
+                        "x": 5.900000095367432,
+                        "y": 1.2000000476837158
+                    },
+                    "enablehover": true
+                },
+                "script": {
+                    "scripts": [
+                        {
+                            "name": "PauseMenuButtons",
+                            "enabled": true,
+                            "map": [
+                                {
+                                    "variable": "buttonFunctionNo",
+                                    "base64": "IAAAAMzMzMwA"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "audio": [
+                    {
+                        "name": "aud_buttonHover01",
+                        "volume": 0.4830000102519989,
+                        "loop": false,
+                        "playOnStart": false,
+                        "isBGM": false,
+                        "isSFX": true
+                    },
+                    {
+                        "name": "aud_buttonClick01",
+                        "volume": 1.0,
+                        "loop": false,
+                        "playOnStart": false,
+                        "isBGM": false,
+                        "isSFX": true
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "namestr": "UI_PauseMenu_UserManualText",
+                    "layer": 7,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "UI_PauseMenu.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.23999999463558197,
+                        "y": -2.7719311714172363
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                },
+                "text": {
+                    "text": "MANUAL",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 12.0,
+                    "color": {
+                        "r": 0.0,
+                        "g": 0.0,
+                        "b": 0.0
+                    },
+                    "layer": 425,
+                    "isCentered": true
+                }
+            },
+            {
+                "name": {
+                    "namestr": "UI_PauseMenu_ExitConfirmation",
+                    "layer": 7,
+                    "isprefab": true,
+                    "tagstr": "UIPauseConfirmation",
+                    "prefabname": "UI_PauseMenu.prefab",
+                    "issync": false
+                },
+                "transform": {
+                    "position": {
+                        "x": -12.740821838378906,
+                        "y": -0.3988189697265625
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                },
+                "script": {
+                    "scripts": []
+                },
+                "children": [
+                    {
+                        "name": {
+                            "namestr": "Confirmation UI",
+                            "layer": 7,
+                            "isprefab": true,
+                            "tagstr": "Default",
+                            "prefabname": "UI_PauseMenu.prefab",
+                            "issync": false
+                        },
+                        "transform": {
+                            "position": {
+                                "x": 12.949272155761719,
+                                "y": 0.08977890014648438
+                            },
+                            "rotation": 0.0,
+                            "scale": {
+                                "x": 6.0,
+                                "y": 6.0
+                            }
+                        },
+                        "sprite": {
+                            "imagefile": "img_quitConfirmationWindow.png",
+                            "layer": 500,
+                            "color": {
+                                "r": 1.0,
+                                "g": 1.0,
+                                "b": 1.0
+                            },
+                            "alpha": 1.0,
+                            "isLit": false
+                        }
+                    },
+                    {
+                        "name": {
+                            "namestr": "Confirmation_Text",
+                            "layer": 7,
+                            "isprefab": true,
+                            "tagstr": "Default",
+                            "prefabname": "UI_PauseMenu.prefab",
+                            "issync": false
+                        },
+                        "transform": {
+                            "position": {
+                                "x": 12.754656791687012,
+                                "y": -2.3273239135742188
+                            },
+                            "rotation": 0.0,
+                            "scale": {
+                                "x": 1.0,
+                                "y": 1.0
+                            }
+                        },
+                        "text": {
+                            "text": "Y/N",
+                            "text": null,
+                            "filename": "fnt_silkscreenRegular.ttf",
+                            "fontsize": 35.099998474121094,
+                            "color": {
+                                "r": 0.0,
+                                "g": 0.0,
+                                "b": 0.0
+                            },
+                            "layer": 600,
+                            "isCentered": true
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

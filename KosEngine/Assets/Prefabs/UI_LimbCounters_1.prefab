@@ -1,0 +1,320 @@
+[
+    {
+        "GlobalSettings": {
+            "globalIllumination": 0.05999999865889549,
+            "backgroundColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0
+            }
+        }
+    },
+    {
+        "CursorSettings": {
+            "cursorImage": "../Assets/Texture/UI/img_inGameCursor.png",
+            "isCursorCentered": true
+        }
+    },
+    {
+        "name": {
+            "namestr": "UI_LimbCounters",
+            "layer": 0,
+            "isprefab": true,
+            "tagstr": "Default",
+            "prefabname": "UI_LimbCounters_1.prefab",
+            "issync": true
+        },
+        "transform": {
+            "position": {
+                "x": 0.021785736083984375,
+                "y": -0.17336797714233398
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "UI_AmmoHUD",
+                    "enabled": true,
+                    "map": []
+                }
+            ]
+        },
+        "children": [
+            {
+                "name": {
+                    "namestr": "UI_LimbCounters_ButtonPrompts",
+                    "layer": 4,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "UI_LimbCounters_1.prefab",
+                    "issync": false
+                },
+                "transform": {
+                    "position": {
+                        "x": 10.390585899353027,
+                        "y": -4.441705703735352
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 4.0,
+                        "y": 4.0
+                    }
+                },
+                "sprite": {
+                    "imagefile": "ani_hudButtonPrompts_strip2.png",
+                    "layer": 99,
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0
+                    },
+                    "alpha": 1.0,
+                    "isLit": false
+                },
+                "animation": {
+                    "frameNumber": 0,
+                    "framesPerSecond": 0,
+                    "frameTimer": 0.0,
+                    "isAnimating": false,
+                    "stripCount": 2
+                },
+                "script": {
+                    "scripts": [
+                        {
+                            "name": "ButtonPrompt",
+                            "enabled": true,
+                            "map": [
+                                {
+                                    "variable": "test",
+                                    "base64": "1"
+                                },
+                                {
+                                    "variable": "promptNo",
+                                    "base64": "AQAAAMzMzMwA"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "name": {
+                    "namestr": "UI_LimbCounters_LeftCounter",
+                    "layer": 4,
+                    "isprefab": true,
+                    "tagstr": "UIGameLeftLimbCounter",
+                    "prefabname": "UI_LimbCounters_1.prefab",
+                    "issync": false
+                },
+                "transform": {
+                    "position": {
+                        "x": 7.8037872314453125,
+                        "y": -6.050000190734863
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 4.0,
+                        "y": 4.0
+                    }
+                },
+                "sprite": {
+                    "imagefile": "ani_hudSegmentBar_strip7.png",
+                    "layer": 354,
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0
+                    },
+                    "alpha": 1.0,
+                    "isLit": false
+                },
+                "animation": {
+                    "frameNumber": 6,
+                    "framesPerSecond": 6,
+                    "frameTimer": 0.0,
+                    "isAnimating": false,
+                    "stripCount": 7
+                }
+            },
+            {
+                "name": {
+                    "namestr": "UI_LimbCounters_RightCounter",
+                    "layer": 4,
+                    "isprefab": true,
+                    "tagstr": "UIGameRightLimbCounter",
+                    "prefabname": "UI_LimbCounters_1.prefab",
+                    "issync": false
+                },
+                "transform": {
+                    "position": {
+                        "x": 9.987579345703125,
+                        "y": -6.050000190734863
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 4.0,
+                        "y": 4.0
+                    }
+                },
+                "sprite": {
+                    "imagefile": "ani_hudSegmentBar_strip7.png",
+                    "layer": 353,
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0
+                    },
+                    "alpha": 1.0,
+                    "isLit": false
+                },
+                "animation": {
+                    "frameNumber": 6,
+                    "framesPerSecond": 6,
+                    "frameTimer": 0.0,
+                    "isAnimating": false,
+                    "stripCount": 7
+                }
+            },
+            {
+                "name": {
+                    "namestr": "UI_LimbCounters_BackCounter",
+                    "layer": 4,
+                    "isprefab": true,
+                    "tagstr": "UIGameBackLimbCounter",
+                    "prefabname": "UI_LimbCounters_1.prefab",
+                    "issync": false
+                },
+                "transform": {
+                    "position": {
+                        "x": 12.205166816711426,
+                        "y": -6.050000190734863
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 4.0,
+                        "y": 4.0
+                    }
+                },
+                "sprite": {
+                    "imagefile": "ani_hudSegmentBar_strip7.png",
+                    "layer": 355,
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0
+                    },
+                    "alpha": 1.0,
+                    "isLit": false
+                },
+                "animation": {
+                    "frameNumber": 6,
+                    "framesPerSecond": 6,
+                    "frameTimer": 0.0,
+                    "isAnimating": false,
+                    "stripCount": 7
+                }
+            },
+            {
+                "name": {
+                    "namestr": "UI_LimbCounters_LeftCounterIcon",
+                    "layer": 4,
+                    "isprefab": true,
+                    "tagstr": "UIGameLeftLimbCounterIcon",
+                    "prefabname": "UI_LimbCounters_1.prefab",
+                    "issync": false
+                },
+                "transform": {
+                    "position": {
+                        "x": 7.800000190734863,
+                        "y": -6.050000190734863
+                    },
+                    "rotation": -0.0,
+                    "scale": {
+                        "x": 4.0,
+                        "y": 4.0
+                    }
+                },
+                "sprite": {
+                    "imagefile": "img_hudGunIcon.png",
+                    "layer": 356,
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0
+                    },
+                    "alpha": 1.0,
+                    "isLit": false
+                }
+            },
+            {
+                "name": {
+                    "namestr": "UI_LimbCounters_RightCounterIcon",
+                    "layer": 4,
+                    "isprefab": true,
+                    "tagstr": "UIGameRightLimbCounterIcon",
+                    "prefabname": "UI_LimbCounters_1.prefab",
+                    "issync": false
+                },
+                "transform": {
+                    "position": {
+                        "x": 9.989999771118164,
+                        "y": -6.050000190734863
+                    },
+                    "rotation": -0.0,
+                    "scale": {
+                        "x": 4.0,
+                        "y": 4.0
+                    }
+                },
+                "sprite": {
+                    "imagefile": "img_hudGunIcon.png",
+                    "layer": 358,
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0
+                    },
+                    "alpha": 1.0,
+                    "isLit": false
+                }
+            },
+            {
+                "name": {
+                    "namestr": "UI_LimbCounters_BackCounterIcon",
+                    "layer": 4,
+                    "isprefab": true,
+                    "tagstr": "UIGameBackLimbCounterIcon",
+                    "prefabname": "UI_LimbCounters_1.prefab",
+                    "issync": false
+                },
+                "transform": {
+                    "position": {
+                        "x": 12.210000038146973,
+                        "y": -6.050000190734863
+                    },
+                    "rotation": -0.0,
+                    "scale": {
+                        "x": 4.0,
+                        "y": 4.0
+                    }
+                },
+                "sprite": {
+                    "imagefile": "img_hudGunIcon.png",
+                    "layer": 357,
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0
+                    },
+                    "alpha": 1.0,
+                    "isLit": false
+                }
+            }
+        ]
+    }
+]

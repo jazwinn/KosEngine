@@ -1,0 +1,170 @@
+[
+    {
+        "GlobalSettings": {
+            "globalIllumination": 0.2199999988079071,
+            "backgroundColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0
+            }
+        }
+    },
+    {
+        "CursorSettings": {
+            "cursorImage": "../Assets/Texture/UI/img_startScreenCursor.png",
+            "isCursorCentered": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "FearlessEnemy",
+            "layer": 2,
+            "isprefab": true,
+            "tagstr": "Enemy",
+            "prefabname": "FearlessEnemy.prefab",
+            "issync": true
+        },
+        "transform": {
+            "position": {
+                "x": 0.8181537389755249,
+                "y": -7.522530555725098
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 3.0,
+                "y": 3.0
+            }
+        },
+        "collider": {
+            "checkcollision": true,
+            "checkresponse": true,
+            "size": {
+                "x": 0.7400000095367432,
+                "y": 0.23999999463558197
+            },
+            "offset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "drawDebug": true,
+            "radius": 0.5,
+            "shapetype": 0
+        },
+        "enemy": {
+            "enemytag": -1,
+            "enemytype": 1,
+            "enemybehaviour": 1
+        },
+        "rigidbody": {
+            "linearVelocity": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "linearAcceleration": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "angularVelocity": 0.0,
+            "angularAcceleration": 0.0,
+            "mass": 1.0,
+            "inverseMass": 1.0,
+            "linearDamping": 0.9900000095367432,
+            "angularDamping": 0.9900000095367432,
+            "force": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "torque": 0.0,
+            "kinematic": false,
+            "static": false
+        },
+        "sprite": {
+            "imagefile": "ani_scientistWalk_strip8.png",
+            "layer": 28,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": true
+        },
+        "animation": {
+            "frameNumber": 0,
+            "framesPerSecond": 0,
+            "frameTimer": 0.0,
+            "isAnimating": true,
+            "stripCount": 8
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "EnemyScript",
+                    "enabled": true,
+                    "map": [
+                        {
+                            "variable": "isDead",
+                            "base64": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "PlayerMeleeKillZone",
+                    "enabled": false,
+                    "map": []
+                }
+            ]
+        },
+        "audio": [
+            {
+                "name": "aud_humanDeath01",
+                "volume": 0.4490000009536743,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            }
+        ],
+        "raycast": {
+            "raycasts": [
+                {
+                    "raycastID": "RaycastToPlayer",
+                    "israycasting": true,
+                    "targetposition": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "Layer Vector": [
+                        {
+                            "layer": 5
+                        }
+                    ]
+                }
+            ]
+        },
+        "children": [
+            {
+                "name": {
+                    "namestr": "Waypoint 1",
+                    "layer": 0,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "FearlessEnemy.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                }
+            }
+        ]
+    }
+]

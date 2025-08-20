@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A40F3B16-1103-4C00-8171-DA6F0C68335A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GameLogicScripts</RootNamespace>
+    <AssemblyName>GameLogicScripts</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\x64\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <IntermediateOutputPath>C:\Users\ngjaz\AppData\Local\Temp\vsED98.tmp\Debug\</IntermediateOutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>ARM64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\x64\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <IntermediateOutputPath>C:\Users\ngjaz\AppData\Local\Temp\vsED98.tmp\Release\</IntermediateOutputPath>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <BuildProjectReferences>false</BuildProjectReferences>
+    <SkipCompilerExecution>true</SkipCompilerExecution>
+    <DesignTimeBuild>false</DesignTimeBuild>
+    <PostBuildEvent>rmdir /s /q obj</PostBuildEvent>
+    <IntermediateOutputPath>..\..\..\x64\scriptobj</IntermediateOutputPath>
+    <BaseIntermediateOutputPath>..\..\..\x64\scriptobj</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <Target Name="Build" />
+  <Target Name="CoreCompile" />
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LogicScript\VideoScript.cs" />
+    <Compile Include="LogicScript\CreditsScroll.cs" />
+    <Compile Include="LogicScript\EnemyCorpseHalf.cs" />
+    <Compile Include="LogicScript\LightFlashing.cs" />
+    <Compile Include="LogicScript\BossController.cs" />
+    <Compile Include="LogicScript\BossBullet.cs" />
+    <Compile Include="LogicScript\BossDoor.cs" />
+    <Compile Include="LogicScript\CameraFollowPlayerScript.cs" />
+    <Compile Include="LogicScript\CoroutineController.cs" />
+    <Compile Include="LogicScript\CoroutineManager.cs" />
+    <Compile Include="LogicScript\CoroutineTester.cs" />
+    <Compile Include="LogicScript\CutsceneManager.cs" />
+    <Compile Include="LogicScript\CutsceneMenuButtons.cs" />
+    <Compile Include="LogicScript\EnemyBloodPool.cs" />
+    <Compile Include="LogicScript\EnemyBulletScript.cs" />
+    <Compile Include="LogicScript\EnemyController.cs" />
+    <Compile Include="LogicScript\EnemyScript.cs" />
+    <Compile Include="LogicScript\EnemySpawner.cs" />
+    <Compile Include="LogicScript\EnemyState.cs" />
+    <Compile Include="LogicScript\ExitGameButton.cs" />
+    <Compile Include="LogicScript\GameController.cs" />
+    <Compile Include="LogicScript\GameControllerLevel1.cs" />
+    <Compile Include="LogicScript\GameControllerLevel6.cs" />
+    <Compile Include="LogicScript\KillCounter.cs" />
+    <Compile Include="LogicScript\Keycard.cs" />
+    <Compile Include="LogicScript\LazerForwardBackward.cs" />
+    <Compile Include="LogicScript\LevelDoorLocker.cs" />
+    <Compile Include="LogicScript\LevelEndPoint.cs" />
+    <Compile Include="LogicScript\LevelEnemySpawner.cs" />
+    <Compile Include="LogicScript\LevelSelectButton.cs" />
+    <Compile Include="LogicScript\LevelSelection.cs" />
+    <Compile Include="LogicScript\LevelSelectionTextBlink.cs" />
+    <Compile Include="LogicScript\LevelTransition.cs" />
+    <Compile Include="LogicScript\MainMenuScript.cs" />
+    <Compile Include="LogicScript\MainMenuTransition.cs" />
+    <Compile Include="LogicScript\ParticleEmitter.cs" />
+    <Compile Include="LogicScript\PauseMenuButtons.cs" />
+    <Compile Include="LogicScript\SoundCursor.cs" />
+    <Compile Include="LogicScript\PauseMenuCursor.cs" />
+    <Compile Include="LogicScript\PauseMenuManager.cs" />
+    <Compile Include="LogicScript\PlayerBulletType2.cs" />
+    <Compile Include="LogicScript\PlayerBullet.cs" />
+    <Compile Include="LogicScript\PlayerController.cs" />
+    <Compile Include="LogicScript\PlayerGun.cs" />
+    <Compile Include="LogicScript\PlayerLoadoutButtons.cs" />
+    <Compile Include="LogicScript\PlayerLoadoutCursor.cs" />
+    <Compile Include="LogicScript\PlayerLoadoutManager.cs" />
+    <Compile Include="LogicScript\PlayerLoadoutText.cs" />
+    <Compile Include="LogicScript\PlayerMeleeKillZone.cs" />
+    <Compile Include="LogicScript\Prop_GlassWall.cs" />
+    <Compile Include="LogicScript\StartGameButton.cs" />
+    <Compile Include="LogicScript\StartMenuButtons.cs" />
+    <Compile Include="LogicScript\StartMenuCursor.cs" />
+    <Compile Include="LogicScript\SoundManager.cs" />
+    <Compile Include="LogicScript\StartMenuEasterEgg.cs" />
+    <Compile Include="LogicScript\testscript.cs" />
+    <Compile Include="LogicScript\UI_AmmoHUD.cs" />
+    <Compile Include="LogicScript\UI_ControllerSwap.cs" />
+    <Compile Include="LogicScript\UI_FPSCounter.cs" />
+    <Compile Include="LogicScript\UI_PlayerDeath.cs" />
+    <Compile Include="LogicScript\UI_TabPrompt.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Engine\ScriptLibrary\GameScript\GameScript.csproj">
+      <Project>{785fc541-4463-4316-8b60-776cebc341b2}</Project>
+      <Name>GameScript</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

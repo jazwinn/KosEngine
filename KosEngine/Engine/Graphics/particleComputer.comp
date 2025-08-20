@@ -1,0 +1,137 @@
+/******************************************************************/
+/*!
+\file      particleComputer.comp
+\author    Sean Tiu
+\par       s.tiu@digipen.edu
+\date      8th March, 2025
+\brief     This computer shader is used to calculate the particles
+           physics and lifetime
+*/
+/******************************************************************/
+
+R"( #version 430 core
+
+ struct Particle 
+{
+    float lifeSpan;      
+    float rotation;
+    float isActive;      
+    int textureID;      
+    int stripCount;     
+    int frameNumber;    
+    int layer;        
+    float initialEmissionAngle; 
+    vec2 position;       
+    vec2 velocity;       
+    vec2 acceleration;  
+    vec2 scale;          
+    vec4 color;
+    float friction;
+    int framesPerSecond;
+    float frameTimer;
+    float padding3;
+};
+
+layout(std430, binding = 0) buffer ParticleBuffer 
+{
+    Particle particles[];
+};
+
+uniform float deltaTime; //Fixed DT
+
+layout (local_size_x = 256) in;
+
+void main() 
+{
+    uint id = gl_GlobalInvocationID.x;
+
+    if (id >= particles.length())
+    {
+        return;
+    }
+
+    if (particles[id].isActive < 1.f)
+    {
+        return;
+    }
+
+  vec2 frictionForce = -particles[id].velocity * particles[id].friction * deltaTime;
+
+  float newAngle =  particles[id].initialEmissionAngle;
+  vec2 newAccel = {  particles[id].acceleration.x * cos(newAngle) +  particles[id].acceleration.y * sin(newAngle),
+                                                     -particles[id].acceleration.x * sin(newAngle) +  particles[id].acceleration.y * cos(newAngle) };
+
+  particles[id].velocity +=  newAccel * deltaTime;
+  particles[id].velocity +=  frictionForce;
+
+
+
+  if (particles[id].framesPerSecond > 0)
+  {
+    float frameTime = 1.f / particles[id].framesPerSecond;
+    float spriteTotalTime = frameTime * particles[id].stripCount;
+
+    
+    if (particles[id].isActive < 100.f)
+    {
+         particles[id].frameTimer += deltaTime;
+        if (particles[id].frameTimer > spriteTotalTime)
+        {
+            particles[id].frameTimer = 0;
+        }
+        if (frameTime < spriteTotalTime) // Actually Redundant
+        {
+            particles[id].frameNumber = int(particles[id].frameTimer / frameTime);
+        }
+        else
+        {
+            particles[id].frameTimer = 0;
+        }
+    }
+    else
+    {
+        if (particles[id].frameTimer < spriteTotalTime)
+        {
+            particles[id].frameTimer += deltaTime;
+            if (particles[id].frameTimer < spriteTotalTime)
+            {
+                particles[id].frameNumber = int(particles[id].frameTimer / frameTime);
+            }
+            else
+            {
+                particles[id].frameNumber = particles[id].stripCount - 1;
+            }
+        }
+        else
+        {
+         particles[id].frameNumber = particles[id].stripCount - 1;
+        }
+       
+    }
+    
+  
+  }
+
+
+
+  if (length(particles[id].velocity) < 0.01)  // Small threshold
+  {
+    particles[id].velocity = vec2(0.0);
+  }
+  particles[id].position += particles[id].velocity * deltaTime;
+
+
+  particles[id].lifeSpan -= deltaTime;
+
+    if (particles[id].lifeSpan < 0.f)
+    {
+       particles[id].isActive = 0.f;
+    }
+
+  
+   
+
+}
+
+
+)"

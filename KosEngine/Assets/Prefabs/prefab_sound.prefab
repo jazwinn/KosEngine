@@ -1,0 +1,1533 @@
+[
+    {
+        "GlobalSettings": {
+            "globalIllumination": 0.2199999988079071,
+            "backgroundColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0
+            }
+        }
+    },
+    {
+        "CursorSettings": {
+            "cursorImage": "../Assets/Texture/UI/img_startScreenCursor.png",
+            "isCursorCentered": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "prefab_sound",
+            "layer": 0,
+            "isprefab": true,
+            "tagstr": "Default",
+            "prefabname": "prefab_sound.prefab",
+            "issync": false
+        },
+        "transform": {
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "SoundManager",
+                    "enabled": true,
+                    "map": [
+                        {
+                            "variable": "sfx",
+                            "base64": ""
+                        },
+                        {
+                            "variable": "bgm",
+                            "base64": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "children": [
+            {
+                "name": {
+                    "namestr": "img_pauseMenuFrame",
+                    "layer": 16,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "prefab_sound.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 4.0,
+                        "y": 4.0
+                    }
+                },
+                "sprite": {
+                    "imagefile": "img_pauseMenuFrame.png",
+                    "layer": 500,
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0
+                    },
+                    "alpha": 1.0,
+                    "isLit": false
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Music Title",
+                    "layer": 16,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "prefab_sound.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.0,
+                        "y": 3.78761625289917
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 0.20000000298023224,
+                        "y": 0.20000000298023224
+                    }
+                },
+                "text": {
+                    "text": "Sound",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 93.5,
+                    "color": {
+                        "r": 0.10588235408067703,
+                        "g": 0.8823529481887817,
+                        "b": 0.06666667014360428
+                    },
+                    "layer": 502,
+                    "isCentered": true
+                }
+            },
+            {
+                "name": {
+                    "namestr": "BGMTEXT",
+                    "layer": 16,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "prefab_sound.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": -2.9121999740600586,
+                        "y": 2.5
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 0.20000000298023224,
+                        "y": 0.20000000298023224
+                    }
+                },
+                "text": {
+                    "text": "BGM",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 50.0,
+                    "color": {
+                        "r": 0.10588235408067703,
+                        "g": 0.8823529481887817,
+                        "b": 0.06666667014360428
+                    },
+                    "layer": 503,
+                    "isCentered": false
+                }
+            },
+            {
+                "name": {
+                    "namestr": "BGMVALUE",
+                    "layer": 16,
+                    "isprefab": true,
+                    "tagstr": "UIPauseTextBGM",
+                    "prefabname": "prefab_sound.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 2.5877890586853027,
+                        "y": 2.5
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 0.20000000298023224,
+                        "y": 0.20000000298023224
+                    }
+                },
+                "text": {
+                    "text": "100",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 50.0,
+                    "color": {
+                        "r": 0.10588235408067703,
+                        "g": 0.8823529481887817,
+                        "b": 0.06666667014360428
+                    },
+                    "layer": 504,
+                    "isCentered": true
+                }
+            },
+            {
+                "name": {
+                    "namestr": "SFXTEXT",
+                    "layer": 16,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "prefab_sound.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": -2.9100000858306885,
+                        "y": -0.8999999761581421
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 0.20000000298023224,
+                        "y": 0.20000000298023224
+                    }
+                },
+                "text": {
+                    "text": "SFX",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 50.0,
+                    "color": {
+                        "r": 0.10588235408067703,
+                        "g": 0.8823529481887817,
+                        "b": 0.06666667014360428
+                    },
+                    "layer": 505,
+                    "isCentered": false
+                }
+            },
+            {
+                "name": {
+                    "namestr": "SFXVALUE",
+                    "layer": 16,
+                    "isprefab": true,
+                    "tagstr": "UIPauseTextSFX",
+                    "prefabname": "prefab_sound.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 2.5899999141693115,
+                        "y": -0.8999999761581421
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 0.20000000298023224,
+                        "y": 0.20000000298023224
+                    }
+                },
+                "text": {
+                    "text": "100",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 50.0,
+                    "color": {
+                        "r": 0.10588235408067703,
+                        "g": 0.8823529481887817,
+                        "b": 0.06666667014360428
+                    },
+                    "layer": 506,
+                    "isCentered": true
+                }
+            },
+            {
+                "name": {
+                    "namestr": "backButton",
+                    "layer": 16,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "prefab_sound.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.0,
+                        "y": -4.69300651550293
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 3.0,
+                        "y": 3.0
+                    }
+                },
+                "sprite": {
+                    "imagefile": "ani_pauseMenuQuitButton_strip2.png",
+                    "layer": 507,
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0
+                    },
+                    "alpha": 1.0,
+                    "isLit": false
+                },
+                "animation": {
+                    "frameNumber": 0,
+                    "framesPerSecond": 0,
+                    "frameTimer": 0.0,
+                    "isAnimating": true,
+                    "stripCount": 2
+                },
+                "button": {
+                    "force": {
+                        "x": 1211.232177734375,
+                        "y": 340.58026123046875
+                    },
+                    "scale": {
+                        "x": 2.9000000953674316,
+                        "y": 1.0
+                    },
+                    "enablehover": true
+                },
+                "script": {
+                    "scripts": [
+                        {
+                            "name": "PauseMenuButtons",
+                            "enabled": true,
+                            "map": [
+                                {
+                                    "variable": "buttonFunctionNo",
+                                    "base64": "IwAAAMzMzMwA"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "audio": [
+                    {
+                        "name": "aud_buttonClick01",
+                        "volume": 1.0,
+                        "loop": false,
+                        "playOnStart": false,
+                        "isBGM": false,
+                        "isSFX": true
+                    },
+                    {
+                        "name": "aud_buttonHover01",
+                        "volume": 1.0,
+                        "loop": false,
+                        "playOnStart": false,
+                        "isBGM": false,
+                        "isSFX": true
+                    }
+                ],
+                "children": [
+                    {
+                        "name": {
+                            "namestr": "BackButtonText",
+                            "layer": 16,
+                            "isprefab": true,
+                            "tagstr": "Default",
+                            "prefabname": "prefab_sound.prefab",
+                            "issync": true
+                        },
+                        "transform": {
+                            "position": {
+                                "x": -0.03436813876032829,
+                                "y": -0.05792297422885895
+                            },
+                            "rotation": 0.0,
+                            "scale": {
+                                "x": 1.0,
+                                "y": 1.0
+                            }
+                        },
+                        "text": {
+                            "text": "Back",
+                            "text": null,
+                            "filename": "fnt_silkscreenRegular.ttf",
+                            "fontsize": 3.0,
+                            "color": {
+                                "r": 0.0,
+                                "g": 0.0,
+                                "b": 0.0
+                            },
+                            "layer": 508,
+                            "isCentered": true
+                        }
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "namestr": "SoundBarGroup",
+                    "layer": 16,
+                    "isprefab": true,
+                    "tagstr": "SoundBarBGM",
+                    "prefabname": "prefab_sound.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.6676761507987976,
+                        "y": -0.36000001430511475
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                },
+                "children": [
+                    {
+                        "name": {
+                            "namestr": "ani_pauseMenuUserManualButton_strip2",
+                            "layer": 16,
+                            "isprefab": true,
+                            "tagstr": "Default",
+                            "prefabname": "prefab_sound.prefab",
+                            "issync": true
+                        },
+                        "transform": {
+                            "position": {
+                                "x": -3.299999952316284,
+                                "y": 2.200000047683716
+                            },
+                            "rotation": 0.0,
+                            "scale": {
+                                "x": 4.0,
+                                "y": 4.0
+                            }
+                        },
+                        "sprite": {
+                            "imagefile": "ani_soundBar_strip2.png",
+                            "layer": 509,
+                            "color": {
+                                "r": 1.0,
+                                "g": 1.0,
+                                "b": 1.0
+                            },
+                            "alpha": 1.0,
+                            "isLit": false
+                        },
+                        "animation": {
+                            "frameNumber": 1,
+                            "framesPerSecond": 0,
+                            "frameTimer": 0.0,
+                            "isAnimating": true,
+                            "stripCount": 2
+                        }
+                    },
+                    {
+                        "name": {
+                            "namestr": "ani_pauseMenuUserManualButton_strip2",
+                            "layer": 16,
+                            "isprefab": true,
+                            "tagstr": "Default",
+                            "prefabname": "prefab_sound.prefab",
+                            "issync": true
+                        },
+                        "transform": {
+                            "position": {
+                                "x": -2.700000047683716,
+                                "y": 2.200000047683716
+                            },
+                            "rotation": 0.0,
+                            "scale": {
+                                "x": 4.0,
+                                "y": 4.0
+                            }
+                        },
+                        "sprite": {
+                            "imagefile": "ani_soundBar_strip2.png",
+                            "layer": 510,
+                            "color": {
+                                "r": 1.0,
+                                "g": 1.0,
+                                "b": 1.0
+                            },
+                            "alpha": 1.0,
+                            "isLit": false
+                        },
+                        "animation": {
+                            "frameNumber": 1,
+                            "framesPerSecond": 0,
+                            "frameTimer": 0.0,
+                            "isAnimating": true,
+                            "stripCount": 2
+                        }
+                    },
+                    {
+                        "name": {
+                            "namestr": "ani_pauseMenuUserManualButton_strip2",
+                            "layer": 16,
+                            "isprefab": true,
+                            "tagstr": "Default",
+                            "prefabname": "prefab_sound.prefab",
+                            "issync": true
+                        },
+                        "transform": {
+                            "position": {
+                                "x": -2.0999999046325684,
+                                "y": 2.1959502696990967
+                            },
+                            "rotation": 0.0,
+                            "scale": {
+                                "x": 4.0,
+                                "y": 4.0
+                            }
+                        },
+                        "sprite": {
+                            "imagefile": "ani_soundBar_strip2.png",
+                            "layer": 511,
+                            "color": {
+                                "r": 1.0,
+                                "g": 1.0,
+                                "b": 1.0
+                            },
+                            "alpha": 1.0,
+                            "isLit": false
+                        },
+                        "animation": {
+                            "frameNumber": 1,
+                            "framesPerSecond": 0,
+                            "frameTimer": 0.0,
+                            "isAnimating": true,
+                            "stripCount": 2
+                        }
+                    },
+                    {
+                        "name": {
+                            "namestr": "ani_pauseMenuUserManualButton_strip2",
+                            "layer": 16,
+                            "isprefab": true,
+                            "tagstr": "Default",
+                            "prefabname": "prefab_sound.prefab",
+                            "issync": true
+                        },
+                        "transform": {
+                            "position": {
+                                "x": -1.5,
+                                "y": 2.1959502696990967
+                            },
+                            "rotation": 0.0,
+                            "scale": {
+                                "x": 4.0,
+                                "y": 4.0
+                            }
+                        },
+                        "sprite": {
+                            "imagefile": "ani_soundBar_strip2.png",
+                            "layer": 512,
+                            "color": {
+                                "r": 1.0,
+                                "g": 1.0,
+                                "b": 1.0
+                            },
+                            "alpha": 1.0,
+                            "isLit": false
+                        },
+                        "animation": {
+                            "frameNumber": 1,
+                            "framesPerSecond": 0,
+                            "frameTimer": 0.0,
+                            "isAnimating": true,
+                            "stripCount": 2
+                        }
+                    },
+                    {
+                        "name": {
+                            "namestr": "ani_pauseMenuUserManualButton_strip2",
+                            "layer": 16,
+                            "isprefab": true,
+                            "tagstr": "Default",
+                            "prefabname": "prefab_sound.prefab",
+                            "issync": true
+                        },
+                        "transform": {
+                            "position": {
+                                "x": -0.8999999761581421,
+                                "y": 2.1959502696990967
+                            },
+                            "rotation": 0.0,
+                            "scale": {
+                                "x": 4.0,
+                                "y": 4.0
+                            }
+                        },
+                        "sprite": {
+                            "imagefile": "ani_soundBar_strip2.png",
+                            "layer": 513,
+                            "color": {
+                                "r": 1.0,
+                                "g": 1.0,
+                                "b": 1.0
+                            },
+                            "alpha": 1.0,
+                            "isLit": false
+                        },
+                        "animation": {
+                            "frameNumber": 1,
+                            "framesPerSecond": 0,
+                            "frameTimer": 0.0,
+                            "isAnimating": true,
+                            "stripCount": 2
+                        }
+                    },
+                    {
+                        "name": {
+                            "namestr": "ani_pauseMenuUserManualButton_strip2",
+                            "layer": 16,
+                            "isprefab": true,
+                            "tagstr": "Default",
+                            "prefabname": "prefab_sound.prefab",
+                            "issync": true
+                        },
+                        "transform": {
+                            "position": {
+                                "x": -0.30000001192092896,
+                                "y": 2.1959502696990967
+                            },
+                            "rotation": 0.0,
+                            "scale": {
+                                "x": 4.0,
+                                "y": 4.0
+                            }
+                        },
+                        "sprite": {
+                            "imagefile": "ani_soundBar_strip2.png",
+                            "layer": 514,
+                            "color": {
+                                "r": 1.0,
+                                "g": 1.0,
+                                "b": 1.0
+                            },
+                            "alpha": 1.0,
+                            "isLit": false
+                        },
+                        "animation": {
+                            "frameNumber": 1,
+                            "framesPerSecond": 0,
+                            "frameTimer": 0.0,
+                            "isAnimating": true,
+                            "stripCount": 2
+                        }
+                    },
+                    {
+                        "name": {
+                            "namestr": "ani_pauseMenuUserManualButton_strip2",
+                            "layer": 16,
+                            "isprefab": true,
+                            "tagstr": "Default",
+                            "prefabname": "prefab_sound.prefab",
+                            "issync": true
+                        },
+                        "transform": {
+                            "position": {
+                                "x": 0.30000001192092896,
+                                "y": 2.1959502696990967
+                            },
+                            "rotation": 0.0,
+                            "scale": {
+                                "x": 4.0,
+                                "y": 4.0
+                            }
+                        },
+                        "sprite": {
+                            "imagefile": "ani_soundBar_strip2.png",
+                            "layer": 515,
+                            "color": {
+                                "r": 1.0,
+                                "g": 1.0,
+                                "b": 1.0
+                            },
+                            "alpha": 1.0,
+                            "isLit": false
+                        },
+                        "animation": {
+                            "frameNumber": 1,
+                            "framesPerSecond": 0,
+                            "frameTimer": 0.0,
+                            "isAnimating": true,
+                            "stripCount": 2
+                        }
+                    },
+                    {
+                        "name": {
+                            "namestr": "ani_pauseMenuUserManualButton_strip2",
+                            "layer": 16,
+                            "isprefab": true,
+                            "tagstr": "Default",
+                            "prefabname": "prefab_sound.prefab",
+                            "issync": true
+                        },
+                        "transform": {
+                            "position": {
+                                "x": 0.8999999761581421,
+                                "y": 2.1959502696990967
+                            },
+                            "rotation": 0.0,
+                            "scale": {
+                                "x": 4.0,
+                                "y": 4.0
+                            }
+                        },
+                        "sprite": {
+                            "imagefile": "ani_soundBar_strip2.png",
+                            "layer": 516,
+                            "color": {
+                                "r": 1.0,
+                                "g": 1.0,
+                                "b": 1.0
+                            },
+                            "alpha": 1.0,
+                            "isLit": false
+                        },
+                        "animation": {
+                            "frameNumber": 1,
+                            "framesPerSecond": 0,
+                            "frameTimer": 0.0,
+                            "isAnimating": true,
+                            "stripCount": 2
+                        }
+                    },
+                    {
+                        "name": {
+                            "namestr": "ani_pauseMenuUserManualButton_strip2",
+                            "layer": 16,
+                            "isprefab": true,
+                            "tagstr": "Default",
+                            "prefabname": "prefab_sound.prefab",
+                            "issync": true
+                        },
+                        "transform": {
+                            "position": {
+                                "x": 1.5,
+                                "y": 2.1959502696990967
+                            },
+                            "rotation": 0.0,
+                            "scale": {
+                                "x": 4.0,
+                                "y": 4.0
+                            }
+                        },
+                        "sprite": {
+                            "imagefile": "ani_soundBar_strip2.png",
+                            "layer": 517,
+                            "color": {
+                                "r": 1.0,
+                                "g": 1.0,
+                                "b": 1.0
+                            },
+                            "alpha": 1.0,
+                            "isLit": false
+                        },
+                        "animation": {
+                            "frameNumber": 1,
+                            "framesPerSecond": 0,
+                            "frameTimer": 0.0,
+                            "isAnimating": true,
+                            "stripCount": 2
+                        }
+                    },
+                    {
+                        "name": {
+                            "namestr": "ani_pauseMenuUserManualButton_strip2",
+                            "layer": 16,
+                            "isprefab": true,
+                            "tagstr": "Default",
+                            "prefabname": "prefab_sound.prefab",
+                            "issync": true
+                        },
+                        "transform": {
+                            "position": {
+                                "x": 2.0999999046325684,
+                                "y": 2.1959502696990967
+                            },
+                            "rotation": 0.0,
+                            "scale": {
+                                "x": 4.0,
+                                "y": 4.0
+                            }
+                        },
+                        "sprite": {
+                            "imagefile": "ani_soundBar_strip2.png",
+                            "layer": 518,
+                            "color": {
+                                "r": 1.0,
+                                "g": 1.0,
+                                "b": 1.0
+                            },
+                            "alpha": 1.0,
+                            "isLit": false
+                        },
+                        "animation": {
+                            "frameNumber": 1,
+                            "framesPerSecond": 0,
+                            "frameTimer": 0.0,
+                            "isAnimating": true,
+                            "stripCount": 2
+                        }
+                    },
+                    {
+                        "name": {
+                            "namestr": "ArrowIncrease",
+                            "layer": 16,
+                            "isprefab": true,
+                            "tagstr": "Default",
+                            "prefabname": "prefab_sound.prefab",
+                            "issync": true
+                        },
+                        "transform": {
+                            "position": {
+                                "x": 2.0092201232910156,
+                                "y": 1.1603811979293823
+                            },
+                            "rotation": 0.0,
+                            "scale": {
+                                "x": 5.0,
+                                "y": 5.0
+                            }
+                        },
+                        "sprite": {
+                            "imagefile": "ani_inventoryRightArrow_strip2.png",
+                            "layer": 519,
+                            "color": {
+                                "r": 1.0,
+                                "g": 1.0,
+                                "b": 1.0
+                            },
+                            "alpha": 1.0,
+                            "isLit": false
+                        },
+                        "animation": {
+                            "frameNumber": 0,
+                            "framesPerSecond": 0,
+                            "frameTimer": 0.0,
+                            "isAnimating": true,
+                            "stripCount": 2
+                        },
+                        "button": {
+                            "force": {
+                                "x": 1442.4674072265625,
+                                "y": 815.1090087890625
+                            },
+                            "scale": {
+                                "x": 0.7599999904632568,
+                                "y": 0.6800000071525574
+                            },
+                            "enablehover": true
+                        },
+                        "script": {
+                            "scripts": [
+                                {
+                                    "name": "PauseMenuButtons",
+                                    "enabled": true,
+                                    "map": [
+                                        {
+                                            "variable": "buttonFunctionNo",
+                                            "base64": "UAAAAMzMzMwA"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "audio": [
+                            {
+                                "name": "aud_buttonHover01",
+                                "volume": 1.0,
+                                "loop": false,
+                                "playOnStart": false,
+                                "isBGM": false,
+                                "isSFX": true
+                            },
+                            {
+                                "name": "aud_buttonClick01",
+                                "volume": 1.0,
+                                "loop": false,
+                                "playOnStart": false,
+                                "isBGM": false,
+                                "isSFX": true
+                            }
+                        ]
+                    },
+                    {
+                        "name": {
+                            "namestr": "ArrowDecrease",
+                            "layer": 16,
+                            "isprefab": true,
+                            "tagstr": "Default",
+                            "prefabname": "prefab_sound.prefab",
+                            "issync": true
+                        },
+                        "transform": {
+                            "position": {
+                                "x": -3.1619873046875,
+                                "y": 1.159999966621399
+                            },
+                            "rotation": 0.0,
+                            "scale": {
+                                "x": 5.0,
+                                "y": 5.0
+                            }
+                        },
+                        "sprite": {
+                            "imagefile": "ani_inventoryLeftArrow_strip2.png",
+                            "layer": 520,
+                            "color": {
+                                "r": 1.0,
+                                "g": 1.0,
+                                "b": 1.0
+                            },
+                            "alpha": 1.0,
+                            "isLit": false
+                        },
+                        "animation": {
+                            "frameNumber": 0,
+                            "framesPerSecond": 0,
+                            "frameTimer": 0.0,
+                            "isAnimating": true,
+                            "stripCount": 2
+                        },
+                        "button": {
+                            "force": {
+                                "x": 995.7691040039063,
+                                "y": 815.0760498046875
+                            },
+                            "scale": {
+                                "x": 0.6399999856948853,
+                                "y": 0.7400000095367432
+                            },
+                            "enablehover": true
+                        },
+                        "script": {
+                            "scripts": [
+                                {
+                                    "name": "PauseMenuButtons",
+                                    "enabled": true,
+                                    "map": [
+                                        {
+                                            "variable": "buttonFunctionNo",
+                                            "base64": "UQAAAMzMzMwA"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "audio": [
+                            {
+                                "name": "aud_buttonHover01",
+                                "volume": 1.0,
+                                "loop": false,
+                                "playOnStart": false,
+                                "isBGM": false,
+                                "isSFX": true
+                            },
+                            {
+                                "name": "aud_buttonClick01",
+                                "volume": 1.0,
+                                "loop": false,
+                                "playOnStart": false,
+                                "isBGM": false,
+                                "isSFX": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": {
+                    "namestr": "SoundBarGroup",
+                    "layer": 16,
+                    "isprefab": true,
+                    "tagstr": "SoundBarSFX",
+                    "prefabname": "prefab_sound.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.6700000166893005,
+                        "y": -3.740000009536743
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                },
+                "children": [
+                    {
+                        "name": {
+                            "namestr": "ani_pauseMenuUserManualButton_strip2",
+                            "layer": 16,
+                            "isprefab": true,
+                            "tagstr": "Default",
+                            "prefabname": "prefab_sound.prefab",
+                            "issync": true
+                        },
+                        "transform": {
+                            "position": {
+                                "x": -3.299999952316284,
+                                "y": 2.200000047683716
+                            },
+                            "rotation": 0.0,
+                            "scale": {
+                                "x": 4.0,
+                                "y": 4.0
+                            }
+                        },
+                        "sprite": {
+                            "imagefile": "ani_soundBar_strip2.png",
+                            "layer": 521,
+                            "color": {
+                                "r": 1.0,
+                                "g": 1.0,
+                                "b": 1.0
+                            },
+                            "alpha": 1.0,
+                            "isLit": false
+                        },
+                        "animation": {
+                            "frameNumber": 1,
+                            "framesPerSecond": 0,
+                            "frameTimer": 0.0,
+                            "isAnimating": true,
+                            "stripCount": 2
+                        }
+                    },
+                    {
+                        "name": {
+                            "namestr": "ani_pauseMenuUserManualButton_strip2",
+                            "layer": 16,
+                            "isprefab": true,
+                            "tagstr": "Default",
+                            "prefabname": "prefab_sound.prefab",
+                            "issync": true
+                        },
+                        "transform": {
+                            "position": {
+                                "x": -2.700000047683716,
+                                "y": 2.1959502696990967
+                            },
+                            "rotation": 0.0,
+                            "scale": {
+                                "x": 4.0,
+                                "y": 4.0
+                            }
+                        },
+                        "sprite": {
+                            "imagefile": "ani_soundBar_strip2.png",
+                            "layer": 522,
+                            "color": {
+                                "r": 1.0,
+                                "g": 1.0,
+                                "b": 1.0
+                            },
+                            "alpha": 1.0,
+                            "isLit": false
+                        },
+                        "animation": {
+                            "frameNumber": 1,
+                            "framesPerSecond": 0,
+                            "frameTimer": 0.0,
+                            "isAnimating": true,
+                            "stripCount": 2
+                        }
+                    },
+                    {
+                        "name": {
+                            "namestr": "ani_pauseMenuUserManualButton_strip2",
+                            "layer": 16,
+                            "isprefab": true,
+                            "tagstr": "Default",
+                            "prefabname": "prefab_sound.prefab",
+                            "issync": true
+                        },
+                        "transform": {
+                            "position": {
+                                "x": -2.0999999046325684,
+                                "y": 2.1959502696990967
+                            },
+                            "rotation": 0.0,
+                            "scale": {
+                                "x": 4.0,
+                                "y": 4.0
+                            }
+                        },
+                        "sprite": {
+                            "imagefile": "ani_soundBar_strip2.png",
+                            "layer": 523,
+                            "color": {
+                                "r": 1.0,
+                                "g": 1.0,
+                                "b": 1.0
+                            },
+                            "alpha": 1.0,
+                            "isLit": false
+                        },
+                        "animation": {
+                            "frameNumber": 1,
+                            "framesPerSecond": 0,
+                            "frameTimer": 0.0,
+                            "isAnimating": true,
+                            "stripCount": 2
+                        }
+                    },
+                    {
+                        "name": {
+                            "namestr": "ani_pauseMenuUserManualButton_strip2",
+                            "layer": 16,
+                            "isprefab": true,
+                            "tagstr": "Default",
+                            "prefabname": "prefab_sound.prefab",
+                            "issync": true
+                        },
+                        "transform": {
+                            "position": {
+                                "x": -1.5,
+                                "y": 2.1959502696990967
+                            },
+                            "rotation": 0.0,
+                            "scale": {
+                                "x": 4.0,
+                                "y": 4.0
+                            }
+                        },
+                        "sprite": {
+                            "imagefile": "ani_soundBar_strip2.png",
+                            "layer": 524,
+                            "color": {
+                                "r": 1.0,
+                                "g": 1.0,
+                                "b": 1.0
+                            },
+                            "alpha": 1.0,
+                            "isLit": false
+                        },
+                        "animation": {
+                            "frameNumber": 1,
+                            "framesPerSecond": 0,
+                            "frameTimer": 0.0,
+                            "isAnimating": true,
+                            "stripCount": 2
+                        }
+                    },
+                    {
+                        "name": {
+                            "namestr": "ani_pauseMenuUserManualButton_strip2",
+                            "layer": 16,
+                            "isprefab": true,
+                            "tagstr": "Default",
+                            "prefabname": "prefab_sound.prefab",
+                            "issync": true
+                        },
+                        "transform": {
+                            "position": {
+                                "x": -0.8999999761581421,
+                                "y": 2.1959502696990967
+                            },
+                            "rotation": 0.0,
+                            "scale": {
+                                "x": 4.0,
+                                "y": 4.0
+                            }
+                        },
+                        "sprite": {
+                            "imagefile": "ani_soundBar_strip2.png",
+                            "layer": 525,
+                            "color": {
+                                "r": 1.0,
+                                "g": 1.0,
+                                "b": 1.0
+                            },
+                            "alpha": 1.0,
+                            "isLit": false
+                        },
+                        "animation": {
+                            "frameNumber": 1,
+                            "framesPerSecond": 0,
+                            "frameTimer": 0.0,
+                            "isAnimating": true,
+                            "stripCount": 2
+                        }
+                    },
+                    {
+                        "name": {
+                            "namestr": "ani_pauseMenuUserManualButton_strip2",
+                            "layer": 16,
+                            "isprefab": true,
+                            "tagstr": "Default",
+                            "prefabname": "prefab_sound.prefab",
+                            "issync": true
+                        },
+                        "transform": {
+                            "position": {
+                                "x": -0.30000001192092896,
+                                "y": 2.1959502696990967
+                            },
+                            "rotation": 0.0,
+                            "scale": {
+                                "x": 4.0,
+                                "y": 4.0
+                            }
+                        },
+                        "sprite": {
+                            "imagefile": "ani_soundBar_strip2.png",
+                            "layer": 526,
+                            "color": {
+                                "r": 1.0,
+                                "g": 1.0,
+                                "b": 1.0
+                            },
+                            "alpha": 1.0,
+                            "isLit": false
+                        },
+                        "animation": {
+                            "frameNumber": 1,
+                            "framesPerSecond": 0,
+                            "frameTimer": 0.0,
+                            "isAnimating": true,
+                            "stripCount": 2
+                        }
+                    },
+                    {
+                        "name": {
+                            "namestr": "ani_pauseMenuUserManualButton_strip2",
+                            "layer": 16,
+                            "isprefab": true,
+                            "tagstr": "Default",
+                            "prefabname": "prefab_sound.prefab",
+                            "issync": true
+                        },
+                        "transform": {
+                            "position": {
+                                "x": 0.30000001192092896,
+                                "y": 2.1959502696990967
+                            },
+                            "rotation": 0.0,
+                            "scale": {
+                                "x": 4.0,
+                                "y": 4.0
+                            }
+                        },
+                        "sprite": {
+                            "imagefile": "ani_soundBar_strip2.png",
+                            "layer": 527,
+                            "color": {
+                                "r": 1.0,
+                                "g": 1.0,
+                                "b": 1.0
+                            },
+                            "alpha": 1.0,
+                            "isLit": false
+                        },
+                        "animation": {
+                            "frameNumber": 1,
+                            "framesPerSecond": 0,
+                            "frameTimer": 0.0,
+                            "isAnimating": true,
+                            "stripCount": 2
+                        }
+                    },
+                    {
+                        "name": {
+                            "namestr": "ani_pauseMenuUserManualButton_strip2",
+                            "layer": 16,
+                            "isprefab": true,
+                            "tagstr": "Default",
+                            "prefabname": "prefab_sound.prefab",
+                            "issync": true
+                        },
+                        "transform": {
+                            "position": {
+                                "x": 0.8999999761581421,
+                                "y": 2.1959502696990967
+                            },
+                            "rotation": 0.0,
+                            "scale": {
+                                "x": 4.0,
+                                "y": 4.0
+                            }
+                        },
+                        "sprite": {
+                            "imagefile": "ani_soundBar_strip2.png",
+                            "layer": 528,
+                            "color": {
+                                "r": 1.0,
+                                "g": 1.0,
+                                "b": 1.0
+                            },
+                            "alpha": 1.0,
+                            "isLit": false
+                        },
+                        "animation": {
+                            "frameNumber": 1,
+                            "framesPerSecond": 0,
+                            "frameTimer": 0.0,
+                            "isAnimating": true,
+                            "stripCount": 2
+                        }
+                    },
+                    {
+                        "name": {
+                            "namestr": "ani_pauseMenuUserManualButton_strip2",
+                            "layer": 16,
+                            "isprefab": true,
+                            "tagstr": "Default",
+                            "prefabname": "prefab_sound.prefab",
+                            "issync": true
+                        },
+                        "transform": {
+                            "position": {
+                                "x": 1.5,
+                                "y": 2.1959502696990967
+                            },
+                            "rotation": 0.0,
+                            "scale": {
+                                "x": 4.0,
+                                "y": 4.0
+                            }
+                        },
+                        "sprite": {
+                            "imagefile": "ani_soundBar_strip2.png",
+                            "layer": 529,
+                            "color": {
+                                "r": 1.0,
+                                "g": 1.0,
+                                "b": 1.0
+                            },
+                            "alpha": 1.0,
+                            "isLit": false
+                        },
+                        "animation": {
+                            "frameNumber": 1,
+                            "framesPerSecond": 0,
+                            "frameTimer": 0.0,
+                            "isAnimating": true,
+                            "stripCount": 2
+                        }
+                    },
+                    {
+                        "name": {
+                            "namestr": "ani_pauseMenuUserManualButton_strip2",
+                            "layer": 16,
+                            "isprefab": true,
+                            "tagstr": "Default",
+                            "prefabname": "prefab_sound.prefab",
+                            "issync": true
+                        },
+                        "transform": {
+                            "position": {
+                                "x": 2.0999999046325684,
+                                "y": 2.1959502696990967
+                            },
+                            "rotation": 0.0,
+                            "scale": {
+                                "x": 4.0,
+                                "y": 4.0
+                            }
+                        },
+                        "sprite": {
+                            "imagefile": "ani_soundBar_strip2.png",
+                            "layer": 530,
+                            "color": {
+                                "r": 1.0,
+                                "g": 1.0,
+                                "b": 1.0
+                            },
+                            "alpha": 1.0,
+                            "isLit": false
+                        },
+                        "animation": {
+                            "frameNumber": 1,
+                            "framesPerSecond": 0,
+                            "frameTimer": 0.0,
+                            "isAnimating": true,
+                            "stripCount": 2
+                        }
+                    },
+                    {
+                        "name": {
+                            "namestr": "ArrowIncrease",
+                            "layer": 16,
+                            "isprefab": true,
+                            "tagstr": "Default",
+                            "prefabname": "prefab_sound.prefab",
+                            "issync": true
+                        },
+                        "transform": {
+                            "position": {
+                                "x": 2.036818504333496,
+                                "y": 1.1804814338684082
+                            },
+                            "rotation": 0.0,
+                            "scale": {
+                                "x": 5.0,
+                                "y": 5.0
+                            }
+                        },
+                        "sprite": {
+                            "imagefile": "ani_inventoryRightArrow_strip2.png",
+                            "layer": 531,
+                            "color": {
+                                "r": 1.0,
+                                "g": 1.0,
+                                "b": 1.0
+                            },
+                            "alpha": 1.0,
+                            "isLit": false
+                        },
+                        "animation": {
+                            "frameNumber": 0,
+                            "framesPerSecond": 0,
+                            "frameTimer": 0.0,
+                            "isAnimating": true,
+                            "stripCount": 2
+                        },
+                        "button": {
+                            "force": {
+                                "x": 1445.0521240234375,
+                                "y": 524.8748168945313
+                            },
+                            "scale": {
+                                "x": 0.6399999856948853,
+                                "y": 0.7599999904632568
+                            },
+                            "enablehover": true
+                        },
+                        "script": {
+                            "scripts": [
+                                {
+                                    "name": "PauseMenuButtons",
+                                    "enabled": true,
+                                    "map": [
+                                        {
+                                            "variable": "buttonFunctionNo",
+                                            "base64": "UgAAAMzMzMwA"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "audio": [
+                            {
+                                "name": "aud_buttonHover01",
+                                "volume": 1.0,
+                                "loop": false,
+                                "playOnStart": false,
+                                "isBGM": false,
+                                "isSFX": true
+                            },
+                            {
+                                "name": "aud_buttonClick01",
+                                "volume": 1.0,
+                                "loop": false,
+                                "playOnStart": false,
+                                "isBGM": false,
+                                "isSFX": true
+                            }
+                        ]
+                    },
+                    {
+                        "name": {
+                            "namestr": "ArrowDecrease",
+                            "layer": 16,
+                            "isprefab": true,
+                            "tagstr": "Default",
+                            "prefabname": "prefab_sound.prefab",
+                            "issync": true
+                        },
+                        "transform": {
+                            "position": {
+                                "x": -3.1600000858306885,
+                                "y": 1.1799999475479126
+                            },
+                            "rotation": 0.0,
+                            "scale": {
+                                "x": 5.0,
+                                "y": 5.0
+                            }
+                        },
+                        "sprite": {
+                            "imagefile": "ani_inventoryLeftArrow_strip2.png",
+                            "layer": 532,
+                            "color": {
+                                "r": 1.0,
+                                "g": 1.0,
+                                "b": 1.0
+                            },
+                            "alpha": 1.0,
+                            "isLit": false
+                        },
+                        "animation": {
+                            "frameNumber": 0,
+                            "framesPerSecond": 0,
+                            "frameTimer": 0.0,
+                            "isAnimating": true,
+                            "stripCount": 2
+                        },
+                        "button": {
+                            "force": {
+                                "x": 996.1415405273438,
+                                "y": 524.8331909179688
+                            },
+                            "scale": {
+                                "x": 0.7400000095367432,
+                                "y": 0.7799999713897705
+                            },
+                            "enablehover": true
+                        },
+                        "script": {
+                            "scripts": [
+                                {
+                                    "name": "PauseMenuButtons",
+                                    "enabled": true,
+                                    "map": [
+                                        {
+                                            "variable": "buttonFunctionNo",
+                                            "base64": "UwAAAMzMzMwA"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "audio": [
+                            {
+                                "name": "aud_buttonHover01",
+                                "volume": 1.0,
+                                "loop": false,
+                                "playOnStart": false,
+                                "isBGM": false,
+                                "isSFX": true
+                            },
+                            {
+                                "name": "aud_buttonClick01",
+                                "volume": 1.0,
+                                "loop": false,
+                                "playOnStart": false,
+                                "isBGM": false,
+                                "isSFX": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,212 @@
+[
+    {
+        "GlobalSettings": {
+            "globalIllumination": 0.2199999988079071,
+            "backgroundColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0
+            }
+        }
+    },
+    {
+        "CursorSettings": {
+            "cursorImage": "../Assets/Texture/UI/img_startScreenCursor.png",
+            "isCursorCentered": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "door_block",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 0.5208333134651184,
+                "y": 0.5208333134651184
+            }
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "BossDoor",
+                    "enabled": true,
+                    "map": []
+                }
+            ]
+        },
+        "tilemap": {
+            "imagefile": "img_tileFloorMap.png",
+            "layer": 64,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "rowlength": 2,
+            "columnlength": 19,
+            "pictureRowLength": 13,
+            "pictureColumnLength": 6,
+            "tilePictureIndex": [
+                [
+                    35,
+                    35
+                ],
+                [
+                    19,
+                    19
+                ],
+                [
+                    22,
+                    22
+                ],
+                [
+                    22,
+                    22
+                ],
+                [
+                    22,
+                    22
+                ],
+                [
+                    22,
+                    22
+                ],
+                [
+                    22,
+                    22
+                ],
+                [
+                    22,
+                    22
+                ],
+                [
+                    22,
+                    22
+                ],
+                [
+                    22,
+                    22
+                ],
+                [
+                    22,
+                    22
+                ],
+                [
+                    22,
+                    22
+                ],
+                [
+                    22,
+                    22
+                ],
+                [
+                    22,
+                    22
+                ],
+                [
+                    22,
+                    22
+                ],
+                [
+                    22,
+                    22
+                ],
+                [
+                    22,
+                    22
+                ],
+                [
+                    22,
+                    22
+                ],
+                [
+                    9,
+                    9
+                ]
+            ]
+        },
+        "children": [
+            {
+                "name": {
+                    "namestr": "Wall",
+                    "layer": 5,
+                    "isprefab": true,
+                    "tagstr": "Wall",
+                    "prefabname": "Wall.prefab",
+                    "issync": false
+                },
+                "transform": {
+                    "position": {
+                        "x": 3.318809986114502,
+                        "y": 3.2366461753845215
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                },
+                "collider": {
+                    "checkcollision": true,
+                    "checkresponse": true,
+                    "size": {
+                        "x": 16.6200008392334,
+                        "y": 6.400000095367432
+                    },
+                    "offset": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "drawDebug": true,
+                    "radius": 0.5,
+                    "shapetype": 0
+                }
+            },
+            {
+                "name": {
+                    "namestr": "Wall",
+                    "layer": 5,
+                    "isprefab": true,
+                    "tagstr": "Wall",
+                    "prefabname": "Wall.prefab",
+                    "issync": false
+                },
+                "transform": {
+                    "position": {
+                        "x": 3.318809986114502,
+                        "y": -36.0099983215332
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                },
+                "collider": {
+                    "checkcollision": true,
+                    "checkresponse": true,
+                    "size": {
+                        "x": 16.6200008392334,
+                        "y": 6.400000095367432
+                    },
+                    "offset": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "drawDebug": true,
+                    "radius": 0.5,
+                    "shapetype": 0
+                }
+            }
+        ]
+    }
+]

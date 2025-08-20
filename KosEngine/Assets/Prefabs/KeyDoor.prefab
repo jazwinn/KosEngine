@@ -1,0 +1,80 @@
+[
+    {
+        "GlobalSettings": {
+            "globalIllumination": 0.2199999988079071,
+            "backgroundColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0
+            }
+        }
+    },
+    {
+        "CursorSettings": {
+            "cursorImage": "../Assets/Texture/UI/img_startScreenCursor.png",
+            "isCursorCentered": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "KeyDoor",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": -5.0,
+                "y": 39.0
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 0.5208333134651184,
+                "y": 0.5208333134651184
+            }
+        },
+        "collider": {
+            "checkcollision": false,
+            "checkresponse": true,
+            "size": {
+                "x": 26.68000030517578,
+                "y": 1.399999976158142
+            },
+            "offset": {
+                "x": 9.15999984741211,
+                "y": 0.3400000035762787
+            },
+            "drawDebug": true,
+            "radius": 0.5,
+            "shapetype": 0
+        },
+        "tilemap": {
+            "imagefile": "img_tileFloorMap.png",
+            "layer": 100,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "rowlength": 10,
+            "columnlength": 1,
+            "pictureRowLength": 13,
+            "pictureColumnLength": 6,
+            "tilePictureIndex": [
+                [
+                    34,
+                    35,
+                    35,
+                    35,
+                    35,
+                    35,
+                    35,
+                    35,
+                    35,
+                    36
+                ]
+            ]
+        }
+    }
+]

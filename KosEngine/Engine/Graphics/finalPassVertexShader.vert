@@ -1,0 +1,28 @@
+/******************************************************************/
+/*!
+\file      finalPassVertexShader.vert
+\author    Sean Tiu
+\par       s.tiu@digipen.edu
+\date      17th Jan, 2025
+\brief     A vertex shader used for final pass rendering.
+
+Copyright (C) 2024 DigiPen Institute of Technology.
+Reproduction or disclosure of this file or its contents without the
+prior written consent of DigiPen Institute of Technology is prohibited.
+*/
+/******************************************************************/
+R"( #version 460 core
+
+layout (location = 0) in vec2 vertex;
+layout (location = 1) in vec2 inTexCoords;
+
+out vec2 texCoords;
+
+void main()
+{
+    gl_Position = vec4(vertex.x, vertex.y, 0.0, 1.0); 
+    texCoords = inTexCoords;
+}  
+
+
+)"

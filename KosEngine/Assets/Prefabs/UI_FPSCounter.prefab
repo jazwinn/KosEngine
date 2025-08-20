@@ -1,0 +1,59 @@
+[
+    {
+        "GlobalSettings": {
+            "globalIllumination": 0.2199999988079071,
+            "backgroundColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0
+            }
+        }
+    },
+    {
+        "CursorSettings": {
+            "cursorImage": "../Assets/Texture/UI/img_startScreenCursor.png",
+            "isCursorCentered": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "UI_FPSCounter",
+            "layer": 15,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": 1.5262371301651,
+                "y": 0.8299999833106995
+            },
+            "rotation": 0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "text": {
+            "text": "FPS : 000",
+            "text": null,
+            "filename": "fnt_silkscreenRegular.ttf",
+            "fontsize": 1.5,
+            "color": {
+                "r": 0.10588235408067703,
+                "g": 0.8823529481887817,
+                "b": 0.06666667014360428
+            },
+            "layer": 900,
+            "isCentered": true
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "UI_FPSCounter",
+                    "enabled": true,
+                    "map": []
+                }
+            ]
+        }
+    }
+]

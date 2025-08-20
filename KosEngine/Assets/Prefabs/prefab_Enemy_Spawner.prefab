@@ -1,0 +1,76 @@
+[
+    {
+        "GlobalSettings": {
+            "globalIllumination": 0.2199999988079071,
+            "backgroundColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0
+            }
+        }
+    },
+    {
+        "CursorSettings": {
+            "cursorImage": "../Assets/Texture/UI/img_startScreenCursor.png",
+            "isCursorCentered": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "prefab_Enemy_Spawner",
+            "layer": 0,
+            "isprefab": true,
+            "tagstr": "Default",
+            "prefabname": "prefab_Enemy_Spawner.prefab",
+            "issync": false
+        },
+        "transform": {
+            "position": {
+                "x": 21.053258895874023,
+                "y": -12.054062843322754
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 0.18000000715255737,
+                "y": 0.23999999463558197
+            }
+        },
+        "collider": {
+            "checkcollision": false,
+            "checkresponse": false,
+            "size": {
+                "x": 6.400000095367432,
+                "y": 5.639999866485596
+            },
+            "offset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "drawDebug": true,
+            "radius": 0.5,
+            "shapetype": 0
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "EnemySpawner",
+                    "enabled": true,
+                    "map": [
+                        {
+                            "variable": "spawnlimit",
+                            "base64": "AgAAAMzMzMwA"
+                        },
+                        {
+                            "variable": "minSpawnInterval",
+                            "base64": "AADAQMzMzMwA"
+                        },
+                        {
+                            "variable": "maxSpawnInterval",
+                            "base64": "AABAQczMzMwA"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]

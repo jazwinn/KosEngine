@@ -1,0 +1,93 @@
+[
+    {
+        "GlobalSettings": {
+            "globalIllumination": 0.2199999988079071,
+            "backgroundColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0
+            }
+        }
+    },
+    {
+        "CursorSettings": {
+            "cursorImage": "../Assets/Texture/UI/img_startScreenCursor.png",
+            "isCursorCentered": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "UI_Deathscreen",
+            "layer": 0,
+            "isprefab": true,
+            "tagstr": "Default",
+            "prefabname": "UI_Deathscreen.prefab",
+            "issync": true
+        },
+        "transform": {
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "sprite": {
+            "imagefile": "",
+            "layer": 0,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": true
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "UI_PlayerDeath",
+                    "enabled": true,
+                    "map": []
+                }
+            ]
+        },
+        "children": [
+            {
+                "name": {
+                    "namestr": "UI_Deathscreen_Image",
+                    "layer": 9,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "UI_Deathscreen.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 0.38999998569488525,
+                        "y": 0.38999998569488525
+                    }
+                },
+                "sprite": {
+                    "imagefile": "img_deathScreen.png",
+                    "layer": 700,
+                    "color": {
+                        "r": 1.0,
+                        "g": 1.0,
+                        "b": 1.0
+                    },
+                    "alpha": 1.0,
+                    "isLit": false
+                }
+            }
+        ]
+    }
+]

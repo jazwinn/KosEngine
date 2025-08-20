@@ -1,0 +1,125 @@
+[
+    {
+        "GlobalSettings": {
+            "globalIllumination": 0.2199999988079071,
+            "backgroundColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0
+            }
+        }
+    },
+    {
+        "CursorSettings": {
+            "cursorImage": "../Assets/Texture/UI/img_startScreenCursor.png",
+            "isCursorCentered": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "prefab_enemyBullet",
+            "layer": 2,
+            "isprefab": false,
+            "tagstr": "EnemyBullet"
+        },
+        "transform": {
+            "position": {
+                "x": 0.0,
+                "y": 101.03352355957031
+            },
+            "rotation": 0.0,
+            "scale": {
+                "x": 3.549999952316284,
+                "y": 3.450000047683716
+            }
+        },
+        "collider": {
+            "checkcollision": true,
+            "checkresponse": false,
+            "size": {
+                "x": 0.05000000074505806,
+                "y": 0.25999999046325684
+            },
+            "offset": {
+                "x": 0.0,
+                "y": 0.03999999910593033
+            },
+            "drawDebug": true,
+            "radius": 0.5,
+            "shapetype": 0
+        },
+        "rigidbody": {
+            "linearVelocity": {
+                "x": 0.0,
+                "y": 7.0
+            },
+            "linearAcceleration": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "angularVelocity": 0.0,
+            "angularAcceleration": 0.0,
+            "mass": 1.0,
+            "inverseMass": 1.0,
+            "linearDamping": 1.0,
+            "angularDamping": 0.9900000095367432,
+            "force": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "torque": 0.0,
+            "kinematic": false,
+            "static": false
+        },
+        "sprite": {
+            "imagefile": "ani_railgunBulletEffect_strip10.png",
+            "layer": 14,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": true
+        },
+        "animation": {
+            "frameNumber": 0,
+            "framesPerSecond": 80,
+            "frameTimer": 0.0,
+            "isAnimating": false,
+            "stripCount": 10
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "EnemyBulletScript",
+                    "enabled": true,
+                    "map": []
+                }
+            ]
+        },
+        "LightingComponent": {
+            "m_innerOuterRadius": {
+                "x": 0.0,
+                "y": 1.0
+            },
+            "m_intensity": 1.0,
+            "m_light_OffSet": {
+                "x": 0.0,
+                "y": 0.029999999329447746
+            },
+            "m_light_scale": {
+                "x": 0.44999998807907104,
+                "y": 1.0700000524520874
+            },
+            "m_light_rotation": 1.0,
+            "m_colour": {
+                "x": 0.5353982448577881,
+                "y": 1.0,
+                "z": 0.9136580228805542
+            },
+            "m_lightType": 1
+        }
+    }
+]

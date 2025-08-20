@@ -1,0 +1,105 @@
+[
+    {
+        "GlobalSettings": {
+            "globalIllumination": 0.2199999988079071,
+            "backgroundColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0
+            }
+        }
+    },
+    {
+        "CursorSettings": {
+            "cursorImage": "../Assets/Texture/UI/img_startScreenCursor.png",
+            "isCursorCentered": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "EnemyTopHalf",
+            "layer": 12,
+            "isprefab": true,
+            "tagstr": "Enemy",
+            "prefabname": "FearlessEnemyStatic.prefab",
+            "issync": false
+        },
+        "transform": {
+            "position": {
+                "x": -5.381708145141602,
+                "y": -1.2396069765090942
+            },
+            "rotation": -95.46551513671875,
+            "scale": {
+                "x": 2.999998092651367,
+                "y": 2.999998092651367
+            }
+        },
+        "collider": {
+            "checkcollision": true,
+            "checkresponse": true,
+            "size": {
+                "x": 0.7400000095367432,
+                "y": 0.23999999463558197
+            },
+            "offset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "drawDebug": true,
+            "radius": 0.5,
+            "shapetype": 0
+        },
+        "rigidbody": {
+            "linearVelocity": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "linearAcceleration": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "angularVelocity": 0.0,
+            "angularAcceleration": 0.0,
+            "mass": 1.0,
+            "inverseMass": 1.0,
+            "linearDamping": 0.9900000095367432,
+            "angularDamping": 0.9900000095367432,
+            "force": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "torque": 0.0,
+            "kinematic": false,
+            "static": false
+        },
+        "sprite": {
+            "imagefile": "ani_scientistDeathPose_strip5.png",
+            "layer": 10,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": true
+        },
+        "animation": {
+            "frameNumber": 4,
+            "framesPerSecond": 15,
+            "frameTimer": 0.0,
+            "isAnimating": false,
+            "stripCount": 5
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "EnemyCorpseHalf",
+                    "enabled": true,
+                    "map": []
+                }
+            ]
+        }
+    }
+]

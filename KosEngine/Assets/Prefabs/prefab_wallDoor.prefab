@@ -1,0 +1,55 @@
+[
+    {
+        "GlobalSettings": {
+            "globalIllumination": 0.2199999988079071,
+            "backgroundColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0
+            }
+        }
+    },
+    {
+        "CursorSettings": {
+            "cursorImage": "../Assets/Texture/UI/img_startScreenCursor.png",
+            "isCursorCentered": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "WallDoor",
+            "layer": 6,
+            "isprefab": false,
+            "tagstr": "Wall"
+        },
+        "transform": {
+            "position": {
+                "x": -31.36451530456543,
+                "y": -1.9814743995666504
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 1.3250013589859009,
+                "y": 2.2100000381469727
+            }
+        },
+        "collider": {
+            "checkcollision": false,
+            "checkresponse": true,
+            "size": {
+                "x": 11.600000381469727,
+                "y": 3.5
+            },
+            "offset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "drawDebug": true,
+            "radius": 0.5,
+            "shapetype": 0
+        },
+        "script": {
+            "scripts": []
+        }
+    }
+]

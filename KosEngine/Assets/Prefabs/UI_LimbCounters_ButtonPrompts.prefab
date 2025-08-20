@@ -1,0 +1,73 @@
+[
+    {
+        "GlobalSettings": {
+            "globalIllumination": 0.05999999865889549,
+            "backgroundColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0
+            }
+        }
+    },
+    {
+        "CursorSettings": {
+            "cursorImage": "../Assets/Texture/UI/img_inGameCursor.png",
+            "isCursorCentered": true
+        }
+    },
+    {
+        "name": {
+            "namestr": "UI_LimbCounters_ButtonPrompts",
+            "layer": 4,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": 10.390585899353027,
+                "y": -4.441705703735352
+            },
+            "rotation": 0.0,
+            "scale": {
+                "x": 4.0,
+                "y": 4.0
+            }
+        },
+        "sprite": {
+            "imagefile": "ani_hudButtonPrompts_strip2.png",
+            "layer": 99,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": false
+        },
+        "animation": {
+            "frameNumber": 0,
+            "framesPerSecond": 0,
+            "frameTimer": 0.0,
+            "isAnimating": false,
+            "stripCount": 2
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "ButtonPrompt",
+                    "enabled": true,
+                    "map": [
+                        {
+                            "variable": "test",
+                            "base64": "1"
+                        },
+                        {
+                            "variable": "promptNo",
+                            "base64": "AQAAAMzMzMwA"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]

@@ -1,0 +1,560 @@
+[
+    {
+        "GlobalSettings": {
+            "globalIllumination": 1.0,
+            "backgroundColor": {
+                "r": 0.8274509906768799,
+                "g": 0.7137255072593689,
+                "b": 0.7137255072593689
+            }
+        }
+    },
+    {
+        "CursorSettings": {
+            "cursorImage": "../Assets/Texture/UI/img_startScreenCursor.png",
+            "isCursorCentered": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "img_cutscene",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 0.15109655261039734,
+                "y": 0.15000000596046448
+            }
+        },
+        "sprite": {
+            "imagefile": "img_cutscene.png",
+            "layer": 0,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "Camera",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "camera": {
+            "planes": {
+                "left": 0.0,
+                "right": 0.0,
+                "top": 0.0,
+                "bottom": 0.0
+            },
+            "aspectRatio": 0.0
+        }
+    },
+    {
+        "name": {
+            "namestr": "img_scientistPortrait",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": -1.3862369060516357,
+                "y": -0.17917901277542114
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579
+            }
+        },
+        "sprite": {
+            "imagefile": "img_strangerPortrait.png",
+            "layer": 4,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "img_dialogueFrame",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": 0.0,
+                "y": -0.5883199572563171
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579
+            }
+        },
+        "sprite": {
+            "imagefile": "img_dialogueFrame.png",
+            "layer": 2,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "ani_dialogueArrows_strip2",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": 1.4700000286102295,
+                "y": -0.7699999809265137
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 0.6000000238418579,
+                "y": 0.6000000238418579
+            }
+        },
+        "rigidbody": {
+            "linearVelocity": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "linearAcceleration": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "angularVelocity": 0.0,
+            "angularAcceleration": 0.0,
+            "mass": 1.0,
+            "inverseMass": 1.0,
+            "linearDamping": 0.9900000095367432,
+            "angularDamping": 0.9900000095367432,
+            "force": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "torque": 0.0,
+            "kinematic": false,
+            "static": false
+        },
+        "sprite": {
+            "imagefile": "ani_dialogueArrows_strip2.png",
+            "layer": 6,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": false
+        },
+        "animation": {
+            "frameNumber": 0,
+            "framesPerSecond": 0,
+            "frameTimer": 0.0,
+            "isAnimating": false,
+            "stripCount": 2
+        },
+        "button": {
+            "force": {
+                "x": 1722.8350830078125,
+                "y": 122.0150146484375
+            },
+            "scale": {
+                "x": 0.20000000298023224,
+                "y": 0.2199999988079071
+            },
+            "enablehover": true
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "CutsceneMenuButtons",
+                    "enabled": true,
+                    "map": [
+                        {
+                            "variable": "buttonFunctionNo",
+                            "base64": "AQAAAMzMzMwA"
+                        }
+                    ]
+                }
+            ]
+        },
+        "audio": [
+            {
+                "name": "aud_buttonHover01",
+                "volume": 0.4440000057220459,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            },
+            {
+                "name": "aud_buttonClick01",
+                "volume": 1.0,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            }
+        ]
+    },
+    {
+        "name": {
+            "namestr": "NPCTitle",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": -0.8500000238418579,
+                "y": -0.4461106061935425
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "text": {
+            "text": "???",
+            "text": null,
+            "filename": "fnt_silkscreenRegular.ttf",
+            "fontsize": 2.0,
+            "color": {
+                "r": 0.10588235408067703,
+                "g": 0.8823529481887817,
+                "b": 0.06666667014360428
+            },
+            "layer": 3,
+            "isCentered": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "DialogueText",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": -0.8500000238418579,
+                "y": -0.550000011920929
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "text": {
+            "text": "I'm in the system... you should have control now.",
+            "text": null,
+            "filename": "fnt_silkscreenRegular.ttf",
+            "fontsize": 1.0,
+            "color": {
+                "r": 0.10588235408067703,
+                "g": 0.8823529481887817,
+                "b": 0.06666667014360428
+            },
+            "layer": 7,
+            "isCentered": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "DialogueText",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": -0.8500000238418579,
+                "y": -0.6000000238418579
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 1.0000001192092896,
+                "y": 1.0
+            }
+        },
+        "text": {
+            "text": "use wasd to move the roomba around.",
+            "text": null,
+            "filename": "fnt_silkscreenRegular.ttf",
+            "fontsize": 1.0,
+            "color": {
+                "r": 0.10588235408067703,
+                "g": 0.8823529481887817,
+                "b": 0.06666667014360428
+            },
+            "layer": 8,
+            "isCentered": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "UI_StartMenu_Cursor",
+            "layer": 0,
+            "isprefab": true,
+            "tagstr": "Default",
+            "prefabname": "UI_StartMenu_Cursor.prefab",
+            "issync": true
+        },
+        "transform": {
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "collider": {
+            "checkcollision": true,
+            "checkresponse": false,
+            "size": {
+                "x": 1.0,
+                "y": 1.0
+            },
+            "offset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "drawDebug": true,
+            "radius": 0.02500000037252903,
+            "shapetype": 1
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "StartMenuCursor",
+                    "enabled": true,
+                    "map": []
+                }
+            ]
+        }
+    },
+    {
+        "name": {
+            "namestr": "CutsceneManager",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "CutsceneManager",
+                    "enabled": true,
+                    "map": []
+                }
+            ]
+        },
+        "audio": [
+            {
+                "name": "aud_startMenuAmbienceStart01",
+                "volume": 1.0,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            },
+            {
+                "name": "aud_startMenuAmbienceLoop01",
+                "volume": 1.0,
+                "loop": true,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            }
+        ]
+    },
+    {
+        "name": {
+            "namestr": "Coroutine Handlers",
+            "layer": 0,
+            "isprefab": true,
+            "tagstr": "Default",
+            "prefabname": "Coroutine Handlers.prefab",
+            "issync": true
+        },
+        "transform": {
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "CoroutineController",
+                    "enabled": true,
+                    "map": []
+                }
+            ]
+        }
+    },
+    {
+        "name": {
+            "namestr": "UI_FPSParent",
+            "layer": 0,
+            "isprefab": true,
+            "tagstr": "Default",
+            "prefabname": "UI_FPSParent.prefab",
+            "issync": true
+        },
+        "transform": {
+            "position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "UI_FPSCounter",
+                    "enabled": true,
+                    "map": [
+                        {
+                            "variable": "layerEnabled",
+                            "base64": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "children": [
+            {
+                "name": {
+                    "namestr": "UI_FPSCounter",
+                    "layer": 15,
+                    "isprefab": true,
+                    "tagstr": "Default",
+                    "prefabname": "UI_FPSParent.prefab",
+                    "issync": true
+                },
+                "transform": {
+                    "position": {
+                        "x": 1.4348912239074707,
+                        "y": 0.8299999833106995
+                    },
+                    "rotation": 0.0,
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0
+                    }
+                },
+                "text": {
+                    "text": "FPS : 000",
+                    "text": null,
+                    "filename": "fnt_silkscreenRegular.ttf",
+                    "fontsize": 1.5,
+                    "color": {
+                        "r": 0.10588235408067703,
+                        "g": 0.8823529481887817,
+                        "b": 0.06666667014360428
+                    },
+                    "layer": 900,
+                    "isCentered": true
+                }
+            }
+        ]
+    },
+    {
+        "name": {
+            "namestr": "DialogueText",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": -0.8500000238418579,
+                "y": -0.6499999761581421
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 1.0000001192092896,
+                "y": 1.0
+            }
+        },
+        "text": {
+            "text": "move your mouse to look around and aim.",
+            "text": null,
+            "filename": "fnt_silkscreenRegular.ttf",
+            "fontsize": 1.0,
+            "color": {
+                "r": 0.10588235408067703,
+                "g": 0.8823529481887817,
+                "b": 0.06666667014360428
+            },
+            "layer": 9,
+            "isCentered": false
+        }
+    }
+]

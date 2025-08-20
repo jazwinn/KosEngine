@@ -1,0 +1,134 @@
+[
+    {
+        "GlobalSettings": {
+            "globalIllumination": 0.2199999988079071,
+            "backgroundColor": {
+                "r": 0.0,
+                "g": 0.0,
+                "b": 0.0
+            }
+        }
+    },
+    {
+        "CursorSettings": {
+            "cursorImage": "../Assets/Texture/UI/img_startScreenCursor.png",
+            "isCursorCentered": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "Enemy",
+            "layer": 2,
+            "isprefab": false,
+            "tagstr": "Enemy"
+        },
+        "transform": {
+            "position": {
+                "x": -0.002715297043323517,
+                "y": -0.002715297043323517
+            },
+            "rotation": -135.0,
+            "scale": {
+                "x": 2.342973232269287,
+                "y": 2.999999761581421
+            }
+        },
+        "collider": {
+            "checkcollision": true,
+            "checkresponse": true,
+            "size": {
+                "x": 0.7200000286102295,
+                "y": 0.25999999046325684
+            },
+            "offset": {
+                "x": 0.0,
+                "y": 0.07999999821186066
+            },
+            "drawDebug": true,
+            "radius": 0.5,
+            "shapetype": 0
+        },
+        "rigidbody": {
+            "linearVelocity": {
+                "x": -2.0364673137664795,
+                "y": -2.0364673137664795
+            },
+            "linearAcceleration": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "rotation": 0.0,
+            "angularVelocity": 0.0,
+            "angularAcceleration": 0.0,
+            "mass": 1.0,
+            "inverseMass": 1.0,
+            "linearDamping": 0.9599999785423279,
+            "angularDamping": 0.9900000095367432,
+            "force": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "torque": 0.0,
+            "kinematic": false,
+            "static": false
+        },
+        "sprite": {
+            "imagefile": "ani_scientistWalk_strip14.png",
+            "layer": 20,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": true
+        },
+        "animation": {
+            "frameNumber": 12,
+            "framesPerSecond": 10,
+            "frameTimer": 23147.6015625,
+            "isAnimating": true,
+            "stripCount": 14
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "EnemyController",
+                    "enabled": true,
+                    "map": [
+                        {
+                            "variable": "forceDeath",
+                            "base64": ""
+                        },
+                        {
+                            "variable": "playerIsDead",
+                            "base64": ""
+                        },
+                        {
+                            "variable": "enemySpeed",
+                            "base64": ""
+                        },
+                        {
+                            "variable": "isDead",
+                            "base64": ""
+                        },
+                        {
+                            "variable": "totalEnemiesKilled",
+                            "base64": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "audio": [
+            {
+                "name": "aud_humanDeath01",
+                "volume": 0.23399999737739563,
+                "loop": false,
+                "playOnStart": false,
+                "isBGM": false,
+                "isSFX": true
+            }
+        ]
+    }
+]

@@ -1,0 +1,226 @@
+[
+    {
+        "GlobalSettings": {
+            "globalIllumination": 1.0,
+            "backgroundColor": {
+                "r": 0.8451327085494995,
+                "g": 0.8451327085494995,
+                "b": 0.8451327085494995
+            }
+        }
+    },
+    {
+        "CursorSettings": {
+            "cursorImage": "default",
+            "isCursorCentered": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "cone particle with script",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": -5.455825328826904,
+                "y": 2.5252060890197754
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "ParticleEmitter",
+                    "enabled": true,
+                    "map": []
+                }
+            ]
+        },
+        "particle": {
+            "willSpawn": false,
+            "noOfParticles": 1,
+            "lifeSpan": 2.0,
+            "velocityX": 1.5399999618530273,
+            "velocityY": 0.0,
+            "sizeX": 0.20000000298023224,
+            "sizeY": 0.20000000298023224,
+            "accelerationX": 0.0,
+            "accelerationY": 0.0,
+            "colorR": 0.8716814517974854,
+            "colorG": 0.26613280177116394,
+            "colorB": 0.26613280177116394,
+            "coneRotation": 0.0,
+            "coneAngle": 45.0,
+            "randomFactor": 2.0,
+            "imageFile": "",
+            "stripCount": 0,
+            "frameNumber": 0,
+            "layer": 500,
+            "friction": 0.0,
+            "fps": 0,
+            "loopAnimation": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "animated particle with script",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": 4.929965019226074,
+                "y": -2.435584545135498
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "ParticleEmitter",
+                    "enabled": true,
+                    "map": []
+                }
+            ]
+        },
+        "particle": {
+            "willSpawn": false,
+            "noOfParticles": 1,
+            "lifeSpan": 3.0,
+            "velocityX": 0.8199999928474426,
+            "velocityY": 0.0,
+            "sizeX": 1.0,
+            "sizeY": 1.0,
+            "accelerationX": 0.0,
+            "accelerationY": 0.0,
+            "colorR": 1.0,
+            "colorG": 1.0,
+            "colorB": 1.0,
+            "coneRotation": 0.0,
+            "coneAngle": 360.0,
+            "randomFactor": 1.0,
+            "imageFile": "ani_hudSegmentBar_strip7.png",
+            "stripCount": 7,
+            "frameNumber": 0,
+            "layer": 500,
+            "friction": 0.0,
+            "fps": 2,
+            "loopAnimation": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "particle with script",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": 4.685246467590332,
+                "y": 2.669255495071411
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "ParticleEmitter",
+                    "enabled": true,
+                    "map": []
+                }
+            ]
+        },
+        "particle": {
+            "willSpawn": false,
+            "noOfParticles": 1,
+            "lifeSpan": 3.4000000953674316,
+            "velocityX": 0.8199999928474426,
+            "velocityY": 0.0,
+            "sizeX": 0.20000000298023224,
+            "sizeY": 0.20000000298023224,
+            "accelerationX": 0.0,
+            "accelerationY": 0.0,
+            "colorR": 1.0,
+            "colorG": 1.0,
+            "colorB": 1.0,
+            "coneRotation": 0.0,
+            "coneAngle": 360.0,
+            "randomFactor": 0.0,
+            "imageFile": "",
+            "stripCount": 0,
+            "frameNumber": 0,
+            "layer": 500,
+            "friction": 0.0,
+            "fps": 0,
+            "loopAnimation": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "friction particle with script",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": -5.798553466796875,
+                "y": -1.9179434776306152
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "script": {
+            "scripts": [
+                {
+                    "name": "ParticleEmitter",
+                    "enabled": true,
+                    "map": []
+                }
+            ]
+        },
+        "particle": {
+            "willSpawn": false,
+            "noOfParticles": 1,
+            "lifeSpan": 7.099999904632568,
+            "velocityX": 9.600000381469727,
+            "velocityY": 0.0,
+            "sizeX": 0.20000000298023224,
+            "sizeY": 0.20000000298023224,
+            "accelerationX": 0.0,
+            "accelerationY": 0.0,
+            "colorR": 0.2743362784385681,
+            "colorG": 0.1735844612121582,
+            "colorB": 0.1735844612121582,
+            "coneRotation": 0.0,
+            "coneAngle": 45.0,
+            "randomFactor": 2.0,
+            "imageFile": "",
+            "stripCount": 0,
+            "frameNumber": 0,
+            "layer": 500,
+            "friction": 5.0,
+            "fps": 0,
+            "loopAnimation": false
+        }
+    }
+]

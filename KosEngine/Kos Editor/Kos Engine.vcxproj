@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{ba6a7394-d5dd-4fc4-82a6-972683e976bf}</ProjectGuid>
+    <RootNamespace>KosEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Engine\ECS;$(SolutionDir)Engine\Dependencies\pl_mpeg;$(SolutionDir)Engine\Dependencies\Freetype_Font\include\freetype\config;$(SolutionDir)Engine\Dependencies\Freetype_Font\include;$(SolutionDir)Engine\Dependencies\FMOD_API\studio\inc;$(SolutionDir)Engine\Dependencies\FMOD_API\core\inc;$(SolutionDir)Engine\Dependencies\mono\include\mono-2.0;$(SolutionDir)Engine\Dependencies\mono\include;$(SolutionDir)Engine;$(SolutionDir)Engine\Dependencies\stb_image\include;$(SolutionDir)Engine\Dependencies\glm\include;$(SolutionDir)Engine\Dependencies\GLEW\include\GL;$(SolutionDir)Engine\Dependencies\GLFW\include;$(ProjectDir)Dependencies\imgui;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
+      <DisableSpecificWarnings>26945; 4005; 4245;4083;26495;6255;6263;6001; 4244; 4706;4267;4305;</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Engine lib.lib;glew32s.lib;glfw3.lib;User32.lib;Gdi32.lib;Shell32.lib;opengl32.lib;freetype.lib;mono-2.0-sgen.lib;fmod_vc.lib;Comdlg32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Engine\Dependencies\GLFW\lib-vc2022;$(SolutionDir)Engine\Dependencies\GLEW\lib\Release\x64;$(SolutionDir)Engine\Dependencies\FMOD_API\core\lib\x64;$(SolutionDir)Engine\Dependencies\FMOD_API\studio\lib\x64;$(SolutionDir)Engine\Dependencies\Freetype_Font\lib;$(SolutionDir)Engine\Dependencies\mono\lib;$(SolutionDir)Engine\Dependencies\Freetype_Font\include\freetype\config;$(SolutionDir)x64\Debug</AdditionalLibraryDirectories>
+      <AdditionalOptions>/IGNORE:4098,4099,4286 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y /d "$(SolutionDir)Engine\Dependencies\FMOD_API\core\lib\x64\*.dll" "$(OutDir)"
+xcopy /y /d "$(SolutionDir)Engine\Dependencies\FMOD_API\studio\lib\x64\*.dll" "$(OutDir)"
+xcopy /y /d "$(SolutionDir)Engine\Dependencies\Freetype_Font\lib\*.dll" "$(OutDir)"
+xcopy /y /d "$(SolutionDir)Engine\Dependencies\mono\*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Engine\ECS;$(SolutionDir)Engine\Dependencies\pl_mpeg;$(SolutionDir)Engine\Dependencies\Freetype_Font\include\freetype\config;$(SolutionDir)Engine\Dependencies\Freetype_Font\include;$(SolutionDir)Engine\Dependencies\FMOD_API\studio\inc;$(SolutionDir)Engine\Dependencies\FMOD_API\core\inc;$(SolutionDir)Engine\Dependencies\mono\include\mono-2.0;$(SolutionDir)Engine\Dependencies\mono\include;$(SolutionDir)Engine;$(SolutionDir)Engine\Dependencies\stb_image\include;$(SolutionDir)Engine\Dependencies\glm\include;$(SolutionDir)Engine\Dependencies\GLEW\include\GL;$(SolutionDir)Engine\Dependencies\GLFW\include;$(ProjectDir)Dependencies\imgui;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <UseStandardPreprocessor>true</UseStandardPreprocessor>
+      <DisableSpecificWarnings>26945; 4005; 4245;4083;26495;6255;6263;6001; 4244; 4706;4267;4305;</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Engine lib.lib;glew32s.lib;glfw3.lib;User32.lib;Gdi32.lib;Shell32.lib;opengl32.lib;freetype.lib;mono-2.0-sgen.lib;fmod_vc.lib;Comdlg32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Engine\Dependencies\GLFW\lib-vc2022;$(SolutionDir)Engine\Dependencies\GLEW\lib\Release\x64;$(SolutionDir)Engine\Dependencies\FMOD_API\core\lib\x64;$(SolutionDir)Engine\Dependencies\FMOD_API\studio\lib\x64;$(SolutionDir)Engine\Dependencies\Freetype_Font\lib;$(SolutionDir)Engine\Dependencies\mono\lib;$(SolutionDir)Engine\Dependencies\Freetype_Font\include\freetype\config;$(SolutionDir)x64\Release</AdditionalLibraryDirectories>
+      <AdditionalOptions>/IGNORE:4098,4099,4286 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y /d "$(SolutionDir)Engine\Dependencies\FMOD_API\core\lib\x64\*.dll" "$(OutDir)"
+xcopy /y /d "$(SolutionDir)Engine\Dependencies\FMOD_API\studio\lib\x64\*.dll" "$(OutDir)"
+xcopy /y /d "$(SolutionDir)Engine\Dependencies\Freetype_Font\lib\*.dll" "$(OutDir)"
+xcopy /y /d "$(SolutionDir)Engine\Dependencies\mono\*.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Application\Application.cpp" />
+    <ClCompile Include="Application\main.cpp" />
+    <ClCompile Include="Application\Window.cpp" />
+    <ClCompile Include="Dependencies\imgui\imgui.cpp" />
+    <ClCompile Include="Dependencies\imgui\ImGuizmo.cpp" />
+    <ClCompile Include="Dependencies\imgui\imgui_draw.cpp" />
+    <ClCompile Include="Dependencies\imgui\imgui_impl_glfw.cpp" />
+    <ClCompile Include="Dependencies\imgui\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="Dependencies\imgui\imgui_stdlib.cpp" />
+    <ClCompile Include="Dependencies\imgui\imgui_tables.cpp" />
+    <ClCompile Include="Dependencies\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="Dependencies\imgui\implot.cpp" />
+    <ClCompile Include="Dependencies\imgui\implot_items.cpp" />
+    <ClCompile Include="Editor\EditorCamera.cpp" />
+    <ClCompile Include="Editor\ImGui Panels\Editor.cpp" />
+    <ClCompile Include="Editor\ImGui Panels\imgui_component_window.cpp" />
+    <ClCompile Include="Editor\ImGui Panels\imgui_contentBrowser.cpp" />
+    <ClCompile Include="Editor\ImGui Panels\imgui_editor_window.cpp" />
+    <ClCompile Include="Editor\ImGui Panels\imgui_game_scene_window.cpp" />
+    <ClCompile Include="Editor\ImGui Panels\imgui_Gizmo.cpp" />
+    <ClCompile Include="Editor\ImGui Panels\imgui_global_settings_panel.cpp" />
+    <ClCompile Include="Editor\ImGui Panels\imgui_hierarchy_window.cpp" />
+    <ClCompile Include="Editor\ImGui Panels\imgui_layer_panel.cpp" />
+    <ClCompile Include="Editor\ImGui Panels\imgui_logs_window.cpp" />
+    <ClCompile Include="Editor\ImGui Panels\imgui_menubar.cpp" />
+    <ClCompile Include="Editor\ImGui Panels\imgui_performance_window.cpp" />
+    <ClCompile Include="Editor\ImGui Panels\imgui_play_pause.cpp" />
+    <ClCompile Include="Editor\ImGui Panels\imgui_test_panel.cpp" />
+    <ClCompile Include="Editor\ImGui Panels\imgui_tile_picker.cpp" />
+    <ClCompile Include="Editor\ImGui Panels\imgui__input_window.cpp" />
+    <ClCompile Include="Editor\ImGui Panels\ScriptVariable.cpp" />
+    <ClCompile Include="Editor\TilemapCalculations.cpp" />
+    <ClCompile Include="Editor\WindowFile.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Application\Application.h" />
+    <ClInclude Include="Application\Window.h" />
+    <ClInclude Include="Dependencies\imgui\imconfig.h" />
+    <ClInclude Include="Dependencies\imgui\imgui.h" />
+    <ClInclude Include="Dependencies\imgui\ImGuizmo.h" />
+    <ClInclude Include="Dependencies\imgui\imgui_impl_glfw.h" />
+    <ClInclude Include="Dependencies\imgui\imgui_impl_opengl3.h" />
+    <ClInclude Include="Dependencies\imgui\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="Dependencies\imgui\imgui_internal.h" />
+    <ClInclude Include="Dependencies\imgui\imgui_stdlib.h" />
+    <ClInclude Include="Dependencies\imgui\implot.h" />
+    <ClInclude Include="Dependencies\imgui\implot_internal.h" />
+    <ClInclude Include="Dependencies\imgui\imstb_rectpack.h" />
+    <ClInclude Include="Dependencies\imgui\imstb_textedit.h" />
+    <ClInclude Include="Dependencies\imgui\imstb_truetype.h" />
+    <ClInclude Include="Editor\EditorCamera.h" />
+    <ClInclude Include="Editor\ImGui Panels\Editor.h" />
+    <ClInclude Include="Editor\ImGui Panels\ScriptVariable.h" />
+    <ClInclude Include="Editor\TilemapCalculations.h" />
+    <ClInclude Include="Editor\WindowFile.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

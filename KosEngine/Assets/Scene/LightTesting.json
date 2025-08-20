@@ -1,0 +1,325 @@
+[
+    {
+        "GlobalSettings": {
+            "globalIllumination": 0.0,
+            "backgroundColor": {
+                "r": 0.13300000131130219,
+                "g": 0.23000000417232513,
+                "b": 0.3199999928474426
+            }
+        }
+    },
+    {
+        "CursorSettings": {
+            "cursorImage": "default",
+            "isCursorCentered": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "img_backgroundUniverse",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": -3.94050931930542,
+                "y": 2.8695693016052246
+            },
+            "rotation": 0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "collider": {
+            "checkcollision": true,
+            "checkresponse": true,
+            "size": {
+                "x": 4.800000190734863,
+                "y": 2.700000047683716
+            },
+            "offset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "drawDebug": true,
+            "radius": 0.5,
+            "shapetype": 0
+        },
+        "sprite": {
+            "imagefile": "img_backgroundUniverse.png",
+            "layer": 0,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": true
+        }
+    },
+    {
+        "name": {
+            "namestr": "img_gameLogo",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": 2.237989664077759,
+                "y": 2.951949119567871
+            },
+            "rotation": 0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "collider": {
+            "checkcollision": true,
+            "checkresponse": true,
+            "size": {
+                "x": 2.6500000953674316,
+                "y": 0.5199999809265137
+            },
+            "offset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "drawDebug": true,
+            "radius": 0.5,
+            "shapetype": 0
+        },
+        "sprite": {
+            "imagefile": "img_gameLogo.png",
+            "layer": 1,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": true
+        }
+    },
+    {
+        "name": {
+            "namestr": "img_greyGoose",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": 5.977126598358154,
+                "y": -4.638197898864746
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "collider": {
+            "checkcollision": true,
+            "checkresponse": true,
+            "size": {
+                "x": 6.400000095367432,
+                "y": 6.400000095367432
+            },
+            "offset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "drawDebug": true,
+            "radius": 0.5,
+            "shapetype": 0
+        },
+        "sprite": {
+            "imagefile": "img_greyGoose.png",
+            "layer": 2,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": false
+        }
+    },
+    {
+        "name": {
+            "namestr": "img_inventory",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": -4.489709377288818,
+                "y": -2.430208683013916
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "collider": {
+            "checkcollision": true,
+            "checkresponse": true,
+            "size": {
+                "x": 3.8399999141693115,
+                "y": 1.9900000095367432
+            },
+            "offset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "drawDebug": true,
+            "radius": 0.5,
+            "shapetype": 0
+        },
+        "sprite": {
+            "imagefile": "img_inventory.png",
+            "layer": 3,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": true
+        }
+    },
+    {
+        "name": {
+            "namestr": "img_roombert",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": -0.5179618000984192,
+                "y": 0.46329498291015625
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 1.0,
+                "y": 1.0
+            }
+        },
+        "collider": {
+            "checkcollision": true,
+            "checkresponse": true,
+            "size": {
+                "x": 0.47999998927116394,
+                "y": 0.5
+            },
+            "offset": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "drawDebug": true,
+            "radius": 0.5,
+            "shapetype": 0
+        },
+        "sprite": {
+            "imagefile": "img_roombert.png",
+            "layer": 4,
+            "color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0
+            },
+            "alpha": 1.0,
+            "isLit": true
+        }
+    },
+    {
+        "name": {
+            "namestr": "light",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": -6.646763801574707,
+                "y": 2.858624219894409
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 28.173559188842773,
+                "y": 28.173559188842773
+            }
+        },
+        "LightingComponent": {
+            "m_innerOuterRadius": {
+                "x": 0.0,
+                "y": 1.0
+            },
+            "m_intensity": 1.0,
+            "m_light_OffSet": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "m_light_scale": {
+                "x": 0.25999999046325684,
+                "y": 1.0
+            },
+            "m_light_rotation": 0.0,
+            "m_colour": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "m_lightType": 1
+        }
+    },
+    {
+        "name": {
+            "namestr": "light",
+            "layer": 0,
+            "isprefab": false,
+            "tagstr": "Default"
+        },
+        "transform": {
+            "position": {
+                "x": 0.4508409798145294,
+                "y": 0.8636391758918762
+            },
+            "rotation": -0.0,
+            "scale": {
+                "x": 28.173559188842773,
+                "y": 28.173559188842773
+            }
+        },
+        "LightingComponent": {
+            "m_innerOuterRadius": {
+                "x": 0.0,
+                "y": 1.0
+            },
+            "m_intensity": 1.0,
+            "m_light_OffSet": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "m_light_scale": {
+                "x": 1.0,
+                "y": 1.0
+            },
+            "m_light_rotation": 0.0,
+            "m_colour": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "m_lightType": 0
+        }
+    }
+]
